@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Diff-Base</title>
+  <style type="text/css">
+    body, html {
+      font-family: Helvetica, Arial, sans-serif;
+      background-color: #F5F5F5;
+      color: #114;
+      margin: 0;
+      padding: 0;
+    }
+    a {
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    #titleBar {
+      height: 80px;
+      background-color: #FFF;
+      overflow: hidden;
+      border-bottom: 1px solid #d3d3d3;
+    }
+    #titleBar #container {
+      margin-top: 14px;
+    }
+    #titleBar h1 {
+      margin: 0 auto .5em auto;
+      padding: .2em;
+      color: #D9230F;
+      text-align: center;
+    }
+    #outer-content {
+      max-width: 910px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    #content {
+      margin: 1em auto 1em auto;
+      float: left;
+    }
+    #main{
+      float: left;
+      line-height: 24px;
+    }
+    .button {
+      background-color: #D9230F;
+      border: none;
+      color: white;
+      padding: 15px 25px;
+      text-align: center;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 10px;
+    }
+    .button:hover {
+      background-color: grey;
+    }
+    .boxed {
+      border: 1px solid #d3d3d3;
+      background-color: #FFF;
+      width: auto;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .footer {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: #FFF;
+      color: grey;
+      padding: 20px;
+      width: 97%;
+    }
+  </style>
+</head>
+<body>
+  <div id="titleBar">
+    <div id="container">
+      <h1>Diff-Base: A bioinformatic classification of <i>C. difficile</i> toxins</h1>
+    </div>
+  </div>
+  <div id="outer-content">
+    <div id="content">
+      <div id="main">
+
+        <br>
+        <div id="wrapper" style = "text-align: center;">
+          <a href="./app-A/"><button class="button">Toxin A</button></a>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          <a href="./app-B/"><button class="button">Toxin B</button></a>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="boxed">
+          <h2 align = "center">Description</h2>
+          <p>Diff-Base is an online database of Toxin A (TcdA) and Toxin B (TcdB) protein sequences derived from currently available <i>C. difficile</i> strains. TcdA and TcdB have been bioinformatically classified into distinct groups (toxinotypes) based on their sequence similarities. The full bioinformatic analysis pipeline is described here: [GITHUB].</p>
+
+          <h2 align = "center">Citation</h2>
+          <p>[Forthcoming]</p>
+
+          <h2 align = "center">Funding</h2>
+          <p>This project was funded by NSERC. <img src="./NSERC.jpg" height="27" width="60"/></p>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <p style="text-align:left;">
+      Benjamin Tremblay - Software/database development
+      <span style="float: right;">
+        Min Dong - Project supervision
+      </span>
+    </p>
+    <p style="text-align:left;">
+      Michael Mansfield - Data analysis
+      <span style="float: right;">
+        Andrew Doxey - Project supervision
+      </span>
+    </p>
+  </div>
+</body>
+</html>
