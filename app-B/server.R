@@ -1,6 +1,6 @@
 #-------------------------------------------------------------------------------
 # server.R
-# Last modified: 2020-02-12 21:01:22 (CET)
+# Last modified: 2020-02-12 21:43:13 (CET)
 # BJM Tremblay
 
 msg("Loading server")
@@ -92,20 +92,17 @@ server <- function(input, output, session) {
     req(input$BLASTP_INPUT)
     res <- run_blast(input$BLASTP_INPUT)
     if (is.data.frame(res)) {
+      output$BLASTP_DOWNLOAD <- downloadHandler(
+        filename = "blastp_results.tsv",
+        content = function(con) readr::write_tsv(res, con)
+      )
       output$BLASTP_RES_TABLE <- DT::renderDataTable({
         DT::datatable(
           res,
           extensions = "Buttons",
           options = list(
             pageLength = 10,
-            dom = "Bltip",
-            buttons = list(
-              list(
-                extend = "collection",
-                buttons = c("csv", "excel", "pdf"),
-                text = "Download"
-              )
-            )
+            dom = "ltip"
           )
         )
       })
