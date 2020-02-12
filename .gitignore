@@ -4,3 +4,7 @@
 credientials.json
 app-A/credentials.json
 .secret
+app-A/community/*
+app-A/queries/*
+app-B/community/*
+app-B/queries/*
