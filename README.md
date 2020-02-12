@@ -11,7 +11,7 @@
 
 `shiny`, `shinythemes`, `ape`, `tidytree`, `magrittr`, `readr`, `gmailr`
 
-### BiocConductor (version 10 or later)
+### BioConductor (version 10 or later)
 
 `ggtree`, `Biostrings`
 
