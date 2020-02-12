@@ -1,6 +1,6 @@
 #-------------------------------------------------------------------------------
 # global.R
-# Last modified: 2020-02-12 21:46:05 (CET)
+# Last modified: 2020-02-12 22:57:35 (CET)
 # BJM Tremblay
 
 msg <- function(...) {
@@ -114,6 +114,17 @@ check_query <- function(x) {
   list(status = TRUE)
 }
 
+make_blast_buttons <- function(subject) {
+  make_single <- function(subj) {
+    subj <- gsub(".", "_", subj, fixed = TRUE)
+    as.character(actionLink(
+      paste0("BLASTP_GOTO_", subj), "Go",
+      onclick = 'Shiny.onInputChange(\"BLASTP_GOTO\", this.id)'
+    ))
+  }
+  vapply(subject, make_single, character(1))
+}
+
 run_blast <- function(query, evalue = 1) {
   query <- clean_query(query)
   check <- check_query(query)
@@ -143,6 +154,7 @@ run_blast <- function(query, evalue = 1) {
       res$`Match Coverage %` <- round(
         100 * (res$Coverage / nchar(SEQS_ALL[res$Match])), 1
       )
+      res$`Go To Toxin Page` <- make_blast_buttons(res$Match)
       as.data.frame(res)[, -1]
     }
   }

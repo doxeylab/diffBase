@@ -1,6 +1,6 @@
 #-------------------------------------------------------------------------------
 # server.R
-# Last modified: 2020-02-12 21:42:49 (CET)
+# Last modified: 2020-02-12 22:56:31 (CET)
 # BJM Tremblay
 
 msg("Loading server")
@@ -90,15 +90,20 @@ server <- function(input, output, session) {
     if (is.data.frame(res)) {
       output$BLASTP_DOWNLOAD <- downloadHandler(
         filename = "blastp_results.tsv",
-        content = function(con) readr::write_tsv(res, con)
+        content = function(con) readr::write_tsv(res[, -ncol(res)], con)
       )
       output$BLASTP_RES_TABLE <- DT::renderDataTable({
         DT::datatable(
           res,
           extensions = "Buttons",
+          escape = FALSE,
+          selection = "none",
           options = list(
             pageLength = 10,
-            dom = "ltip"
+            dom = "ltip",
+            columnDefs = list(
+              list(targets = ncol(res), bSortable = FALSE, className = "dt-center")
+            )
           )
         )
       })
@@ -172,6 +177,15 @@ server <- function(input, output, session) {
       )
     }
   )
+
+  observeEvent(input$BLASTP_GOTO, {
+    CURRENT_PAGE$WHICH <- "INFO"
+    SELECTED_TYPE$WHICH <- strsplit(input$BLASTP_GOTO, "_", fixed = TRUE)[[1]][3]
+    SELECTED_SUBTYPE[[SELECTED_TYPE$WHICH]] <- gsub("BLASTP.GOTO.", "",
+      gsub("_", ".", input$BLASTP_GOTO, fixed = TRUE),
+      fixed = TRUE
+    )
+  })
 
 }
 
