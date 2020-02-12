@@ -1,6 +1,6 @@
 #-------------------------------------------------------------------------------
 # global.R
-# Last modified: 2020-02-12 21:03:15 (CET)
+# Last modified: 2020-02-12 21:46:05 (CET)
 # BJM Tremblay
 
 msg <- function(...) {
@@ -127,7 +127,7 @@ run_blast <- function(query, evalue = 1) {
     cat(c(">QUERY", query), file = f, sep = "\n")
     cmd <- paste(
       "blastp -query", f, "-db blastdb/ALL-sequences.fa", "-out", o,
-      "-outfmt '6 qseqid sseqid evalue pident length'",
+      "-outfmt '6 qseqid sseqid evalue mismatch pident length'",
       "-evalue", evalue
     )
     if (system(cmd)) {
@@ -139,7 +139,7 @@ run_blast <- function(query, evalue = 1) {
       msg("Blastp successful")
       res <- suppressMessages(readr::read_tsv(o, col_names = FALSE))
       msg("Number of hits:", nrow(res))
-      colnames(res) <- c("qseqid", "Match", "E-Value", "% Identity", "Coverage")
+      colnames(res) <- c("qseqid", "Match", "E-Value", "# of Mismatches", "% Identity", "Coverage")
       res$`Match Coverage %` <- round(
         100 * (res$Coverage / nchar(SEQS_ALL[res$Match])), 1
       )
