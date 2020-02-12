@@ -1,6 +1,6 @@
 #-------------------------------------------------------------------------------
 # server.R
-# Last modified: 2020-02-09 12:00:21 (CET)
+# Last modified: 2020-02-12 21:01:22 (CET)
 # BJM Tremblay
 
 msg("Loading server")
@@ -146,13 +146,15 @@ server <- function(input, output, session) {
     }
     cat(email, comm_text, sep = "\n",
         file = paste0("community/", as.integer(Sys.time()), ".txt"))
-    gmailr::gm_send_message(
-      gmailr::gm_mime() %>%
-        gmailr::gm_from("diffbaseserver@gmail.com") %>%
-        gmailr::gm_to("diffbaseserver@gmail.com") %>%
-        gmailr::gm_subject(paste("Community message from", email)) %>%
-        gmailr::gm_text_body(comm_text)
-    )
+    if (GMAIL_ACTIVE) {
+      gmailr::gm_send_message(
+        gmailr::gm_mime() %>%
+          gmailr::gm_from("diffbaseserver@gmail.com") %>%
+          gmailr::gm_to("diffbaseserver@gmail.com") %>%
+          gmailr::gm_subject(paste("Community message from", email)) %>%
+          gmailr::gm_text_body(comm_text)
+      )
+    }
     showModal(modalDialog(title = "Thank you", modal_text))
   })
 

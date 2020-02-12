@@ -1,6 +1,6 @@
 #-------------------------------------------------------------------------------
 # global.R
-# Last modified: 2020-02-12 20:35:16 (CET)
+# Last modified: 2020-02-12 21:00:31 (CET)
 # BJM Tremblay
 
 msg <- function(...) {
@@ -27,13 +27,16 @@ library(magrittr)
 # msg("  gmailr")
 # suppressPackageStartupMessages(library(gmailr))
 
+GMAIL_ACTIVE <- FALSE
 if (Sys.info()["user"] == "benjmtremblay_gmail_com") {
   Sys.setenv(GMAILR_APP="/home/benjmtremblay_gmail_com/diff-base/credentials.json")
   gmailr::gm_auth_configure("/home/benjmtremblay_gmail_com/diff-base/credentials.json")
   gmailr::gm_auth(email = TRUE, cache = "/home/benjmtremblay_gmail_com/diff-base/.secret")
+  GMAIL_ACTIVE <- TRUE
 } else if (Sys.info()["user"] == "ben") {
   gmailr::gm_auth_configure("/Users/ben/diffBase/app-A/credentials.json")
   gmailr::gm_auth(email = TRUE, cache = "/Users/ben/diffBase/app-A/.secret")
+  GMAIL_ACTIVE <- TRUE
 }
 
 #-------------------------------------------------------------------------------
