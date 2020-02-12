@@ -2,4 +2,5 @@
 *.swp
 .httr-oauth
 credientials.json
+app-A/credentials.json
 .secret
