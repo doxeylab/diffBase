@@ -1,6 +1,6 @@
 #-------------------------------------------------------------------------------
 # global.R
-# Last modified: 2020-02-12 22:52:20 (CET)
+# Last modified: 2020-02-13 21:05:11 (CET)
 # BJM Tremblay
 
 msg <- function(...) {
@@ -34,6 +34,9 @@ if (Sys.info()["user"] == "benjmtremblay_gmail_com") {
   gmailr::gm_auth(email = TRUE, cache = "/home/benjmtremblay_gmail_com/diff-base/.secret")
   GMAIL_ACTIVE <- TRUE
 }
+
+dir.create("community", showWarnings = FALSE)
+dir.create("queries", showWarnings = FALSE)
 
 #-------------------------------------------------------------------------------
 msg("Loading functions")
