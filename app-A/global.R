@@ -1,6 +1,6 @@
 #-------------------------------------------------------------------------------
 # global.R
-# Last modified: 2020-02-13 21:05:11 (CET)
+# Last modified: 2020-02-14 23:11:46 (CET)
 # BJM Tremblay
 
 msg <- function(...) {
@@ -194,7 +194,8 @@ SEQ_NAMES_ALL <- do.call(c, SEQ_NAMES_LIST)
 names(SEQ_NAMES_ALL) <- gsub("^[A-Z][.]", "", names(SEQ_NAMES_ALL))
 names(SEQ_NAMES_ALL) <- gsub("^[A-Z][1-2][.]", "", names(SEQ_NAMES_ALL))
 
-SEQS_ALL <- readRDS("data/ALL-sequences.RDS")
+SEQS_ALL <- gsub("-", "", readRDS("data/ALL-sequences.RDS"), fixed = TRUE)
+# SEQS_ALL <- readRDS("data/ALL-sequences.RDS")
 # SEQS_ALL_AA <- readRDS("data/ALL-sequences-AAStringSet.RDS)
 
 # SEQS_LIST <- list(  # Note: these are AAStringSet type
