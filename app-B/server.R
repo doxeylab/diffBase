@@ -1,6 +1,6 @@
 #-------------------------------------------------------------------------------
 # server.R
-# Last modified: 2020-02-15 09:51:14 (CET)
+# Last modified: 2020-02-15 10:30:59 (CET)
 # BJM Tremblay
 
 msg("Loading server")
@@ -110,6 +110,7 @@ server <- function(input, output, session) {
           selection = "none",
           options = list(
             pageLength = 10,
+            lengthMenu = list(c(10, 50, 100, 200), c("10", "50", "100", "200")),
             dom = "ltip",
             columnDefs = list(
               list(targets = ncol(res), bSortable = FALSE, className = "dt-center")
