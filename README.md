@@ -137,13 +137,13 @@ server {
   location /app-A {
     run_as $USER;
     app_idle_timeout 0;
-    site_dir /home/$USER/diffBase/app-A/;
+    app_dir /home/$USER/diffBase/app-A/;
     log_dir /home/$USER/diffBase-logs/app-A/;
   }
   location /app-B {
     run_as $USER;
     app_idle_timeout 0;
-    site_dir /home/$USER/diffBase/app-B/;
+    app_dir /home/$USER/diffBase/app-B/;
     log_dir /home/$USER/diffBase-logs/app-B/;
   }
 }
