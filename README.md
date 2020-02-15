@@ -172,3 +172,9 @@ sudo certbot renew
 
 The `certbot` program will try and automatically modify your `nginx` config file. Make sure it did it correctly.
 
+Start `nginx` and `shiny-server`:
+
+```
+sudo systemctl start nginx
+sudo systemctl start shiny-server
+```
