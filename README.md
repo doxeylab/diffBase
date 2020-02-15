@@ -17,7 +17,19 @@
 
 ## Gettings emails from the community message function
 
-Right now the apps send emails automatically whenever someone submits a message using the community feature. To do this, it uses local GMail keys. For obvious reasons, these are not included in the GitHub repo. For now key location information is hard-coded into the app, though this should become configurable before public release.
+Right now the apps send emails automatically whenever someone submits a message using the community feature. To do this, it uses local GMail keys. For obvious reasons, these are not included in the GitHub repo.
+
+## Configuration
+
+Each app has a `diffBaseConfig.txt` file which can be edited to change some of the behaviours of the apps.
+
+- `URL              = "https://diffbase.uwaterloo.ca"`: server URL
+- `UseGmail         = TRUE`: Either `TRUE` or `FALSE`, depending on whether you want email enabled. Useful if you want to run the apps locally and don't want to have to edit the code to prevent it from trying to send emails.
+- `ServerEmail      = "diffbaseserver@gmail.com"`: server email
+- `GmailCredentials = "~/diff-base/credentials.json"`: GMail credentials. Look up the `gmailr` package for instructions on how to set this up.
+- `GmailCache       = "~/diff-base/.secret"`: GMail cache. Look up the `gmailr` R package for instructions on how to set this up.
+- `UseBlastp        = TRUE`: Either `TRUE` or `FALSE`, depending on whether you want to allow BLASTP searches.
+- `BlastpParameters = "-evalue 1"`: Tune the BLASTP search parameters.
 
 ## Running the apps locally
 

@@ -1,6 +1,6 @@
 #-------------------------------------------------------------------------------
 # ui.R
-# Last modified: 2020-02-14 22:37:54 (CET)
+# Last modified: 2020-02-15 09:13:22 (CET)
 # BJM Tremblay
 
 msg("Loading UI")
@@ -19,15 +19,18 @@ ui <- function(request) fluidPage(
     ),
     title = div(
       img(src = "DiffBaseLogo.png", height = 53, width = 100),
-      HTML("<a href='https://diffbase.uwaterloo.ca/'>Diff-Base</a>")
+      HTML(paste0(
+        "<a href='", CONFIGS$URL, "'>Diff-Base</a>"
+      ))
     ),
     id = "NAVBARPAGE",
     position = "fixed-top",
     collapsible = TRUE,
     footer = tags$footer(
-      tags$div(HTML(
-        "<p>For questions or concerns, email <a href='mailto:diffbaseserver@gmail.com'>diffbaseserver@gmail.com</a>."
-      )),
+      tags$div(HTML(paste0(
+        "<p>For questions or concerns, email <a href='mailto:",
+        CONFIGS$ServerEmail, "'>", CONFIGS$ServerEmail, "</a>."
+      ))),
       align = "center",
       style = "
         position: static;

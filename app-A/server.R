@@ -1,6 +1,6 @@
 #-------------------------------------------------------------------------------
 # server.R
-# Last modified: 2020-02-12 22:56:31 (CET)
+# Last modified: 2020-02-15 09:51:41 (CET)
 # BJM Tremblay
 
 msg("Loading server")
@@ -86,6 +86,12 @@ server <- function(input, output, session) {
 
   observeEvent(input$BLASTP_BUTTON, {
     req(input$BLASTP_INPUT)
+    if (!CONFIGS$UseBlastp) {
+      showModal(modalDialog(title = "Error",
+        "Blastp has been disabled. Edit the config file to get it working again."
+      ))
+      return()
+    }
     res <- run_blast(input$BLASTP_INPUT)
     if (is.data.frame(res)) {
       output$BLASTP_DOWNLOAD <- downloadHandler(
@@ -142,13 +148,15 @@ server <- function(input, output, session) {
       )
       email <- "anonymous"
     }
+    msg("Saving community message locally")
     cat(email, comm_text, sep = "\n",
         file = paste0("community/", as.integer(Sys.time()), ".txt"))
-    if (GMAIL_ACTIVE) {
+    if (CONFIGS$UseGmail) {
+      msg("Sending community message by email")
       gmailr::gm_send_message(
         gmailr::gm_mime() %>%
-          gmailr::gm_from("diffbaseserver@gmail.com") %>%
-          gmailr::gm_to("diffbaseserver@gmail.com") %>%
+          gmailr::gm_from(CONFIGS$ServerEmail) %>%
+          gmailr::gm_to(CONFIGS$ServerEmail) %>%
           gmailr::gm_subject(paste("Community message from", email)) %>%
           gmailr::gm_text_body(comm_text)
       )

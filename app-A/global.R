@@ -1,6 +1,6 @@
 #-------------------------------------------------------------------------------
 # global.R
-# Last modified: 2020-02-14 23:11:46 (CET)
+# Last modified: 2020-02-15 09:55:50 (CET)
 # BJM Tremblay
 
 msg <- function(...) {
@@ -17,22 +17,23 @@ msg("  ape")
 library(ape)
 msg("  ggtree")
 suppressMessages(suppressPackageStartupMessages(library(ggtree)))
-# msg("  Biostrings")  # slow to load
-# suppressPackageStartupMessages(library(Biostrings))
 msg("  tidytree")
 suppressPackageStartupMessages(library(tidytree))
 msg("  magrittr")
 library(magrittr)
 
-# msg("  gmailr")
-# suppressPackageStartupMessages(library(gmailr))
+CONFIGS <- readr::read_lines("diffBaseConfig.txt") %>%
+  Filter(function(x) x != "", .) %>%
+  Filter(function(x) !grepl("^\\s+$", x), .) %>%
+  paste0(collapse = ",") %>%
+  paste0("list(", ., ")") %>%
+  parse(text = .) %>%
+  eval()
 
-GMAIL_ACTIVE <- FALSE
-if (Sys.info()["user"] == "benjmtremblay_gmail_com") {
-  Sys.setenv(GMAILR_APP="/home/benjmtremblay_gmail_com/diff-base/credentials.json")
-  gmailr::gm_auth_configure("/home/benjmtremblay_gmail_com/diff-base/credentials.json")
-  gmailr::gm_auth(email = TRUE, cache = "/home/benjmtremblay_gmail_com/diff-base/.secret")
-  GMAIL_ACTIVE <- TRUE
+if (!is.null(CONFIGS$UseGmail) && CONFIGS$UseGmail) {
+  Sys.setenv(GMAILR_APP = CONFIGS$GmailCredentials)
+  gmailr::gm_auth_configure(CONFIGS$GmailCredentials)
+  gmailr::gm_auth(email = TRUE, cache = CONFIGS$GmailCache)
 }
 
 dir.create("community", showWarnings = FALSE)
@@ -142,7 +143,7 @@ run_blast <- function(query, evalue = 1) {
     cmd <- paste(
       "blastp -query", f, "-db blastdb/ALL-sequences.fa", "-out", o,
       "-outfmt '6 qseqid sseqid evalue mismatch pident length'",
-      "-evalue", evalue
+      CONFIGS$BlastpParameters
     )
     if (system(cmd)) {
       msg("Blastp failed")
@@ -241,8 +242,6 @@ for (i in seq_len(nrow(clades))) {
     geom_cladelabel(
       node = clades$Node[i], label = as.character(clades$Label)[i],
       align = TRUE,
-      # offset = -0.006,
-      # offset = -0.004,
       offset = -27.5,
       offset.text = -1.2,
       hjust = 0.5
