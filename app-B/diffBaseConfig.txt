@@ -1,6 +1,6 @@
 URL              = "https://diffbase.uwaterloo.ca"
 
-UseGmail         = TRUE
+UseGmail         = FALSE
 ServerEmail      = "diffbaseserver@gmail.com"
 GmailCredentials = "/home/benjmtremblay_gmail_com/diff-base/credentials.json"
 GmailCache       = "/home/benjmtremblay_gmail_com/diff-base/.secret"
