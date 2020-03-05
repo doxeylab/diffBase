@@ -1,6 +1,6 @@
 #-------------------------------------------------------------------------------
 # global.R
-# Last modified: 2020-02-15 09:55:50 (CET)
+# Last modified: 2020-03-05 21:46:57 (CET)
 # BJM Tremblay
 
 msg <- function(...) {
@@ -186,10 +186,7 @@ SEQ_NAMES_LIST <- list(
   C = readRDS("data/C-names.RDS"),
   D = readRDS("data/D-names.RDS"),
   E = readRDS("data/E-names.RDS"),
-  F = readRDS("data/F-names.RDS"),
-  G = readRDS("data/G-names.RDS"),
-  H = readRDS("data/H-names.RDS"),
-  I = readRDS("data/I-names.RDS")
+  F = readRDS("data/F-names.RDS")
 )
 SEQ_NAMES_ALL <- do.call(c, SEQ_NAMES_LIST)
 names(SEQ_NAMES_ALL) <- gsub("^[A-Z][.]", "", names(SEQ_NAMES_ALL))
@@ -212,7 +209,7 @@ SEQS_ALL <- gsub("-", "", readRDS("data/ALL-sequences.RDS"), fixed = TRUE)
 # )
 
 ALL_TYPES <- c(
-  "A", "B", "C", "D", "E", "F", "G", "H", "I"
+  "A", "B", "C", "D", "E", "F"
 )
 
 for (a_t in ALL_TYPES) {

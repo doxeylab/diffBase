@@ -1,6 +1,6 @@
 #-------------------------------------------------------------------------------
 # server.R
-# Last modified: 2020-02-15 10:29:48 (CET)
+# Last modified: 2020-03-05 21:45:39 (CET)
 # BJM Tremblay
 
 msg("Loading server")
@@ -28,10 +28,7 @@ server <- function(input, output, session) {
     C = "C.1",
     D = "D.1",
     E = "E.1",
-    F = "F.1",
-    G = "G.1",
-    H = "H.1",
-    I = "I.1"
+    F = "F.1"
   )
 
   output$PANEL_LEFT_CURRENT_TYPE <- renderText({
