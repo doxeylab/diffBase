@@ -1,6 +1,6 @@
 #-------------------------------------------------------------------------------
 # server.R
-# Last modified: 2020-02-15 10:30:59 (CET)
+# Last modified: 2020-03-05 23:00:02 (CET)
 # BJM Tremblay
 
 msg("Loading server")
@@ -19,12 +19,11 @@ server <- function(input, output, session) {
   outputOptions(output, "CURRENT_PAGE", suspendWhenHidden = FALSE)
 
   SELECTED_TYPE <- reactiveValues(
-    WHICH = "A1"
+    WHICH = "A"
   )
 
   SELECTED_SUBTYPE <- reactiveValues(
-    A1 = "A1.1",
-    A2 = "A2.1",
+    A = "A.1",
     B = "B.1",
     C = "C.1",
     D = "D.1",

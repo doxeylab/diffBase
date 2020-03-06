@@ -1,6 +1,6 @@
 #-------------------------------------------------------------------------------
 # ui.R
-# Last modified: 2020-02-15 09:40:07 (CET)
+# Last modified: 2020-03-05 23:00:16 (CET)
 # BJM Tremblay
 
 msg("Loading UI")
@@ -56,8 +56,7 @@ ui <- function(request) fluidPage(
             condition = "output.CURRENT_PAGE == 'WELCOME'",
             tagList(
               h4("Toxinotypes (TcdB)"),
-              actionLink("BUTTON_A1", "A1:"), "57 members", br(),
-              actionLink("BUTTON_A2", "A2:"), "12 members", br(),
+              actionLink("BUTTON_A", "A:"), "69 members", br(),
               actionLink("BUTTON_B", "B:"), "2 members", br(),
               actionLink("BUTTON_C", "C:"), "11 members", br(),
               actionLink("BUTTON_D", "D:"), "7 members", br(),

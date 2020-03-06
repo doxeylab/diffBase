@@ -1,6 +1,6 @@
 #-------------------------------------------------------------------------------
 # global.R
-# Last modified: 2020-02-15 09:55:33 (CET)
+# Last modified: 2020-03-05 22:59:43 (CET)
 # BJM Tremblay
 
 msg <- function(...) {
@@ -181,8 +181,7 @@ TREE <- readRDS("data/tree.RDS")
 TREE_TBL <- as_tibble(TREE)
 
 SEQ_NAMES_LIST <- list(
-  A1 = readRDS("data/A1-names.RDS"),
-  A2 = readRDS("data/A2-names.RDS"),
+  A = readRDS("data/A-names.RDS"),
   B = readRDS("data/B-names.RDS"),
   C = readRDS("data/C-names.RDS"),
   D = readRDS("data/D-names.RDS"),
@@ -220,7 +219,7 @@ SEQS_ALL <- gsub("-", "", readRDS("data/ALL-sequences.RDS"), fixed = TRUE)
 # )
 
 ALL_TYPES <- c(
-  "A1", "A2", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"
+  "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"
 )
 
 for (a_t in ALL_TYPES) {
