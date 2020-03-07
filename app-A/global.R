@@ -1,7 +1,9 @@
 #-------------------------------------------------------------------------------
 # global.R
-# Last modified: 2020-03-07 01:31:02 (CET)
+# Last modified: 2020-03-07 10:14:37 (CET)
 # BJM Tremblay
+
+LAST_UPDATE_DATE <- function() "2020-03-07"
 
 msg <- function(...) {
   time <- format(as.POSIXlt(Sys.time(), tz = "America/Toronto"))
@@ -236,12 +238,10 @@ for (i in seq_len(nrow(clades))) {
     )
 }
 
-# MD_FILES <- list.files("data/metadata-A")
-# METADATA <- structure(
-#   lapply(MD_FILES,
-#     function(x) suppressMessages(readr::read_tsv(
-#       paste0("data/metadata-A/", x), skip = 1, progress = FALSE
-#     ))),
-#   names = MD_FILES
-# )
 METADATA <- readRDS("data/metadata.RDS")
+METADATA <- lapply(METADATA, function(x) x[x$Source != "PAT", ])
+METADATA_ALL <- do.call(rbind, METADATA)
+
+NUMBER_OF_SEQUENCES <- function() length(SEQ_NAMES_ALL)
+NUMBER_OF_STRAINS <- function() length(unique(METADATA_ALL$Strain))
+NUMBER_OF_NCBI_IDs <- function() length(METADATA)

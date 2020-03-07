@@ -1,6 +1,6 @@
 #-------------------------------------------------------------------------------
 # ui.R
-# Last modified: 2020-03-05 23:00:16 (CET)
+# Last modified: 2020-03-07 10:15:57 (CET)
 # BJM Tremblay
 
 msg("Loading UI")
@@ -95,11 +95,13 @@ ui <- function(request) fluidPage(
         wellPanel(
           tagList(
             h4("Database information"),
-            tags$b("Last updated data:"), br(),
-            tags$b("Number of sequences:"), br(),
-            tags$b("Number of bacterial strains:"), br(),
-            tags$b("Number of NCBI IDs:"), br(),
-            tags$b("Number of publications:"), br()
+            HTML(paste("<b>Last updated data:</b>", LAST_UPDATE_DATE())),
+            br(),
+            HTML(paste("<b>Number of sequences:</b>", NUMBER_OF_SEQUENCES())),
+            br(),
+            HTML(paste("<b>Number of bacterial strains:</b>", NUMBER_OF_STRAINS())),
+            br(),
+            HTML(paste("<b>Number of NCBI IDs:</b>", NUMBER_OF_NCBI_IDs()))
           )
         ),
         wellPanel(
