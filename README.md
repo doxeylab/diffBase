@@ -26,6 +26,8 @@ The script checks for changes in the sequences by comparing them to a store of M
 
 Note that the update script requires the `phangorn` R package from CRAN to build the trees.
 
+Additionally, note that the subtypes are named based on their order within the family files. So if you wish to add subtypes and not disturb the current naming scheme, add them to the bottom of the fasta files.
+
 ## Gettings emails from the community message function
 
 Right now the apps send emails automatically whenever someone submits a message using the community feature. To do this, it uses local GMail keys. For obvious reasons, these are not included in the GitHub repo.

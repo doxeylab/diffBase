@@ -81,6 +81,8 @@ fix_update_date <- function(f) {
   readr::write_lines(l, f)
 }
 
+#-------------------------------------------------------------------------------
+
 if (UPDATE_A) {
 
   message("Updating app-A..")
@@ -114,20 +116,22 @@ if (UPDATE_A) {
 
   MD_NAMES <- names(MD)
   AnamesFlat <- unlist(Anames, use.names = FALSE)
-  if (length(MD_NAMES) != length(AnamesFlat)) {
-    stop(
-      "The number of metadata files does not match the number\n",
-      "of group-A sequences."
-    )
-  }
-  if (anyNA(pmatch(MD_NAMES, AnamesFlat, nomatch = NA))) {
-    stop(
-      "Found mismatches between metadata names and group-A\n",
-      "sequences names."
-    )
-  }
+  # if (length(MD_NAMES) != length(AnamesFlat)) {
+  #   stop(
+  #     "The number of metadata files does not match the number\n",
+  #     "of group-A sequences."
+  #   )
+  # }
+  # if (anyNA(pmatch(MD_NAMES, AnamesFlat, nomatch = NA))) {
+  #   stop(
+  #     "Found mismatches between metadata names and group-A\n",
+  #     "sequences names."
+  #   )
+  # }
 
   saveRDS(MD, "app-A/data/metadata.RDS")
+
+  saveRDS(Anames, "app-A/data/ALL-names.RDS")
 
   for (i in seq_along(Anames)) {
     saveRDS(
@@ -193,6 +197,8 @@ make_names_B <- function(x) {
   structure(names(Blist[[x]]), names = paste0(x, ".", 1:length(Blist[[x]])))
 }
 
+#-------------------------------------------------------------------------------
+
 if (UPDATE_B) {
 
   message("Updating app-B..")
@@ -233,26 +239,28 @@ if (UPDATE_B) {
   )
 
   MD <- structure(lapply(
-    list.files("metadata-A", full.names = TRUE),
+    list.files("metadata-B", full.names = TRUE),
     function(x) suppressMessages(readr::read_tsv(x, skip = 2))
-  ), names = list.files("metadata-A"))
+  ), names = list.files("metadata-B"))
 
   MD_NAMES <- names(MD)
-  AnamesFlat <- unlist(Anames, use.names = FALSE)
-  if (length(MD_NAMES) != length(AnamesFlat)) {
-    stop(
-      "The number of metadata files does not match the number\n",
-      "of group-A sequences."
-    )
-  }
-  if (anyNA(pmatch(MD_NAMES, AnamesFlat, nomatch = NA))) {
-    stop(
-      "Found mismatches between metadata names and group-A\n",
-      "sequences names."
-    )
-  }
+  BnamesFlat <- unlist(Bnames, use.names = FALSE)
+  # if (length(MD_NAMES) != length(BnamesFlat)) {
+  #   stop(
+  #     "The number of metadata files does not match the number\n",
+  #     "of group-A sequences."
+  #   )
+  # }
+  # if (anyNA(pmatch(MD_NAMES, BnamesFlat, nomatch = NA))) {
+  #   stop(
+  #     "Found mismatches between metadata names and group-B\n",
+  #     "sequences names."
+  #   )
+  # }
 
-  saveRDS(MD, "app-A/data/metadata.RDS")
+  saveRDS(MD, "app-B/data/metadata.RDS")
+
+  saveRDS(Bnames, "app-B/data/ALL-names.RDS")
 
   for (i in seq_along(Bnames)) {
     saveRDS(
@@ -316,6 +324,8 @@ if (UPDATE_B) {
   message("")
 
 }
+
+#-------------------------------------------------------------------------------
 
 message("All done.")
 saveRDS(MD5_ALL, ".diff-base.groups.md5.RDS")

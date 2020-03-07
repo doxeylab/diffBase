@@ -1,6 +1,6 @@
 #-------------------------------------------------------------------------------
 # global.R
-# Last modified: 2020-03-07 23:06:07 (CET)
+# Last modified: 2020-03-07 23:41:21 (CET)
 # BJM Tremblay
 
 LAST_UPDATE_DATE <- function() "2020-03-07"
@@ -80,7 +80,9 @@ make_type_info <- function() {
 }
 
 show_metadata <- function(ACC) {
-  METADATA[[which(as.logical(pmatch(names(METADATA), ACC)))]]
+  aa <- which(as.logical(pmatch(names(METADATA), ACC, nomatch = 0)))
+  if (!length(aa)) return(NULL)
+  METADATA[[aa]]
 }
 
 make_type_info_more <- function() {
@@ -231,14 +233,19 @@ for (i in seq_len(nrow(clades))) {
   clades$Node[i] <- MRCA(TREE2, ALL_TYPES_SUBTYPES[[i]])
 }
 
-TREE_PLOT <- ggtree(TREE2) +
+TREE_PLOT <- ggtree(TREE2, branch.length = "none") +
   layout_dendrogram()
 for (i in seq_len(nrow(clades))) {
   TREE_PLOT <- TREE_PLOT +
     geom_cladelabel(
       node = clades$Node[i], label = as.character(clades$Label)[i],
-      align = TRUE, offset = -0.148, offset.text = -0.005,
-      hjust = 0.4
+      align = TRUE,
+      offset = -72,
+      offset.text = -2.8,
+      hjust = 0.5
+      # offset = -0.148,
+      # offset.text = -0.005,
+      # hjust = 0.4
     )
 }
 
