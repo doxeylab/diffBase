@@ -21,10 +21,10 @@ MD5_A <- tools::md5sum(list.files("groups-A", full.names = TRUE))
 MD5_B <- tools::md5sum(list.files("groups-B", full.names = TRUE))
 MD5_ALL <- list(A = MD5_A, B = MD5_B)
 if (!file.exists(".diff-base.groups.md5.RDS")) {
-  saveRDS(MD5_ALL, ".diff-base.groups.md5.RDS")
   UPDATE_A <- TRUE
   UPDATE_B <- TRUE
   message("  Couldn't find old MD5 checksums. Forcing update.")
+  message("")
 } else {
   MD5_OLD <- readRDS(".diff-base.groups.md5.RDS")
   if (length(MD5_ALL$A) != length(MD5_OLD$A)) {
@@ -53,6 +53,7 @@ if (!file.exists(".diff-base.groups.md5.RDS")) {
     message("  Detected changes in groups-B.")
     UPDATE_B <- TRUE
   }
+  message("")
 }
 
 if (!UPDATE_A && !UPDATE_B) {
@@ -67,7 +68,7 @@ make_names_A <- function(x) {
 
 fix_update_date <- function(f) {
   l <- readr::read_lines(f)
-  l[grep("^LAST_UPDATE_DATE <- function()")] <- paste0(
+  l[grep("^LAST_UPDATE_DATE <- function()", l)] <- paste0(
     "LAST_UPDATE_DATE <- function() \"",
     UPDATE_DATE, "\""
   )
@@ -99,6 +100,28 @@ if (UPDATE_A) {
     E = make_names_A("E"),
     F = make_names_A("F")
   )
+
+  MD <- structure(lapply(
+    list.files("metadata-A", full.names = TRUE),
+    function(x) suppressMessages(readr::read_tsv(x, skip = 2))
+  ), names = list.files("metadata-A"))
+
+  MD_NAMES <- names(MD)
+  AnamesFlat <- unlist(Anames, use.names = FALSE)
+  if (length(MD_NAMES) != length(AnamesFlat)) {
+    stop(
+      "The number of metadata files does not match the number\n",
+      "of group-A sequences."
+    )
+  }
+  if (anyNA(pmatch(MD_NAMES, AnamesFlat, nomatch = NA))) {
+    stop(
+      "Found mismatches between metadata names and group-A\n",
+      "sequences names."
+    )
+  }
+
+  saveRDS(MD, "app-A/data/metadata.RDS")
 
   for (i in seq_along(Anames)) {
     saveRDS(
@@ -140,7 +163,10 @@ if (UPDATE_A) {
   }
 
   setwd("app-A/blastdb")
-  if (system("makeblastdb -blastdb_version 4 -dbtype prot -in ALL-sequences.fa")) {
+  if (system(
+        "makeblastdb -blastdb_version 4 -dbtype prot -in ALL-sequences.fa",
+        ignore.stdout = TRUE, ignore.stderr = TRUE
+      )) {
     setwd("../../")
     stop("makeblastdb command failed")
   }
@@ -192,8 +218,30 @@ if (UPDATE_B) {
     I = make_names_B("I"),
     J = make_names_B("J"),
     K = make_names_B("K"),
-    L = make_names_B("L"),
+    L = make_names_B("L")
   )
+
+  MD <- structure(lapply(
+    list.files("metadata-A", full.names = TRUE),
+    function(x) suppressMessages(readr::read_tsv(x, skip = 2))
+  ), names = list.files("metadata-A"))
+
+  MD_NAMES <- names(MD)
+  AnamesFlat <- unlist(Anames, use.names = FALSE)
+  if (length(MD_NAMES) != length(AnamesFlat)) {
+    stop(
+      "The number of metadata files does not match the number\n",
+      "of group-A sequences."
+    )
+  }
+  if (anyNA(pmatch(MD_NAMES, AnamesFlat, nomatch = NA))) {
+    stop(
+      "Found mismatches between metadata names and group-A\n",
+      "sequences names."
+    )
+  }
+
+  saveRDS(MD, "app-A/data/metadata.RDS")
 
   for (i in seq_along(Bnames)) {
     saveRDS(
@@ -238,7 +286,10 @@ if (UPDATE_B) {
   }
 
   setwd("app-B/blastdb")
-  if (system("makeblastdb -blastdb_version 4 -dbtype prot -in ALL-sequences.fa")) {
+  if (system(
+        "makeblastdb -blastdb_version 4 -dbtype prot -in ALL-sequences.fa",
+        ignore.stdout = TRUE, ignore.stderr = TRUE
+      )) {
     setwd("../../")
     stop("makeblastdb command failed")
   }

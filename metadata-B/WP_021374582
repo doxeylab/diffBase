@@ -1,0 +1,6 @@
+>WP_021374582
+
+Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	Strain	Assembly
+42912176	RefSeq	NZ_AVHE01000015.1	5632	12732	+	WP_021374582.1	glycosylating toxin TcdB	Clostridioides difficile CD69	CD69	GCF_000449185.2
+42912176	INSDC	AVHE01000015.1	5632	12732	+	EQE88348.1	toxin B	Clostridioides difficile CD69	CD69	GCA_000449185.2
+

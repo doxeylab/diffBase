@@ -1,0 +1,18 @@
+>WP_095904493
+
+Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	Strain	Assembly
+34121705	RefSeq	NZ_CAADEN010000002.1	68056	76188	+	WP_095904493.1	glycosylating toxin TcdA	Clostridioides difficile	SWE007	GCF_900692305.1
+34121705	RefSeq	NZ_CAADEQ010000005.1	209184	217316	-	WP_095904493.1	glycosylating toxin TcdA	Clostridioides difficile	SWE008	GCF_900692335.1
+34121705	RefSeq	NZ_CAADES010000006.1	200822	208954	-	WP_095904493.1	glycosylating toxin TcdA	Clostridioides difficile	SWE009	GCF_900692355.1
+34121705	RefSeq	NZ_MOTN01000001.1	68236	76368	+	WP_095904493.1	glycosylating toxin TcdA	Clostridioides difficile	6629-NonSp/novelST	GCF_002303695.1
+34121705	INSDC	KC292092.1	1	8133	+	AGG91538.1	toxin A	Clostridioides difficile	ZR80	
+34121705	INSDC	MOTN01000001.1	68236	76368	+	PBI67753.1	peptidase C80	Clostridioides difficile	6629-NonSp/novelST	GCA_002303695.1
+34121705	INSDC	CAADEN010000002.1	68056	76188	+	VFH09895.1	Toxin A	Clostridioides difficile	SWE007	GCA_900692305.1
+34121705	INSDC	CAADEQ010000005.1	209184	217316	-	VFH26585.1	Toxin A	Clostridioides difficile	SWE008	GCA_900692335.1
+34121705	INSDC	CAADES010000006.1	200822	208954	-	VFH32671.1	Toxin A	Clostridioides difficile	SWE009	GCA_900692355.1
+34121705	PAT	N/A				AGU08444.1	Sequence 140 from patent US 8481692	Unknown		
+34121705	PAT	N/A				AGY25111.1	Sequence 140 from patent US 8557548	Unknown		
+34121705	PAT	N/A				AJN69016.1	Sequence 140 from patent US 8900597	Unknown		
+34121705	PAT	N/A				AOD83405.1	Sequence 140 from patent US 9187536	Unknown		
+34121705	PAT	N/A				AVA67137.1	Sequence 140 from patent US 9745354	Unknown		
+

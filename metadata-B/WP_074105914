@@ -1,0 +1,14 @@
+>WP_074105914
+
+Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	Strain	Assembly
+34121710	RefSeq	NZ_BIPD01000042.1	1181	8281	+	WP_074105914.1	glycosylating toxin TcdB	Clostridioides difficile	FD064	GCF_004314885.1
+34121710	RefSeq	NZ_BIXN01000052.1	16663	23763	-	WP_074105914.1	glycosylating toxin TcdB	Clostridioides difficile	FD303	GCF_004319245.1
+34121710	RefSeq	NZ_NBTR02000002.1	3431082	3438182	+	WP_074105914.1	glycosylating toxin TcdB	Clostridioides difficile	FDAARGOS_269	GCF_002082985.1
+34121710	INSDC	KC292153.1	1	7101	+	AGG91599.1	toxin B	Clostridioides difficile	ZR2	
+34121710	INSDC	NBTR02000002.1	3431082	3438182	+	PNP13625.1	glycosylating toxin TcdB	Clostridioides difficile	FDAARGOS_269	GCA_002082985.2
+34121710	PAT	N/A				AGU08418.1	Sequence 114 from patent US 8481692	Unknown		
+34121710	PAT	N/A				AGY25085.1	Sequence 114 from patent US 8557548	Unknown		
+34121710	PAT	N/A				AJN68990.1	Sequence 114 from patent US 8900597	Unknown		
+34121710	PAT	N/A				AOD83379.1	Sequence 114 from patent US 9187536	Unknown		
+34121710	PAT	N/A				AVA67111.1	Sequence 114 from patent US 9745354	Unknown		
+
