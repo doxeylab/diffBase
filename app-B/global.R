@@ -1,6 +1,6 @@
 #-------------------------------------------------------------------------------
 # global.R
-# Last modified: 2020-03-07 01:23:20 (CET)
+# Last modified: 2020-03-07 01:31:38 (CET)
 # BJM Tremblay
 
 msg <- function(...) {
@@ -240,11 +240,12 @@ for (i in seq_len(nrow(clades))) {
     )
 }
 
-MD_FILES <- list.files("data/metadata-B")
-METADATA <- structure(
-  lapply(MD_FILES,
-    function(x) suppressMessages(readr::read_tsv(
-      paste0("data/metadata-B/", x), skip = 1, progress = FALSE
-    ))),
-  names = MD_FILES
-)
+# MD_FILES <- list.files("data/metadata-B")
+# METADATA <- structure(
+#   lapply(MD_FILES,
+#     function(x) suppressMessages(readr::read_tsv(
+#       paste0("data/metadata-B/", x), skip = 1, progress = FALSE
+#     ))),
+#   names = MD_FILES
+# )
+METADATA <- readRDS("data/metadata.RDS")
