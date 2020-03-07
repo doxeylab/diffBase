@@ -1,6 +1,0 @@
->WP_095905404
-
-Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	Strain	Assembly
-159671429	RefSeq	NZ_MNBT01000022.1	40013	48145	+	WP_095905404.1	glycosylating toxin TcdA	Clostridioides difficile	5482-L/ST55	GCF_002300915.1
-159671429	INSDC	MNBT01000022.1	40013	48145	+	PBF66129.1	peptidase C80	Clostridioides difficile	5482-L/ST55	GCA_002300915.1
-

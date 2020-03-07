@@ -1,6 +1,0 @@
->WP_158012762
-
-Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	Strain	Assembly
-67618886	RefSeq	NZ_LN681232.1	4356	11450	+	WP_158012762.1	glycosylating toxin TcdB	Paeniclostridium sordellii	JGS6364	GCF_900000185.1
-67618886	INSDC	LN681232.1	4356	11450	+	CEK32613.1	Toxin B,Toxin B,glucan-binding repeat,TcdA/TcdB pore forming domain	Paeniclostridium sordellii	JGS6364	GCA_900000185.2
-

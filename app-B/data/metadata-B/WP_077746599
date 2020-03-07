@@ -1,7 +1,0 @@
->WP_077746599
-
-Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	Strain	Assembly
-137937057	RefSeq	NZ_FMKN01000003.1	202236	209336	-	WP_077746599.1	glycosylating toxin TcdB	Clostridioides difficile		GCF_900096125.1
-137937057	RefSeq	NZ_FUUH01000003.1	58734	65834	+	WP_077746599.1	glycosylating toxin TcdB	Clostridioides difficile	CD35	GCF_900166395.1
-137937057	INSDC	FUUH01000003.1	58734	65834	+	SJW38094.1	toxin B	Clostridioides difficile	CD35	GCA_900166395.1
-

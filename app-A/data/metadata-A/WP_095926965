@@ -1,6 +1,0 @@
->WP_095926965
-
-Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	Strain	Assembly
-159683346	RefSeq	NZ_MOTC01000031.1	23082	30533	-	WP_095926965.1	peptidase C80	Clostridioides difficile	6615-NonSp/ST11	GCF_002303425.1
-159683346	INSDC	MOTC01000031.1	23082	30533	-	PBI18492.1	peptidase C80	Clostridioides difficile	6615-NonSp/ST11	GCA_002303425.1
-
