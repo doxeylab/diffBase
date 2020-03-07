@@ -2,7 +2,7 @@
 
 UPDATE_DATE <- as.character(Sys.Date())
 
-message("--- Running Diff-base update script (", UPDATE_TIME, ") ---")
+message("--- Running Diff-base update script (", UPDATE_DATE, ") ---")
 message("")
 
 if (!all(c("app-A", "app-B") %in% list.files())) {
