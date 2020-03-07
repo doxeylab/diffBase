@@ -1,6 +1,6 @@
 #-------------------------------------------------------------------------------
 # global.R
-# Last modified: 2020-03-07 10:57:21 (CET)
+# Last modified: 2020-03-07 23:07:50 (CET)
 # BJM Tremblay
 
 LAST_UPDATE_DATE <- function() "2020-03-07"
@@ -80,7 +80,7 @@ make_type_info <- function() {
 }
 
 show_metadata <- function(ACC) {
-  METADATA[[which(as.logical(pmatch(names(METADATA), ACC, nomatch = 0)))]]
+  METADATA[[which(as.logical(pmatch(names(METADATA), ACC)))]]
 }
 
 make_type_info_more <- function() {

@@ -1,6 +1,6 @@
 #-------------------------------------------------------------------------------
 # server.R
-# Last modified: 2020-03-07 01:27:12 (CET)
+# Last modified: 2020-03-07 23:08:13 (CET)
 # BJM Tremblay
 
 msg("Loading server")
@@ -53,8 +53,9 @@ server <- function(input, output, session) {
   output$PANEL_TOP_RIGHT_METADATA <- DT::renderDataTable({
     if (CURRENT_PAGE$WHICH != "INFO") return()
     out <- show_metadata(
-             SEQ_NAMES_ALL[SELECTED_SUBTYPE[[SELECTED_TYPE$WHICH]]]
-           )
+      SEQ_NAMES_ALL[SELECTED_SUBTYPE[[SELECTED_TYPE$WHICH]]]
+    )
+    if (is.null(out)) return()
     DT::datatable(
       out,
       selection = "none",
