@@ -24,6 +24,8 @@ The script checks for changes in the sequences by comparing them to a store of M
 - `FORCE_UPDATE=T`: Force the update script to run, even if the MD5 checksums haven't changed. Useful if you've changed the behaviour of the update script or if you've updated the metadata.
 - `NO_UPDATE_TREE=T`: Don't update the trees. Useful if you manually generated the trees and don't want to build them using the mechanism in the update script.
 
+Note that the update script requires the `phangorn` R package from CRAN to build the trees.
+
 ## Gettings emails from the community message function
 
 Right now the apps send emails automatically whenever someone submits a message using the community feature. To do this, it uses local GMail keys. For obvious reasons, these are not included in the GitHub repo.
