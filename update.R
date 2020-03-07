@@ -6,7 +6,7 @@ message("--- Running Diff-base update script (", UPDATE_DATE, ") ---")
 message("")
 
 if (as.logical(toupper(Sys.getenv("FORCE_UPDATE")))) {
-  message("Detected FORCE_UPDATE, deleting existing MD5 checksums")
+  message("Detected FORCE_UPDATE, deleting existing MD5 checksums.")
   message("")
   unlink(".diff-base.groups.md5.RDS")
 }
