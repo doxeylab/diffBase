@@ -1,0 +1,6 @@
+>WP_077726702
+
+Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	Strain	Assembly
+137951604	RefSeq	NZ_FUUC01000004.1	59440	66540	+	WP_077726702.1	glycosylating toxin TcdB	Clostridioides difficile	CD14	GCF_900166355.1
+137951604	INSDC	FUUC01000004.1	59440	66540	+	SJW17494.1	toxin B	Clostridioides difficile	CD14	GCA_900166355.1
+

@@ -1,6 +1,6 @@
 #-------------------------------------------------------------------------------
 # global.R
-# Last modified: 2020-03-05 22:59:43 (CET)
+# Last modified: 2020-03-07 01:23:20 (CET)
 # BJM Tremblay
 
 msg <- function(...) {
@@ -64,12 +64,12 @@ make_type_info <- function() {
     br(),
     htmlOutput("PANEL_LEFT_CURRENT_SUBTYPE"),
     br(),
-    textOutput("CURRENT_ACCESSION"),
+    htmlOutput("CURRENT_ACCESSION"),
     selectInput(
       "SUBTYPE_SELECTOR",
       label = "",
-      choices = names(SEQ_NAMES_LIST$A1),
-      selected = "A1.1",
+      choices = names(SEQ_NAMES_LIST$A),
+      selected = "A.1",
       width = "85px"
     ),
     br(),
@@ -77,15 +77,20 @@ make_type_info <- function() {
   )
 }
 
+show_metadata <- function(ACC) {
+  METADATA[[which(as.logical(pmatch(names(METADATA), ACC, nomatch = 0)))]]
+}
+
 make_type_info_more <- function() {
   tagList(
-    tags$b("Information:"), br(),
-    br(),
-    tags$b("References:"), br(),
-    br(),
     htmlOutput("PANEL_TOP_RIGHT_CURRENT_SUBTYPE"),
     br(),
-    verbatimTextOutput("PANEL_TOP_RIGHT_CURRENT_SUBTYPE_SEQUENCE")
+    verbatimTextOutput("PANEL_TOP_RIGHT_CURRENT_SUBTYPE_SEQUENCE"),
+    br(),
+    tags$b("Member sequences:"),
+    DT::dataTableOutput("PANEL_TOP_RIGHT_METADATA"),
+    br(),
+    downloadLink("DOWNLOAD_METADATA", "Download associated sequences table")
   )
 }
 
@@ -199,24 +204,6 @@ names(SEQ_NAMES_ALL) <- gsub("^[A-Z][.]", "", names(SEQ_NAMES_ALL))
 names(SEQ_NAMES_ALL) <- gsub("^[A-Z][1-2][.]", "", names(SEQ_NAMES_ALL))
 
 SEQS_ALL <- gsub("-", "", readRDS("data/ALL-sequences.RDS"), fixed = TRUE)
-# SEQS_ALL <- readRDS("data/ALL-sequences.RDS")
-# SEQS_ALL_AA <- readRDS("data/ALL-sequences-AAStringSet.RDS)
-
-# SEQS_LIST <- list(  # Note: these are AAStringSet type
-#   A1 = readRDS("data/A1-sequences.RDS"),
-#   A2 = readRDS("data/A2-sequences.RDS"),
-#   B = readRDS("data/B-sequences.RDS"),
-#   C = readRDS("data/C-sequences.RDS"),
-#   D = readRDS("data/D-sequences.RDS"),
-#   E = readRDS("data/E-sequences.RDS"),
-#   F = readRDS("data/F-sequences.RDS"),
-#   G = readRDS("data/G-sequences.RDS"),
-#   H = readRDS("data/H-sequences.RDS"),
-#   I = readRDS("data/I-sequences.RDS"),
-#   J = readRDS("data/J-sequences.RDS"),
-#   K = readRDS("data/K-sequences.RDS"),
-#   L = readRDS("data/L-sequences.RDS")
-# )
 
 ALL_TYPES <- c(
   "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"
@@ -252,3 +239,12 @@ for (i in seq_len(nrow(clades))) {
       hjust = 0.4
     )
 }
+
+MD_FILES <- list.files("data/metadata-B")
+METADATA <- structure(
+  lapply(MD_FILES,
+    function(x) suppressMessages(readr::read_tsv(
+      paste0("data/metadata-B/", x), skip = 1, progress = FALSE
+    ))),
+  names = MD_FILES
+)

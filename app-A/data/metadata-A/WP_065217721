@@ -1,0 +1,75 @@
+>WP_065217721
+
+Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	Strain	Assembly
+43098803	RefSeq	NZ_BINU01000072.1	2549	10681	-	WP_065217721.1	glycosylating toxin TcdA	Clostridioides difficile	FD028	GCF_004314185.1
+43098803	RefSeq	NZ_BINV01000028.1	8850	16982	-	WP_065217721.1	glycosylating toxin TcdA	Clostridioides difficile	FD029	GCF_004314205.1
+43098803	RefSeq	NZ_BIOP01000026.1	42396	50528	+	WP_065217721.1	glycosylating toxin TcdA	Clostridioides difficile	FD050	GCF_004314605.1
+43098803	RefSeq	NZ_BIOX01000057.1	9014	17146	+	WP_065217721.1	glycosylating toxin TcdA	Clostridioides difficile	FD058	GCF_004314765.1
+43098803	RefSeq	NZ_BIOY01000067.1	9971	18103	+	WP_065217721.1	glycosylating toxin TcdA	Clostridioides difficile	FD059	GCF_004314785.1
+43098803	RefSeq	NZ_BIPG01000111.1	1317	9449	-	WP_065217721.1	glycosylating toxin TcdA	Clostridioides difficile	FD067	GCF_004314945.1
+43098803	RefSeq	NZ_BIPJ01000055.1	8928	17060	-	WP_065217721.1	glycosylating toxin TcdA	Clostridioides difficile	FD070	GCF_004315005.1
+43098803	RefSeq	NZ_BIPL01000065.1	1069	9201	-	WP_065217721.1	glycosylating toxin TcdA	Clostridioides difficile	FD073	GCF_004315045.1
+43098803	RefSeq	NZ_BIPS01000057.1	8824	16956	+	WP_065217721.1	glycosylating toxin TcdA	Clostridioides difficile	FD080	GCF_004315185.1
+43098803	RefSeq	NZ_BIQC01000054.1	10506	18638	-	WP_065217721.1	glycosylating toxin TcdA	Clostridioides difficile	FD092	GCF_004315385.1
+43098803	RefSeq	NZ_BIQD01000075.1	8891	17023	+	WP_065217721.1	glycosylating toxin TcdA	Clostridioides difficile	FD093	GCF_004315405.1
+43098803	RefSeq	NZ_BIQG01000046.1	9546	17678	+	WP_065217721.1	glycosylating toxin TcdA	Clostridioides difficile	FD096	GCF_004315465.1
+43098803	RefSeq	NZ_BIQM01000055.1	8044	16176	-	WP_065217721.1	glycosylating toxin TcdA	Clostridioides difficile	FD103	GCF_004315585.1
+43098803	RefSeq	NZ_BIQN01000073.1	9694	17826	+	WP_065217721.1	glycosylating toxin TcdA	Clostridioides difficile	FD104	GCF_004315605.1
+43098803	RefSeq	NZ_BIQO01000057.1	9739	17871	+	WP_065217721.1	glycosylating toxin TcdA	Clostridioides difficile	FD105	GCF_004315625.1
+43098803	RefSeq	NZ_BIQQ01000057.1	9513	17645	+	WP_065217721.1	glycosylating toxin TcdA	Clostridioides difficile	FD108	GCF_004315665.1
+43098803	RefSeq	NZ_BIQU01000054.1	9459	17591	+	WP_065217721.1	glycosylating toxin TcdA	Clostridioides difficile	FD112	GCF_004315745.1
+43098803	RefSeq	NZ_BIQY01000047.1	9835	17967	+	WP_065217721.1	glycosylating toxin TcdA	Clostridioides difficile	FD116	GCF_004315825.1
+43098803	RefSeq	NZ_BIRN01000030.1	38543	46675	-	WP_065217721.1	glycosylating toxin TcdA	Clostridioides difficile	FD131	GCF_004316125.1
+43098803	RefSeq	NZ_BIRP01000042.1	8619	16751	-	WP_065217721.1	glycosylating toxin TcdA	Clostridioides difficile	FD133	GCF_004316165.1
+43098803	RefSeq	NZ_BIRZ01000010.1	58986	67118	+	WP_065217721.1	glycosylating toxin TcdA	Clostridioides difficile	FD143	GCF_004316365.1
+43098803	RefSeq	NZ_BISS01000077.1	1056	9188	-	WP_065217721.1	glycosylating toxin TcdA	Clostridioides difficile	FD164	GCF_004316745.1
+43098803	RefSeq	NZ_BISW01000048.1	8798	16930	-	WP_065217721.1	glycosylating toxin TcdA	Clostridioides difficile	FD176	GCF_004316825.1
+43098803	RefSeq	NZ_BISY01000062.1	8348	16480	+	WP_065217721.1	glycosylating toxin TcdA	Clostridioides difficile	FD178	GCF_004316865.1
+43098803	RefSeq	NZ_BITE01000053.1	8797	16929	-	WP_065217721.1	glycosylating toxin TcdA	Clostridioides difficile	FD184	GCF_004316985.1
+43098803	RefSeq	NZ_BITF01000062.1	8574	16706	-	WP_065217721.1	glycosylating toxin TcdA	Clostridioides difficile	FD185	GCF_004317005.1
+43098803	RefSeq	NZ_BITH01000069.1	8979	17111	-	WP_065217721.1	glycosylating toxin TcdA	Clostridioides difficile	FD187	GCF_004317045.1
+43098803	RefSeq	NZ_BITR01000145.1	1108	9240	-	WP_065217721.1	glycosylating toxin TcdA	Clostridioides difficile	FD197	GCF_004317245.1
+43098803	RefSeq	NZ_BIUB01000033.1	8977	17109	+	WP_065217721.1	glycosylating toxin TcdA	Clostridioides difficile	FD207	GCF_004317445.1
+43098803	RefSeq	NZ_BIUI01000082.1	406	8538	+	WP_065217721.1	glycosylating toxin TcdA	Clostridioides difficile	FD214	GCF_004317585.1
+43098803	RefSeq	NZ_BIUP01000059.1	8029	16161	-	WP_065217721.1	glycosylating toxin TcdA	Clostridioides difficile	FD222	GCF_004317725.1
+43098803	RefSeq	NZ_BIUZ01000044.1	8797	16929	-	WP_065217721.1	glycosylating toxin TcdA	Clostridioides difficile	FD232	GCF_004317925.1
+43098803	RefSeq	NZ_BIVI01000072.1	567	8699	+	WP_065217721.1	glycosylating toxin TcdA	Clostridioides difficile	FD241	GCF_004318105.1
+43098803	RefSeq	NZ_BIVJ01000066.1	1429	9561	-	WP_065217721.1	glycosylating toxin TcdA	Clostridioides difficile	FD242	GCF_004318125.1
+43098803	RefSeq	NZ_BIVO01000052.1	19068	27200	+	WP_065217721.1	glycosylating toxin TcdA	Clostridioides difficile	FD248	GCF_004318225.1
+43098803	RefSeq	NZ_BIVP01000087.1	114	8246	+	WP_065217721.1	glycosylating toxin TcdA	Clostridioides difficile	FD249	GCF_004318245.1
+43098803	RefSeq	NZ_BIWC01000055.1	1195	9327	-	WP_065217721.1	glycosylating toxin TcdA	Clostridioides difficile	FD264	GCF_004318505.1
+43098803	RefSeq	NZ_BIWL01000132.1	249	8381	+	WP_065217721.1	glycosylating toxin TcdA	Clostridioides difficile	FD273	GCF_004319845.1
+43098803	RefSeq	NZ_BIXB01000033.1	8190	16322	-	WP_065217721.1	glycosylating toxin TcdA	Clostridioides difficile	FD289	GCF_004319005.1
+43098803	RefSeq	NZ_BIXR01000090.1	8797	16929	-	WP_065217721.1	glycosylating toxin TcdA	Clostridioides difficile	FD307	GCF_004319325.1
+43098803	RefSeq	NZ_BIXW01000023.1	8957	17089	+	WP_065217721.1	glycosylating toxin TcdA	Clostridioides difficile	FD312	GCF_004319425.1
+43098803	RefSeq	NZ_FULS01000003.1	321308	329440	+	WP_065217721.1	glycosylating toxin TcdA	Clostridioides difficile	VRECD0162	GCF_900164245.1
+43098803	RefSeq	NZ_FUPX01000005.1	67582	75714	+	WP_065217721.1	glycosylating toxin TcdA	Clostridioides difficile	VRECD0095	GCF_900165265.1
+43098803	RefSeq	NZ_FUQL01000002.1	75027	83159	+	WP_065217721.1	glycosylating toxin TcdA	Clostridioides difficile	VRECD0191	GCF_900165405.1
+43098803	RefSeq	NZ_LYDP01000002.1	143362	151494	-	WP_065217721.1	glycosylating toxin TcdA	Clostridioides difficile	CD8-15	GCF_001678145.1
+43098803	RefSeq	NZ_MOTK01000001.1	184056	192188	+	WP_065217721.1	glycosylating toxin TcdA	Clostridioides difficile	6624-Y/ST13	GCF_002303585.1
+43098803	RefSeq	NZ_MTVS01000005.1	358943	367075	+	WP_065217721.1	glycosylating toxin TcdA	Clostridioides difficile	20110740	GCF_001972045.1
+43098803	RefSeq	NZ_QKRE01000004.1	3931875	3940007	+	WP_065217721.1	glycosylating toxin TcdA	Clostridioides difficile	CBA7203	GCF_009903535.1
+43098803	RefSeq	NZ_QKRF01000001.1	719627	727759	+	WP_065217721.1	glycosylating toxin TcdA	Clostridioides difficile	CBA7201	GCF_009903545.1
+43098803	RefSeq	NZ_QLNY01000005.1	502781	510913	+	WP_065217721.1	glycosylating toxin TcdA	Clostridioides difficile	CBA7205	GCF_009903485.1
+43098803	RefSeq	NZ_QLOB01000001.1	3592467	3600599	-	WP_065217721.1	glycosylating toxin TcdA	Clostridioides difficile	CBA7209	GCF_009903385.1
+43098803	INSDC	QLNY01000005.1	502781	510913	+	NAS57675.1	glycosylating toxin TcdA	Clostridioides difficile	CBA7205	
+43098803	INSDC	QKRF01000001.1	719627	727759	+	NAS81187.1	glycosylating toxin TcdA	Clostridioides difficile	CBA7201	
+43098803	INSDC	QLOB01000001.1	3592467	3600599	-	NAT70146.1	glycosylating toxin TcdA	Clostridioides difficile	CBA7209	
+43098803	INSDC	QKRE01000004.1	3931875	3940007	+	NAT87421.1	glycosylating toxin TcdA	Clostridioides difficile	CBA7203	
+43098803	INSDC	LYDP01000002.1	143362	151494	-	OBW84718.1	peptidase C80	Clostridioides difficile	CD8-15	GCA_001678145.1
+43098803	INSDC	MTVS01000005.1	358943	367075	+	OMK22012.1	toxin A	Clostridioides difficile	20110740	GCA_001972045.1
+43098803	INSDC	MOTK01000001.1	184056	192188	+	PBI50765.1	peptidase C80	Clostridioides difficile	6624-Y/ST13	GCA_002303585.1
+43098803	INSDC	FULS01000003.1	321308	329440	+	SJO11373.1	Toxin A	Clostridioides difficile	VRECD0162	GCA_900164245.1
+43098803	INSDC	FUPX01000005.1	67582	75714	+	SJS20719.1	Toxin A	Clostridioides difficile	VRECD0095	GCA_900165265.1
+43098803	INSDC	FUQL01000002.1	75027	83159	+	SJS26740.1	Toxin A	Clostridioides difficile	VRECD0191	GCA_900165405.1
+43098803	PAT	N/A				AGU08440.1	Sequence 136 from patent US 8481692	Unknown		
+43098803	PAT	N/A				AGU08441.1	Sequence 137 from patent US 8481692	Unknown		
+43098803	PAT	N/A				AGY25107.1	Sequence 136 from patent US 8557548	Unknown		
+43098803	PAT	N/A				AGY25108.1	Sequence 137 from patent US 8557548	Unknown		
+43098803	PAT	N/A				AJN69012.1	Sequence 136 from patent US 8900597	Unknown		
+43098803	PAT	N/A				AJN69013.1	Sequence 137 from patent US 8900597	Unknown		
+43098803	PAT	N/A				AOD83401.1	Sequence 136 from patent US 9187536	Unknown		
+43098803	PAT	N/A				AOD83402.1	Sequence 137 from patent US 9187536	Unknown		
+43098803	PAT	N/A				AVA67133.1	Sequence 136 from patent US 9745354	Unknown		
+43098803	PAT	N/A				AVA67134.1	Sequence 137 from patent US 9745354	Unknown		
+

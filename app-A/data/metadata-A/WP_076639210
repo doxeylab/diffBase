@@ -1,0 +1,36 @@
+>WP_076639210
+
+Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	Strain	Assembly
+43098800	RefSeq	NZ_BIQE01000028.1	37094	45226	+	WP_076639210.1	glycosylating toxin TcdA	Clostridioides difficile	FD094	GCF_004315425.1
+43098800	RefSeq	NZ_BIQR01000045.1	14009	22141	+	WP_076639210.1	glycosylating toxin TcdA	Clostridioides difficile	FD109	GCF_004315685.1
+43098800	RefSeq	NZ_CAACZO010000013.1	74027	82159	-	WP_076639210.1	glycosylating toxin TcdA	Clostridioides difficile	Lei034	GCF_900687405.1
+43098800	RefSeq	NZ_MOPY01000050.1	9479	17611	+	WP_076639210.1	glycosylating toxin TcdA	Clostridioides difficile	5544-AH/ST67	GCF_002301465.1
+43098800	RefSeq	NZ_MOQC01000028.1	38236	46368	+	WP_076639210.1	glycosylating toxin TcdA	Clostridioides difficile	5550-AH/ST67	GCF_002301525.1
+43098800	RefSeq	NZ_MOQI01000042.1	9774	17906	+	WP_076639210.1	glycosylating toxin TcdA	Clostridioides difficile	5558-AH/ST67	GCF_002301615.1
+43098800	RefSeq	NZ_MOQN01000074.1	9720	17852	+	WP_076639210.1	glycosylating toxin TcdA	Clostridioides difficile	6583-AH/ST67	GCF_002301715.1
+43098800	RefSeq	NZ_MTVQ01000001.1	730933	739065	+	WP_076639210.1	glycosylating toxin TcdA	Clostridioides difficile	20100502	GCF_001971865.1
+43098800	RefSeq	NZ_OEZK01000062.1	74099	82231	-	WP_076639210.1	glycosylating toxin TcdA	Clostridioides difficile	51680	GCF_900243125.1
+43098800	RefSeq	NZ_SRMH01000013.1	37244	45376	+	WP_076639210.1	glycosylating toxin TcdA	Clostridioides difficile	CD-B18-123	GCF_005502205.1
+43098800	INSDC	MTVQ01000001.1	730933	739065	+	OMK12028.1	toxin A	Clostridioides difficile	20100502	GCA_001971865.1
+43098800	INSDC	MOPY01000050.1	9479	17611	+	PBE51923.1	peptidase C80	Clostridioides difficile	5544-AH/ST67	GCA_002301465.1
+43098800	INSDC	MOQC01000028.1	38236	46368	+	PBE66079.1	peptidase C80	Clostridioides difficile	5550-AH/ST67	GCA_002301525.1
+43098800	INSDC	MOQI01000042.1	9774	17906	+	PBE91014.1	peptidase C80	Clostridioides difficile	5558-AH/ST67	GCA_002301615.1
+43098800	INSDC	MOQN01000074.1	9720	17852	+	PBF12645.1	peptidase C80	Clostridioides difficile	6583-AH/ST67	GCA_002301715.1
+43098800	INSDC	SRMH01000013.1	37244	45376	+	TKY93417.1	glycosylating toxin TcdA	Clostridioides difficile	CD-B18-123	GCA_005502205.1
+43098800	INSDC	CAACZO010000013.1	74027	82159	-	VFC37079.1	Toxin A	Clostridioides difficile	Lei034	GCA_900687405.1
+43098800	PAT	N/A				AGU08406.1	Sequence 102 from patent US 8481692	Unknown		
+43098800	PAT	N/A				AGU08407.1	Sequence 103 from patent US 8481692	Unknown		
+43098800	PAT	N/A				AGU08408.1	Sequence 104 from patent US 8481692	Unknown		
+43098800	PAT	N/A				AGY25073.1	Sequence 102 from patent US 8557548	Unknown		
+43098800	PAT	N/A				AGY25074.1	Sequence 103 from patent US 8557548	Unknown		
+43098800	PAT	N/A				AGY25075.1	Sequence 104 from patent US 8557548	Unknown		
+43098800	PAT	N/A				AJN68978.1	Sequence 102 from patent US 8900597	Unknown		
+43098800	PAT	N/A				AJN68979.1	Sequence 103 from patent US 8900597	Unknown		
+43098800	PAT	N/A				AJN68980.1	Sequence 104 from patent US 8900597	Unknown		
+43098800	PAT	N/A				AOD83367.1	Sequence 102 from patent US 9187536	Unknown		
+43098800	PAT	N/A				AOD83368.1	Sequence 103 from patent US 9187536	Unknown		
+43098800	PAT	N/A				AOD83369.1	Sequence 104 from patent US 9187536	Unknown		
+43098800	PAT	N/A				AVA67099.1	Sequence 102 from patent US 9745354	Unknown		
+43098800	PAT	N/A				AVA67100.1	Sequence 103 from patent US 9745354	Unknown		
+43098800	PAT	N/A				AVA67101.1	Sequence 104 from patent US 9745354	Unknown		
+

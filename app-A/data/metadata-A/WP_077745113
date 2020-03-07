@@ -1,0 +1,21 @@
+>WP_077745113
+
+Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	Strain	Assembly
+34121704	RefSeq	NZ_FULI01000004.1	218891	227023	-	WP_077745113.1	glycosylating toxin TcdA	Clostridioides difficile	VRECD0121	GCF_900164155.1
+34121704	RefSeq	NZ_UFWB01000003.1	630312	638444	+	WP_077745113.1	glycosylating toxin TcdA	Clostridioides difficile	NCTC13749	GCF_900447055.1
+34121704	INSDC	KC292061.1	1	8133	+	AGG91507.1	toxin A	Clostridioides difficile	GZ1	
+34121704	INSDC	KC292065.1	1	8133	+	AGG91511.1	toxin A	Clostridioides difficile	SH12	
+34121704	INSDC	KC292067.1	1	8133	+	AGG91513.1	toxin A	Clostridioides difficile	ZR83	
+34121704	INSDC	KC292073.1	1	8133	+	AGG91519.1	toxin A	Clostridioides difficile	ZR27	
+34121704	INSDC	KC292082.1	1	8133	+	AGG91528.1	toxin A	Clostridioides difficile	HN587	
+34121704	INSDC	KC292086.1	1	8133	+	AGG91532.1	toxin A	Clostridioides difficile	SH10	
+34121704	INSDC	KC292091.1	1	8133	+	AGG91537.1	toxin A	Clostridioides difficile	HN583	
+34121704	INSDC	KC292097.1	1	8133	+	AGG91543.1	toxin A	Clostridioides difficile	HN603	
+34121704	INSDC	KC292098.1	1	8133	+	AGG91544.1	toxin A	Clostridioides difficile	SH1	
+34121704	INSDC	KC292105.1	1	8133	+	AGG91551.1	toxin A	Clostridioides difficile	SH11	
+34121704	INSDC	KC292107.1	1	8133	+	AGG91553.1	toxin A	Clostridioides difficile	HN581	
+34121704	INSDC	KC292110.1	1	8133	+	AGG91556.1	toxin A	Clostridioides difficile	SH2	
+34121704	INSDC	KC292113.1	1	8133	+	AGG91559.1	toxin A	Clostridioides difficile	SD2	
+34121704	INSDC	FULI01000004.1	218891	227023	-	SJN97043.1	Toxin A	Clostridioides difficile	VRECD0121	GCA_900164155.1
+34121704	INSDC	UFWB01000003.1	630312	638444	+	SUY17032.1	toxin A	Clostridioides difficile	NCTC13749	GCA_900447055.1
+

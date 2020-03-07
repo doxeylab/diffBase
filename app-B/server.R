@@ -1,6 +1,6 @@
 #-------------------------------------------------------------------------------
 # server.R
-# Last modified: 2020-03-05 23:00:02 (CET)
+# Last modified: 2020-03-07 01:23:17 (CET)
 # BJM Tremblay
 
 msg("Loading server")
@@ -49,9 +49,28 @@ server <- function(input, output, session) {
   })
 
   output$PANEL_TOP_RIGHT_CURRENT_SUBTYPE <- renderText({
+    if (CURRENT_PAGE$WHICH != "INFO") return()
     paste(
       "<b>Currently selected subtype sequence:</b>",
       SELECTED_SUBTYPE[[SELECTED_TYPE$WHICH]]
+    )
+  })
+
+  output$PANEL_TOP_RIGHT_METADATA <- DT::renderDataTable({
+    if (CURRENT_PAGE$WHICH != "INFO") return()
+    out <- show_metadata(
+             SEQ_NAMES_ALL[SELECTED_SUBTYPE[[SELECTED_TYPE$WHICH]]]
+           )
+    DT::datatable(
+      out,
+      selection = "none",
+      options = list(
+        pageLength = 10,
+        ordering = FALSE,
+        scrollX = TRUE,
+        dom = "tip"
+      ),
+      rownames = FALSE
     )
   })
 
@@ -80,11 +99,15 @@ server <- function(input, output, session) {
   })
 
   output$PANEL_TOP_RIGHT_CURRENT_SUBTYPE_SEQUENCE <- renderText({
+    if (CURRENT_PAGE$WHICH != "INFO") return()
     SEQS_ALL[[SELECTED_SUBTYPE[[SELECTED_TYPE$WHICH]]]]
   })
 
   output$CURRENT_ACCESSION <- renderText({
-    SEQ_NAMES_ALL[SELECTED_SUBTYPE[[SELECTED_TYPE$WHICH]]]
+    paste(
+      "<b>Representative sequence:</b>",
+      SEQ_NAMES_ALL[SELECTED_SUBTYPE[[SELECTED_TYPE$WHICH]]]
+    )
   })
 
   observeEvent(input$BLASTP_BUTTON, {
@@ -167,6 +190,16 @@ server <- function(input, output, session) {
     }
     showModal(modalDialog(title = "Thank you", modal_text))
   })
+
+  output$DOWNLOAD_METADATA <- downloadHandler(
+    filename = paste0(
+      "ToxinB_", SELECTED_SUBTYPE[[SELECTED_TYPE$WHICH]],
+      "_Associated_Metadata.tsv"
+    ),
+    content = function(con) readr::write_tsv(show_metadata(
+      SEQ_NAMES_ALL[SELECTED_SUBTYPE[[SELECTED_TYPE$WHICH]]]
+    ), con)
+  )
 
   output$DOWNLOAD_ALL <- downloadHandler(
     filename = "ToxinB_sequences.fa",
