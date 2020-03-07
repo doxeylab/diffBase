@@ -5,6 +5,12 @@ UPDATE_DATE <- as.character(Sys.Date())
 message("--- Running Diff-base update script (", UPDATE_DATE, ") ---")
 message("")
 
+if (as.logical(toupper(Sys.getenv("FORCE_UPDATE")))) {
+  message("Detected FORCE_UPDATE, deleting existing MD5 checksums")
+  message("")
+  unlink(".diff-base.groups.md5.RDS")
+}
+
 if (!all(c("app-A", "app-B") %in% list.files())) {
   stop(
     "Couldn't find app directories. Make sure you run this script ",

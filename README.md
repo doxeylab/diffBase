@@ -15,6 +15,15 @@
 
 `ggtree`, `Biostrings`
 
+## Updating the database
+
+The update script `update.R` can be run to refresh the data files in the apps. The script can handle changes in the sequences themselves as well as the number of subtype sequences. It **cannot** handle changes in the number of group families. For these cases, you must manually update the source code of the apps and the update script.
+
+The script checks for changes in the sequences by comparing them to a store of MD5 checksums, and only executes if it finds any changes. A couple of environmental variables can be set:
+
+- `FORCE_UPDATE=T`: Force the update script to run, even if the MD5 checksums haven't changed. Useful if you've changed the behaviour of the update script or if you've updated the metadata.
+- `NO_UPDATE_TREE=T`: Don't update the trees. Useful if you manually generated the trees and don't want to build them using the mechanism in the update script.
+
 ## Gettings emails from the community message function
 
 Right now the apps send emails automatically whenever someone submits a message using the community feature. To do this, it uses local GMail keys. For obvious reasons, these are not included in the GitHub repo.
