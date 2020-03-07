@@ -9,3 +9,4 @@ app-A/queries/*
 app-B/community/*
 app-B/queries/*
 rsconnect
+*.swo

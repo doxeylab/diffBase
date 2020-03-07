@@ -145,16 +145,21 @@ if (UPDATE_A) {
   }
 
   Avec <- c(Alist$A, Alist$B, Alist$C, Alist$D, Alist$E, Alist$F)
+  Avec2 <- AAStringSet(gsub("-", "", as.character(Avec), fixed = TRUE))
 
-  writeXStringSet(Avec, "app-A/data/ALL-sequences.fa")
-  writeXStringSet(Avec, "app-A/downloads/ALL-sequences.fa")
-  writeXStringSet(Avec, "app-A/blastdb/ALL-sequences.fa")
-  saveRDS(Avec, "app-A/data/ALL-sequences-AAStringSet.RDS")
-  saveRDS(as.character(Avec), "app-A/data/ALL-sequences.RDS")
+  writeXStringSet(Avec2, "app-A/data/ALL-sequences.fa")
+  writeXStringSet(Avec2, "app-A/downloads/ALL-sequences.fa")
+  writeXStringSet(Avec2, "app-A/blastdb/ALL-sequences.fa")
+  saveRDS(Avec2, "app-A/data/ALL-sequences-AAStringSet.RDS")
+  saveRDS(as.character(Avec2), "app-A/data/ALL-sequences.RDS")
 
+  Alist2 <- lapply(
+    Alist,
+    function(x) AAStringSet(gsub("-", "", as.character(x), fixed = TRUE))
+  )
   for (i in seq_along(Anames)) {
     writeXStringSet(
-      Alist[[i]],
+      Alist2[[i]],
       paste0("app-A/downloads/", names(Anames)[i], "-sequences.fa")
     )
   }
@@ -268,16 +273,21 @@ if (UPDATE_B) {
     Blist$A, Blist$B, Blist$C, Blist$D, Blist$E, Blist$F,
     Blist$G, Blist$H, Blist$I, Blist$J, Blist$K, Blist$L
   )
+  Bvec2 <- AAStringSet(gsub("-", "", as.character(Bvec), fixed = TRUE))
 
-  writeXStringSet(Bvec, "app-B/data/ALL-sequences.fa")
-  writeXStringSet(Bvec, "app-B/downloads/ALL-sequences.fa")
-  writeXStringSet(Bvec, "app-B/blastdb/ALL-sequences.fa")
-  saveRDS(Bvec, "app-B/data/ALL-sequences-AAStringSet.RDS")
-  saveRDS(as.character(Bvec), "app-B/data/ALL-sequences.RDS")
+  writeXStringSet(Bvec2, "app-B/data/ALL-sequences.fa")
+  writeXStringSet(Bvec2, "app-B/downloads/ALL-sequences.fa")
+  writeXStringSet(Bvec2, "app-B/blastdb/ALL-sequences.fa")
+  saveRDS(Bvec2, "app-B/data/ALL-sequences-AAStringSet.RDS")
+  saveRDS(as.character(Bvec2), "app-B/data/ALL-sequences.RDS")
 
+  Blist2 <- lapply(
+    Blist,
+    function(x) AAStringSet(gsub("-", "", as.character(x), fixed = TRUE))
+  )
   for (i in seq_along(Bnames)) {
     writeXStringSet(
-      Blist[[i]],
+      Blist2[[i]],
       paste0("app-B/downloads/", names(Bnames)[i], "-sequences.fa")
     )
   }
