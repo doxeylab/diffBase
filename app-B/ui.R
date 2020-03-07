@@ -1,6 +1,6 @@
 #-------------------------------------------------------------------------------
 # ui.R
-# Last modified: 2020-03-07 10:15:57 (CET)
+# Last modified: 2020-03-07 10:58:51 (CET)
 # BJM Tremblay
 
 msg("Loading UI")
@@ -56,18 +56,18 @@ ui <- function(request) fluidPage(
             condition = "output.CURRENT_PAGE == 'WELCOME'",
             tagList(
               h4("Toxinotypes (TcdB)"),
-              actionLink("BUTTON_A", "A:"), "69 members", br(),
-              actionLink("BUTTON_B", "B:"), "2 members", br(),
-              actionLink("BUTTON_C", "C:"), "11 members", br(),
-              actionLink("BUTTON_D", "D:"), "7 members", br(),
-              actionLink("BUTTON_E", "E:"), "14 members", br(),
-              actionLink("BUTTON_F", "F:"), "2 members", br(),
-              actionLink("BUTTON_G", "G:"), "1 member", br(),
-              actionLink("BUTTON_H", "H:"), "11 members", br(),
-              actionLink("BUTTON_I", "I:"), "1 member", br(),
-              actionLink("BUTTON_J", "J:"), "1 member", br(),
-              actionLink("BUTTON_K", "K:"), "1 member", br(),
-              actionLink("BUTTON_L", "L:"), "5 members", br(),
+              actionLink("BUTTON_A", "A:"), GET_MEMBER_COUNT("A"), br(),
+              actionLink("BUTTON_B", "B:"), GET_MEMBER_COUNT("B"), br(),
+              actionLink("BUTTON_C", "C:"), GET_MEMBER_COUNT("C"), br(),
+              actionLink("BUTTON_D", "D:"), GET_MEMBER_COUNT("D"), br(),
+              actionLink("BUTTON_E", "E:"), GET_MEMBER_COUNT("E"), br(),
+              actionLink("BUTTON_F", "F:"), GET_MEMBER_COUNT("F"), br(),
+              actionLink("BUTTON_G", "G:"), GET_MEMBER_COUNT("G"), br(),
+              actionLink("BUTTON_H", "H:"), GET_MEMBER_COUNT("H"), br(),
+              actionLink("BUTTON_I", "I:"), GET_MEMBER_COUNT("I"), br(),
+              actionLink("BUTTON_J", "J:"), GET_MEMBER_COUNT("J"), br(),
+              actionLink("BUTTON_K", "K:"), GET_MEMBER_COUNT("K"), br(),
+              actionLink("BUTTON_L", "L:"), GET_MEMBER_COUNT("L"), br(),
               br(),
               downloadLink(
                 "DOWNLOAD_ALL", "Download all toxin B sequences"

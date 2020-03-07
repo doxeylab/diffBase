@@ -1,6 +1,6 @@
 #-------------------------------------------------------------------------------
 # ui.R
-# Last modified: 2020-03-07 10:15:47 (CET)
+# Last modified: 2020-03-07 10:57:56 (CET)
 # BJM Tremblay
 
 msg("Loading UI")
@@ -56,12 +56,12 @@ ui <- function(request) fluidPage(
             condition = "output.CURRENT_PAGE == 'WELCOME'",
             tagList(
               h4("Toxinotypes (TcdA)"),
-              actionLink("BUTTON_A", "A:"), "36 members", br(),
-              actionLink("BUTTON_B", "B:"), "17 members", br(),
-              actionLink("BUTTON_C", "C:"), "6 members", br(),
-              actionLink("BUTTON_D", "D:"), "4 members", br(),
-              actionLink("BUTTON_E", "E:"), "1 member", br(),
-              actionLink("BUTTON_F", "F:"), "1 members", br(),
+              actionLink("BUTTON_A", "A:"), GET_MEMBER_COUNT("A"), br(),
+              actionLink("BUTTON_B", "B:"), GET_MEMBER_COUNT("B"), br(),
+              actionLink("BUTTON_C", "C:"), GET_MEMBER_COUNT("C"), br(),
+              actionLink("BUTTON_D", "D:"), GET_MEMBER_COUNT("D"), br(),
+              actionLink("BUTTON_E", "E:"), GET_MEMBER_COUNT("E"), br(),
+              actionLink("BUTTON_F", "F:"), GET_MEMBER_COUNT("F"), br(),
               br(),
               downloadLink(
                 "DOWNLOAD_ALL", "Download all toxin A sequences"
