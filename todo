@@ -1,6 +1,3 @@
-- Still some hyphens leftover in sequences, remember to clean these out when I
-  get new versions of sequences (update: still necessary?)
-- Show all rows in blast results table (requires custom javascript; worthwhile?)
 - Repo needs a licence
 - Think about modularizing the app a bit more.. it's kind of annoying to have
   to retype everything twice
