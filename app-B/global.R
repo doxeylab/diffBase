@@ -1,6 +1,6 @@
 #-------------------------------------------------------------------------------
 # global.R
-# Last modified: 2020-03-07 23:41:21 (CET)
+# Last modified: 2020-03-08 11:26:25 (CET)
 # BJM Tremblay
 
 LAST_UPDATE_DATE <- function() "2020-03-07"
@@ -168,7 +168,7 @@ run_blast <- function(query, evalue = 1) {
         100 * (res$Coverage / nchar(SEQS_ALL[res$Match])), 1
       )
       res$`Go To Toxin Page` <- make_blast_buttons(res$Match)
-      as.data.frame(res)[, -1]
+      as.data.frame(res)[order(res[[5]], decreasing = TRUE), -1]
     }
   }
 }
