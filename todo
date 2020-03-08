@@ -1,3 +1,5 @@
 - Repo needs a licence
 - Think about modularizing the app a bit more.. it's kind of annoying to have
   to retype everything twice
+- For downloadable sequences: include original IDs in header names? (Instead
+  of just toxin type)
