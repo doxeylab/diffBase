@@ -1,9 +1,9 @@
 #-------------------------------------------------------------------------------
 # global.R
-# Last modified: 2020-03-08 11:26:49 (CET)
+# Last modified: 2020-03-09 21:05:51 (CET)
 # BJM Tremblay
 
-LAST_UPDATE_DATE <- function() "2020-03-07"
+LAST_UPDATE_DATE <- function() "2020-03-09"
 
 msg <- function(...) {
   time <- format(as.POSIXlt(Sys.time(), tz = "America/Toronto"))
@@ -193,7 +193,9 @@ SEQ_NAMES_LIST <- list(
   C = readRDS("data/C-names.RDS"),
   D = readRDS("data/D-names.RDS"),
   E = readRDS("data/E-names.RDS"),
-  F = readRDS("data/F-names.RDS")
+  F = readRDS("data/F-names.RDS"),
+  G = readRDS("data/G-names.RDS"),
+  H = readRDS("data/H-names.RDS")
 )
 SEQ_NAMES_ALL <- do.call(c, SEQ_NAMES_LIST)
 names(SEQ_NAMES_ALL) <- gsub("^[A-Z][.]", "", names(SEQ_NAMES_ALL))
@@ -202,7 +204,7 @@ names(SEQ_NAMES_ALL) <- gsub("^[A-Z][1-2][.]", "", names(SEQ_NAMES_ALL))
 SEQS_ALL <- gsub("-", "", readRDS("data/ALL-sequences.RDS"), fixed = TRUE)
 
 ALL_TYPES <- c(
-  "A", "B", "C", "D", "E", "F"
+  "A", "B", "C", "D", "E", "F", "G", "H"
 )
 
 for (a_t in ALL_TYPES) {
@@ -232,8 +234,8 @@ for (i in seq_len(nrow(clades))) {
     geom_cladelabel(
       node = clades$Node[i], label = as.character(clades$Label)[i],
       align = TRUE,
-      offset = -27.5,
-      offset.text = -1.2,
+      offset = -49,
+      offset.text = -2,
       hjust = 0.5
     )
 }

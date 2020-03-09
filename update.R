@@ -5,7 +5,7 @@ UPDATE_DATE <- as.character(Sys.Date())
 message("--- Running Diff-base update script (", UPDATE_DATE, ") ---")
 message("")
 
-if (as.logical(toupper(Sys.getenv("FORCE_UPDATE")))) {
+if (isTRUE(as.logical(toupper(Sys.getenv("FORCE_UPDATE"))))) {
   message("Detected FORCE_UPDATE, deleting existing MD5 checksums.")
   message("")
   unlink(".diff-base.groups.md5.RDS")
@@ -95,9 +95,11 @@ if (UPDATE_A) {
   gD <- readAAStringSet("groups-A/groupD.fa")
   gE <- readAAStringSet("groups-A/groupE.fa")
   gF <- readAAStringSet("groups-A/groupF.fa")
+  gG <- readAAStringSet("groups-A/groupG.fa")
+  gH <- readAAStringSet("groups-A/groupH.fa")
 
   Alist <- list(
-    A = gA, B = gB, C = gC, D = gD, E = gE, F = gF
+    A = gA, B = gB, C = gC, D = gD, E = gE, F = gF, G = gG, H = gH
   )
 
   Anames <- list(
@@ -106,7 +108,9 @@ if (UPDATE_A) {
     C = make_names_A("C"),
     D = make_names_A("D"),
     E = make_names_A("E"),
-    F = make_names_A("F")
+    F = make_names_A("F"),
+    G = make_names_A("G"),
+    H = make_names_A("H")
   )
 
   MD <- structure(lapply(
@@ -168,7 +172,7 @@ if (UPDATE_A) {
     )
   }
 
-  if (as.logical(toupper(Sys.getenv("NO_UPDATE_TREE")))) {
+  if (isTRUE(as.logical(toupper(Sys.getenv("NO_UPDATE_TREE"))))) {
     message("  Detected NO_UPDATE_TREE")
   } else {
     suppressPackageStartupMessages(library(phangorn))
