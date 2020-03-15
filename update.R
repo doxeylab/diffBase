@@ -1,5 +1,15 @@
 #!/usr/bin/env Rscript
 
+# update.R
+# Last modified: 2020-03-15 16:50:23 (CET)
+# BJM Tremblay
+
+# possible tree building code:
+# library(ape)
+# aln <- read.alignment("file.fa", "fasta")
+# tree <- bionj(dist.alignment(aln, matrix = "similarity"))
+# tree <- ladderize(midpoint.root(tree))
+
 UPDATE_DATE <- as.character(Sys.Date())
 
 message("--- Running Diff-base update script (", UPDATE_DATE, ") ---")
