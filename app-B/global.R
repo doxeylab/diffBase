@@ -1,6 +1,6 @@
 #-------------------------------------------------------------------------------
 # global.R
-# Last modified: 2020-03-15 16:55:12 (CET)
+# Last modified: 2020-05-05 16:48:47 (CEST)
 # BJM Tremblay
 
 LAST_UPDATE_DATE <- function() "2020-03-09"
@@ -162,6 +162,7 @@ run_blast <- function(query, evalue = 1) {
       msg("Blastp successful")
       res <- suppressMessages(readr::read_tsv(o, col_names = FALSE))
       msg("Number of hits:", nrow(res))
+      if (nrow(res) == 0) return(NULL)
       colnames(res) <- c("qseqid", "Match", "E-Value", "# of Mismatches", "% Identity", "Coverage")
       res$`Match Coverage %` <- round(
         100 * (res$Coverage / nchar(SEQS_ALL[res$Match])), 1

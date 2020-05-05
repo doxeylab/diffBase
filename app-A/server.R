@@ -1,6 +1,6 @@
 #-------------------------------------------------------------------------------
 # server.R
-# Last modified: 2020-03-09 20:58:11 (CET)
+# Last modified: 2020-05-05 16:50:32 (CEST)
 # BJM Tremblay
 
 msg("Loading server")
@@ -116,7 +116,12 @@ server <- function(input, output, session) {
       return()
     }
     res <- run_blast(input$BLASTP_INPUT)
-    if (is.data.frame(res)) {
+    if (is.null(res)) {
+      showModal(modalDialog(title = "BLASTP",
+        "No hits were detected."
+      ))
+      return()
+    } else if (is.data.frame(res)) {
       output$BLASTP_DOWNLOAD <- downloadHandler(
         filename = "blastp_results.tsv",
         content = function(con) readr::write_tsv(res[, -ncol(res)], con)

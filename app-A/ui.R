@@ -1,6 +1,6 @@
 #-------------------------------------------------------------------------------
 # ui.R
-# Last modified: 2020-03-09 21:09:14 (CET)
+# Last modified: 2020-03-25 13:51:38 (CET)
 # BJM Tremblay
 
 msg("Loading UI")
@@ -25,7 +25,7 @@ ui <- function(request) fluidPage(
     ),
     id = "NAVBARPAGE",
     position = "fixed-top",
-    collapsible = TRUE,
+    collapsible = FALSE,
     footer = tags$footer(
       tags$div(HTML(paste0(
         "<p>For questions or concerns, email <a href='mailto:",
