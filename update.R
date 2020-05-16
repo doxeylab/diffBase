@@ -1,7 +1,7 @@
 #!/usr/bin/env Rscript
 
 # update.R
-# Last modified: 2020-05-14 16:59:36 (CEST)
+# Last modified: 2020-05-16 15:01:57 (CEST)
 # BJM Tremblay
 
 # possible tree building code:
@@ -104,6 +104,14 @@ update_app <- function(app) {
   fix_update_date(paste0(app, "/global.R"))
 
   unlink(list.files(paste0("app-", let, "/downloads"), full.names = TRUE))
+
+  meta2acc <- suppressMessages(readr::read_delim(
+    paste0("classifications/tcd", tolower(let), "-allBLASThits.classified.txt"),
+    " ", col_names = FALSE
+  ))
+  colnames(meta2acc) <- c("Acc", "Subtype", "Identity", "Length", "Coverage")
+  meta2acc <- meta2acc[meta2acc$Identity == 100 & meta2acc$Coverage == "COMPLETE", ]
+  saveRDS(meta2acc, paste0(app, "/data/metadata2acc.RDS"))
 
 }
 
