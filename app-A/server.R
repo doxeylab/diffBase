@@ -1,6 +1,6 @@
 #-------------------------------------------------------------------------------
 # server.R
-# Last modified: 2020-05-05 16:50:32 (CEST)
+# Last modified: 2020-05-14 11:29:26 (CEST)
 # BJM Tremblay
 
 msg("Loading server")
@@ -19,18 +19,18 @@ server <- function(input, output, session) {
   outputOptions(output, "CURRENT_PAGE", suspendWhenHidden = FALSE)
 
   SELECTED_TYPE <- reactiveValues(
-    WHICH = "A"
+    WHICH = "A1"
   )
 
   SELECTED_SUBTYPE <- reactiveValues(
-    A = "A.1",
-    B = "B.1",
-    C = "C.1",
-    D = "D.1",
-    E = "E.1",
-    F = "F.1",
-    G = "G.1",
-    H = "H.1"
+    "A1" = "A1.1",
+    "A2" = "A2.1",
+    "A3" = "A3.1",
+    "A4" = "A4.1",
+    "A5" = "A5.1",
+    "A6" = "A6.1",
+    "A7" = "A7.1",
+    "sordellii_TcsH" = "sordellii_TcsH.1"
   )
 
   output$PANEL_LEFT_CURRENT_TYPE <- renderText({
@@ -97,13 +97,13 @@ server <- function(input, output, session) {
 
   output$PANEL_TOP_RIGHT_CURRENT_SUBTYPE_SEQUENCE <- renderText({
     if (CURRENT_PAGE$WHICH != "INFO") return()
-    SEQS_ALL[[SELECTED_SUBTYPE[[SELECTED_TYPE$WHICH]]]]
+    as.character(SEQS_ALL[[SELECTED_SUBTYPE[[SELECTED_TYPE$WHICH]]]])
   })
 
   output$CURRENT_ACCESSION <- renderText({
     paste(
       "<b>Representative sequence:</b>",
-      SEQ_NAMES_ALL[SELECTED_SUBTYPE[[SELECTED_TYPE$WHICH]]]
+      names(SEQ_NAMES_ALL[SELECTED_SUBTYPE[[SELECTED_TYPE$WHICH]]])
     )
   })
 

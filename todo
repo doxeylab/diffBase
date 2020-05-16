@@ -4,3 +4,7 @@
 - For downloadable sequences: include original IDs in header names? (Instead
   of just toxin type)
 - Collapsible trees: https://adeelk93.github.io/collapsibleTree/
+
+- Don't show tree by default
+- Search function
+- Blast: download alignment

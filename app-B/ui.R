@@ -1,6 +1,6 @@
 #-------------------------------------------------------------------------------
 # ui.R
-# Last modified: 2020-03-25 13:51:47 (CET)
+# Last modified: 2020-05-14 11:32:01 (CEST)
 # BJM Tremblay
 
 msg("Loading UI")
@@ -56,18 +56,20 @@ ui <- function(request) fluidPage(
             condition = "output.CURRENT_PAGE == 'WELCOME'",
             tagList(
               h4("Toxin Groups (TcdB)"),
-              actionLink("BUTTON_A", "A:"), GET_MEMBER_COUNT("A"), br(),
-              actionLink("BUTTON_B", "B:"), GET_MEMBER_COUNT("B"), br(),
-              actionLink("BUTTON_C", "C:"), GET_MEMBER_COUNT("C"), br(),
-              actionLink("BUTTON_D", "D:"), GET_MEMBER_COUNT("D"), br(),
-              actionLink("BUTTON_E", "E:"), GET_MEMBER_COUNT("E"), br(),
-              actionLink("BUTTON_F", "F:"), GET_MEMBER_COUNT("F"), br(),
-              actionLink("BUTTON_G", "G:"), GET_MEMBER_COUNT("G"), br(),
-              actionLink("BUTTON_H", "H:"), GET_MEMBER_COUNT("H"), br(),
-              actionLink("BUTTON_I", "I:"), GET_MEMBER_COUNT("I"), br(),
-              actionLink("BUTTON_J", "J:"), GET_MEMBER_COUNT("J"), br(),
-              actionLink("BUTTON_K", "K:"), GET_MEMBER_COUNT("K"), br(),
-              actionLink("BUTTON_L", "L:"), GET_MEMBER_COUNT("L"), br(),
+              actionLink("BUTTON_B1", "B1:"), GET_MEMBER_COUNT("B1"), br(),
+              actionLink("BUTTON_B2", "B2:"), GET_MEMBER_COUNT("B2"), br(),
+              actionLink("BUTTON_B3", "B3:"), GET_MEMBER_COUNT("B3"), br(),
+              actionLink("BUTTON_B4", "B4:"), GET_MEMBER_COUNT("B4"), br(),
+              actionLink("BUTTON_B5", "B5:"), GET_MEMBER_COUNT("B5"), br(),
+              actionLink("BUTTON_B6", "B6:"), GET_MEMBER_COUNT("B6"), br(),
+              actionLink("BUTTON_B7", "B7:"), GET_MEMBER_COUNT("B7"), br(),
+              actionLink("BUTTON_B8", "B8:"), GET_MEMBER_COUNT("B8"), br(),
+              actionLink("BUTTON_B9", "B9:"), GET_MEMBER_COUNT("B9"), br(),
+              actionLink("BUTTON_B10", "B10:"), GET_MEMBER_COUNT("B10"), br(),
+              actionLink("BUTTON_B11", "B11:"), GET_MEMBER_COUNT("B11"), br(),
+              actionLink("BUTTON_B12", "B12:"), GET_MEMBER_COUNT("B12"), br(),
+              actionLink("BUTTON_sordellii_group", "sordellii_group:"), GET_MEMBER_COUNT("sordellii_group"), br(),
+              actionLink("BUTTON_sordellii_TcsL", "sordellii_TcsL:"), GET_MEMBER_COUNT("sordellii_TcsL"), br(),
               br(),
               downloadLink(
                 "DOWNLOAD_ALL", "Download all toxin B sequences"

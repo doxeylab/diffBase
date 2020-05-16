@@ -1,9 +1,9 @@
 #-------------------------------------------------------------------------------
 # global.R
-# Last modified: 2020-05-05 16:50:13 (CEST)
+# Last modified: 2020-05-14 22:19:02 (CEST)
 # BJM Tremblay
 
-LAST_UPDATE_DATE <- function() "2020-03-09"
+LAST_UPDATE_DATE <- function() "2020-05-14"
 
 msg <- function(...) {
   time <- format(as.POSIXlt(Sys.time(), tz = "America/Toronto"))
@@ -165,7 +165,7 @@ run_blast <- function(query, evalue = 1) {
       if (nrow(res) == 0) return(NULL)
       colnames(res) <- c("qseqid", "Match", "E-Value", "# of Mismatches", "% Identity", "Coverage")
       res$`Match Coverage %` <- round(
-        100 * (res$Coverage / nchar(SEQS_ALL[res$Match])), 1
+        100 * (res$Coverage / nchar(as.character(SEQS_ALL)[res$Match])), 1
       )
       res$`Go To Toxin Page` <- make_blast_buttons(res$Match)
       as.data.frame(res)[order(res[[5]], decreasing = TRUE), -1]
@@ -189,54 +189,61 @@ TREE <- readRDS("data/tree.RDS")
 
 TREE_TBL <- as_tibble(TREE)
 
-SEQ_NAMES_LIST <- list(
-  A = readRDS("data/A-names.RDS"),
-  B = readRDS("data/B-names.RDS"),
-  C = readRDS("data/C-names.RDS"),
-  D = readRDS("data/D-names.RDS"),
-  E = readRDS("data/E-names.RDS"),
-  F = readRDS("data/F-names.RDS"),
-  G = readRDS("data/G-names.RDS"),
-  H = readRDS("data/H-names.RDS")
-)
-SEQ_NAMES_ALL <- do.call(c, SEQ_NAMES_LIST)
-names(SEQ_NAMES_ALL) <- gsub("^[A-Z][.]", "", names(SEQ_NAMES_ALL))
-names(SEQ_NAMES_ALL) <- gsub("^[A-Z][1-2][.]", "", names(SEQ_NAMES_ALL))
+SEQ_NAMES_LIST <- readRDS("data/ALL-names.RDS")
 
-SEQS_ALL <- gsub("-", "", readRDS("data/ALL-sequences.RDS"), fixed = TRUE)
+# SEQ_NAMES_ALL <- do.call(c, SEQ_NAMES_LIST)
+# names(SEQ_NAMES_ALL) <- gsub("^[A-Z]+\\d+[.]", "", names(SEQ_NAMES_ALL))
+SEQ_NAMES_ALL <- unlist(SEQ_NAMES_LIST, use.names = FALSE)
+names(SEQ_NAMES_ALL) <- SEQ_NAMES_ALL
 
-ALL_TYPES <- c(
-  "A", "B", "C", "D", "E", "F", "G", "H"
-)
+# names(SEQ_NAMES_ALL) <- gsub("^[A-Z][1-2][.]", "", names(SEQ_NAMES_ALL))
+
+SEQS_ALL <- readRDS("data/ALL-sequences.RDS")
+
+ALL_TYPES <- names(SEQ_NAMES_LIST)
 
 for (a_t in ALL_TYPES) {
   if (!file.exists(paste0("downloads/", a_t, "-sequences.fa"))) {
     Biostrings::writeXStringSet(
       Biostrings::AAStringSet(
-        SEQS_ALL[names(SEQ_NAMES_LIST[[a_t]])]
+        SEQS_ALL[[a_t]]
       ),
       paste0("downloads/", a_t, "-sequences.fa")
     )
   }
 }
 
+SEQS_ALL_AA <- SEQS_ALL
+SEQS_ALL <- SEQS_ALL[[1]]
+for (i in seq_along(SEQS_ALL_AA)[-1]) SEQS_ALL <- c(SEQS_ALL, SEQS_ALL_AA[[i]])
+
+if (!file.exists("downloads/ALL-sequences.fa"))
+  Biostrings::writeXStringSet(SEQS_ALL, "downloads/ALL-sequences.fa")
+
 ALL_TYPES_SUBTYPES <- lapply(SEQ_NAMES_LIST, function(x) names(x))
 
 TREE2 <- groupOTU(TREE, ALL_TYPES_SUBTYPES)
 
-clades <- data.frame(Label = ALL_TYPES, Node = NA)
+clades <- data.frame(Label = ALL_TYPES, Node = NA, Size = NA_integer_, stringsAsFactors = FALSE)
 for (i in seq_len(nrow(clades))) {
   clades$Node[i] <- MRCA(TREE2, ALL_TYPES_SUBTYPES[[i]])
+  clades$Size[i] <- length(SEQ_NAMES_LIST[[i]])
 }
 
 TREE_PLOT <- ggtree(TREE2, branch.length = "none") +
+  # geom_tiplab(size = 1)
   layout_dendrogram()
-for (i in seq_len(nrow(clades))) {
+# for (i in seq_len(nrow(clades))) {
+for (i in 1:4) {
+  # if (clades$Size[i] <= 1) next
   TREE_PLOT <- TREE_PLOT +
     geom_cladelabel(
-      node = clades$Node[i], label = as.character(clades$Label)[i],
+      node = clades$Node[i],
+      # label = gsub("^[A-Z]", "", as.character(clades$Label)[i]),
+      label = as.character(clades$Label)[i],
       align = TRUE,
-      offset = -49,
+      # offset = 15 + i
+      offset = -57,
       offset.text = -2,
       hjust = 0.5
     )
