@@ -1,6 +1,6 @@
 #-------------------------------------------------------------------------------
 # global.R
-# Last modified: 2020-05-14 22:18:54 (CEST)
+# Last modified: 2020-05-16 15:26:19 (CEST)
 # BJM Tremblay
 
 LAST_UPDATE_DATE <- function() "2020-05-16"
@@ -70,8 +70,8 @@ make_type_info <- function() {
     selectInput(
       "SUBTYPE_SELECTOR",
       label = "",
-      choices = names(SEQ_NAMES_LIST$A),
-      selected = "A.1",
+      choices = names(SEQ_NAMES_LIST$B1),
+      selected = "B1.1",
       width = "85px"
     ),
     br(),
@@ -79,9 +79,11 @@ make_type_info <- function() {
   )
 }
 
-show_metadata <- function(ACC) {
-  i <- which(as.logical(pmatch(names(METADATA), ACC, nomatch = 0)))
-  if (length(i)) METADATA[[i]] else NULL
+show_metadata <- function(subtype) {
+  ACCs <- META2ACC$Acc[META2ACC$Subtype == subtype]
+  i <- which(as.logical(pmatch(names(METADATA), ACCs)))
+  x <- METADATA[i]
+  if (length(x)) do.call(rbind, x) else NULL
 }
 
 make_type_info_more <- function() {
@@ -262,6 +264,8 @@ for (i in seq_len(nrow(clades))) {
 METADATA <- readRDS("data/metadata.RDS")
 METADATA <- lapply(METADATA, function(x) x[x$Source != "PAT", ])
 METADATA_ALL <- do.call(rbind, METADATA)
+
+META2ACC <- readRDS("data/metadata2acc.RDS")
 
 NUMBER_OF_SEQUENCES <- function() length(SEQ_NAMES_ALL)
 NUMBER_OF_STRAINS <- function() length(unique(METADATA_ALL$Strain))
