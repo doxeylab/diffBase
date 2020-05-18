@@ -1,6 +1,6 @@
 #-------------------------------------------------------------------------------
 # server.R
-# Last modified: 2020-05-14 11:32:41 (CEST)
+# Last modified: 2020-05-18 15:19:45 (CEST)
 # BJM Tremblay
 
 msg("Loading server")
@@ -40,7 +40,7 @@ server <- function(input, output, session) {
   )
 
   output$PANEL_LEFT_CURRENT_TYPE <- renderText({
-    paste("<b>Toxinotype:</b>", SELECTED_TYPE$WHICH)
+    paste("<b>Type:</b>", SELECTED_TYPE$WHICH)
   })
 
   output$PANEL_LEFT_CURRENT_SUBTYPE <- renderText({
