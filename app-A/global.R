@@ -1,9 +1,9 @@
 #-------------------------------------------------------------------------------
 # global.R
-# Last modified: 2020-05-16 15:26:08 (CEST)
+# Last modified: 2020-05-19 18:36:53 (CEST)
 # BJM Tremblay
 
-LAST_UPDATE_DATE <- function() "2020-05-16"
+LAST_UPDATE_DATE <- function() "2020-05-19"
 
 msg <- function(...) {
   time <- format(as.POSIXlt(Sys.time(), tz = "America/Toronto"))
@@ -81,7 +81,7 @@ make_type_info <- function() {
 
 show_metadata <- function(subtype) {
   ACCs <- META2ACC$Acc[META2ACC$Subtype == subtype]
-  i <- which(as.logical(pmatch(names(METADATA), ACCs)))
+  i <- unique(which(as.logical(pmatch(names(METADATA), ACCs))))
   x <- METADATA[i]
   if (length(x)) do.call(rbind, x) else NULL
 }

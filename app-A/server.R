@@ -1,6 +1,6 @@
 #-------------------------------------------------------------------------------
 # server.R
-# Last modified: 2020-05-18 15:19:34 (CEST)
+# Last modified: 2020-05-18 16:04:10 (CEST)
 # BJM Tremblay
 
 msg("Loading server")
@@ -33,8 +33,24 @@ server <- function(input, output, session) {
     "sordellii_TcsH" = "sordellii_TcsH.1"
   )
 
+  observe({
+    query <- parseQueryString(session$clientData$url_search)
+    req(query[["goto"]])
+    SType <- query[["goto"]]
+    QType <- strsplit(SType, ".", fixed = TRUE)[[1]][1]
+    if (!QType %in% ALL_TYPES || !SType %in% ALL_TYPES_SUBTYPES[[QType]]) {
+      showModal(modalDialog(
+        title = "Error", paste("Incorrect query.", SType, "does not exist.")
+      ))
+    } else {
+      SELECTED_TYPE$WHICH <- QType
+      SELECTED_SUBTYPE[[QType]] <- SType
+      CURRENT_PAGE$WHICH <- "INFO"
+    }
+  })
+
   output$PANEL_LEFT_CURRENT_TYPE <- renderText({
-    paste("<b>Types:</b>", SELECTED_TYPE$WHICH)
+    paste("<b>Type:</b>", SELECTED_TYPE$WHICH)
   })
 
   output$PANEL_LEFT_CURRENT_SUBTYPE <- renderText({
