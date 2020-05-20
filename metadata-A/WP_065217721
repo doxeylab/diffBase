@@ -1,5 +1,4 @@
 >WP_065217721
-
 Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	Strain	Assembly
 43098803	RefSeq	NZ_BINU01000072.1	2549	10681	-	WP_065217721.1	glycosylating toxin TcdA	Clostridioides difficile	FD028	GCF_004314185.1
 43098803	RefSeq	NZ_BINV01000028.1	8850	16982	-	WP_065217721.1	glycosylating toxin TcdA	Clostridioides difficile	FD029	GCF_004314205.1
@@ -72,4 +71,3 @@ Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	S
 43098803	PAT	N/A				AOD83402.1	Sequence 137 from patent US 9187536	Unknown		
 43098803	PAT	N/A				AVA67133.1	Sequence 136 from patent US 9745354	Unknown		
 43098803	PAT	N/A				AVA67134.1	Sequence 137 from patent US 9745354	Unknown		
-

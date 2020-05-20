@@ -1,0 +1,6 @@
+>WP_095892065
+Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	Strain	Assembly
+159674962	RefSeq	NZ_JAAVSO010000094.1	1	5317	-	WP_095892065.1	glycosylating toxin TcdA	Clostridioides difficile	OC108	GCF_012102895.1
+159674962	RefSeq	NZ_MPFC01000208.1	25973	31289	+	WP_095892065.1	glycosylating toxin TcdA	Clostridioides difficile	7465-DH/ST42	GCF_002302225.1
+159674962	INSDC	JAAVSO010000094.1	1	5317	-	NKC46802.1	glycosylating toxin TcdA	Clostridioides difficile	OC108	
+159674962	INSDC	MPFC01000208.1	25973	31289	+	PBG59745.1	peptidase C80	Clostridioides difficile	7465-DH/ST42	GCA_002302225.1

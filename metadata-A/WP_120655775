@@ -1,0 +1,4 @@
+>WP_120655775
+Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	Strain	Assembly
+211963469	RefSeq	NZ_PNES01000020.1	70910	78283	+	WP_120655775.1	glycosylating toxin TcdA	Clostridioides difficile	CD6	GCF_003625425.1
+211963469	INSDC	PNES01000020.1	70910	78283	+	RKL72551.1	peptidase C80	Clostridioides difficile	CD6	GCA_003625425.1

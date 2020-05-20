@@ -1,0 +1,4 @@
+>EQF13219
+Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	Strain	Assembly
+42914318	INSDC	AVHS01000027.1	32132	38548	+	EQF13219.1	toxin B	Clostridioides difficile CD133	CD133	GCA_000449345.2
+42914318	INSDC	AVJA01000023.1	24754	31170	+	EQG46809.1	toxin B	Clostridioides difficile DA00132	DA00132	GCA_000450065.2

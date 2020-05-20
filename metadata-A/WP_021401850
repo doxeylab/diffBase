@@ -1,0 +1,31 @@
+>WP_021401850
+Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	Strain	Assembly
+42935453	RefSeq	NZ_AVJS01000008.1	405153	413285	+	WP_021401850.1	glycosylating toxin TcdA	Clostridioides difficile DA00203	DA00203	GCF_000450405.2
+42935453	RefSeq	NZ_AVKE01000008.1	353600	361732	+	WP_021401850.1	glycosylating toxin TcdA	Clostridioides difficile DA00261	DA00261	GCF_000449565.2
+42935453	RefSeq	NZ_CAADAA010000003.1	66821	74953	+	WP_021401850.1	glycosylating toxin TcdA	Clostridioides difficile	lsh12	GCF_900687775.1
+42935453	RefSeq	NZ_PZRL01000001.1	3591120	3599252	-	WP_021401850.1	glycosylating toxin TcdA	Clostridioides difficile	20690	GCF_006379355.1
+42935453	INSDC	AVJS01000008.1	405153	413285	+	EQH14869.1	toxin B	Clostridioides difficile DA00203	DA00203	GCA_000450405.2
+42935453	INSDC	AVKE01000008.1	353600	361732	+	EQH57225.1	toxin B	Clostridioides difficile DA00261	DA00261	GCA_000449565.2
+42935453	INSDC	PZRL01000001.1	3591120	3599252	-	TOY30648.1	glycosylating toxin TcdA	Clostridioides difficile	20690	GCA_006379355.1
+42935453	INSDC	CAADAA010000003.1	66821	74953	+	VFC81522.1	Toxin A	Clostridioides difficile	lsh12	GCA_900687775.1
+42935453	PAT	N/A				AGU08396.1	Sequence 92 from patent US 8481692	Unknown		
+42935453	PAT	N/A				AGU08398.1	Sequence 94 from patent US 8481692	Unknown		
+42935453	PAT	N/A				AGU08410.1	Sequence 106 from patent US 8481692	Unknown		
+42935453	PAT	N/A				AGU08472.1	Sequence 168 from patent US 8481692	Unknown		
+42935453	PAT	N/A				AGY25063.1	Sequence 92 from patent US 8557548	Unknown		
+42935453	PAT	N/A				AGY25065.1	Sequence 94 from patent US 8557548	Unknown		
+42935453	PAT	N/A				AGY25077.1	Sequence 106 from patent US 8557548	Unknown		
+42935453	PAT	N/A				AGY25139.1	Sequence 168 from patent US 8557548	Unknown		
+42935453	PAT	N/A				AJN68968.1	Sequence 92 from patent US 8900597	Unknown		
+42935453	PAT	N/A				AJN68970.1	Sequence 94 from patent US 8900597	Unknown		
+42935453	PAT	N/A				AJN68982.1	Sequence 106 from patent US 8900597	Unknown		
+42935453	PAT	N/A				AJN69044.1	Sequence 168 from patent US 8900597	Unknown		
+42935453	PAT	N/A				AOD83357.1	Sequence 92 from patent US 9187536	Unknown		
+42935453	PAT	N/A				AOD83359.1	Sequence 94 from patent US 9187536	Unknown		
+42935453	PAT	N/A				AOD83371.1	Sequence 106 from patent US 9187536	Unknown		
+42935453	PAT	N/A				AOD83433.1	Sequence 168 from patent US 9187536	Unknown		
+42935453	PAT	N/A				AQN28349.1	Sequence 98 from patent US 9388394	Unknown		
+42935453	PAT	N/A				AVA67089.1	Sequence 92 from patent US 9745354	Unknown		
+42935453	PAT	N/A				AVA67091.1	Sequence 94 from patent US 9745354	Unknown		
+42935453	PAT	N/A				AVA67103.1	Sequence 106 from patent US 9745354	Unknown		
+42935453	PAT	N/A				AVA67165.1	Sequence 168 from patent US 9745354	Unknown		

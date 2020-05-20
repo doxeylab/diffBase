@@ -1,0 +1,4 @@
+>WP_135325729
+Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	Strain	Assembly
+243079774	RefSeq	NZ_SRJX01000260.1	9683	16045	+	WP_135325729.1	glycosylating toxin TcdA	Clostridioides difficile	MCD22	GCF_004684485.1
+243079774	INSDC	SRJX01000260.1	9683	16045	+	TFZ91145.1	glycosylating toxin TcdA	Clostridioides difficile	MCD22	GCA_004684485.1

@@ -1,0 +1,5 @@
+>WP_003434546
+Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	Strain	Assembly
+25752962	RefSeq	NZ_JH379238.1	13892	20020	+	WP_003434546.1	glycosylating toxin TcdA	Clostridioides difficile 70-100-2010	70-100-2010	GCF_000235905.1
+25752962	INSDC	AGAC01000012.1	13892	20020	+	EHJ40401.1	cell wall-binding repeat protein	Clostridioides difficile 70-100-2010	70-100-2010	GCA_000235905.1
+25752962	INSDC	JH379238.1	13892	20020	+	EHJ40401.1	cell wall-binding repeat protein	Clostridioides difficile 70-100-2010	70-100-2010	GCA_000235905.1

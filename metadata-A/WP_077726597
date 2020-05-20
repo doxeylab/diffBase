@@ -1,0 +1,4 @@
+>WP_077726597
+Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	Strain	Assembly
+137947408	RefSeq	NZ_FUSX01000005.1	67849	75918	+	WP_077726597.1	glycosylating toxin TcdA	Clostridioides difficile	CD29	GCF_900166055.1
+137947408	INSDC	FUSX01000005.1	67849	75918	+	SJV24496.1	toxin A	Clostridioides difficile	CD29	GCA_900166055.1

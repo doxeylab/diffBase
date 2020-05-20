@@ -1,0 +1,4 @@
+>WP_021127581
+Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	Strain	Assembly
+42508599	RefSeq	NZ_AQGJ01000153.1	17611	25404	-	WP_021127581.1	glucosylating haemorrhagic toxin TcsH	Paeniclostridium sordellii VPI 9048	VPI 9048	GCF_000444095.1
+42508599	INSDC	AQGJ01000153.1	17611	25404	-	EPZ61075.1	toxin B	Paeniclostridium sordellii VPI 9048	VPI 9048	GCA_000444095.1

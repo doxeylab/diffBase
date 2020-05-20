@@ -1,0 +1,4 @@
+>WP_021389693
+Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	Strain	Assembly
+42923009	RefSeq	NZ_AVIG01000011.1	45502	52488	+	WP_021389693.1	glycosylating toxin TcdA	Clostridioides difficile CD201	CD201	GCF_000449665.2
+42923009	INSDC	AVIG01000011.1	45502	52488	+	EQF71116.1	toxin B	Clostridioides difficile CD201	CD201	GCA_000449665.2

@@ -1,5 +1,4 @@
 >WP_009895693
-
 Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	Strain	Assembly
 14588980	RefSeq	NZ_AQWV01000049.1	7698	14798	-	WP_009895693.1	glycosylating toxin TcdB	Clostridioides difficile ATCC 9689 = DSM 1296	ATCC 9689	GCF_000376285.1
 14588980	RefSeq	NZ_AVGI01000043.1	1070	8170	+	WP_009895693.1	glycosylating toxin TcdB	Clostridioides difficile CD3	CD3	GCF_000448825.2
@@ -442,6 +441,10 @@ Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	S
 14588980	RefSeq	NZ_HF928859.1	1262	8362	+	WP_009895693.1	glycosylating toxin TcdB	Clostridioides difficile E25	E25	GCF_000531595.1
 14588980	RefSeq	NZ_HF930113.1	23267	30367	+	WP_009895693.1	glycosylating toxin TcdB	Clostridioides difficile T61	T61	GCF_000531715.1
 14588980	RefSeq	NZ_HF933900.1	27228	34328	+	WP_009895693.1	glycosylating toxin TcdB	Clostridioides difficile T42	T42	GCF_000530325.1
+14588980	RefSeq	NZ_JAATWQ010000087.1	5830	12930	-	WP_009895693.1	glycosylating toxin TcdB	Clostridioides difficile	OC101	GCF_012030445.1
+14588980	RefSeq	NZ_JAAUXL010000016.1	32125	39225	+	WP_009895693.1	glycosylating toxin TcdB	Clostridioides difficile	HU45	GCF_012030125.1
+14588980	RefSeq	NZ_JAAXLN010000086.1	1075	8175	+	WP_009895693.1	glycosylating toxin TcdB	Clostridioides difficile	HC115	GCF_012276925.1
+14588980	RefSeq	NZ_JAAXLO010000108.1	5738	12838	-	WP_009895693.1	glycosylating toxin TcdB	Clostridioides difficile	HC139	GCF_012276965.1
 14588980	RefSeq	NZ_JCKG01000133.1	7142	14242	-	WP_009895693.1	glycosylating toxin TcdB	Clostridioides difficile	RC10	GCF_002352515.1
 14588980	RefSeq	NZ_JXBS01000004.1	39367	46467	+	WP_009895693.1	glycosylating toxin TcdB	Clostridioides difficile	LIBA-5784	GCF_000828245.1
 14588980	RefSeq	NZ_KE392167.1	60106	67206	+	WP_009895693.1	glycosylating toxin TcdB	Clostridioides difficile ATCC 9689 = DSM 1296	DSM 1296	GCF_000438845.1
@@ -744,6 +747,10 @@ Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	S
 14588980	INSDC	QLOA01000002.1	746357	753457	+	NAT80662.1	glycosylating toxin TcdB	Clostridioides difficile	CBA7207	
 14588980	INSDC	QKRE01000004.1	3923425	3930525	+	NAT87417.1	glycosylating toxin TcdB	Clostridioides difficile	CBA7203	
 14588980	INSDC	QWLH01000024.1	5612	12712	+	NBJ87429.1	glycosylating toxin TcdB	Clostridioides difficile	J11	
+14588980	INSDC	JAAUXL010000016.1	32125	39225	+	NJI69696.1	glycosylating toxin TcdB	Clostridioides difficile	HU45	
+14588980	INSDC	JAATWQ010000087.1	5830	12930	-	NJJ44328.1	glycosylating toxin TcdB	Clostridioides difficile	OC101	
+14588980	INSDC	JAAXLN010000086.1	1075	8175	+	NKN25108.1	glycosylating toxin TcdB	Clostridioides difficile	HC115	
+14588980	INSDC	JAAXLO010000108.1	5738	12838	-	NKN88773.1	glycosylating toxin TcdB	Clostridioides difficile	HC139	
 14588980	INSDC	LYDP01000002.1	152844	159944	-	OBW84722.1	peptidase C80	Clostridioides difficile	CD8-15	GCA_001678145.1
 14588980	INSDC	MOSV01000033.1	1162	8262	+	OLP71028.1	peptidase C80	Clostridioides difficile	01A09CD0020	GCA_001939005.1
 14588980	INSDC	MTVS01000005.1	350493	357593	+	OMK22009.1	toxin B	Clostridioides difficile	20110740	GCA_001972045.1
@@ -979,6 +986,7 @@ Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	S
 14588980	INSDC	CAADAR010000005.1	59383	66483	+	VFD43294.1	Toxin B	Clostridioides difficile	clo41	GCA_900688305.1
 14588980	INSDC	CAADAQ010000015.1	40725	47825	-	VFD43793.1	Toxin B	Clostridioides difficile	lsh07	GCA_900688245.1
 14588980	INSDC	CAADDL010000004.1	39468	46568	+	VFG11754.1	Toxin B	Clostridioides difficile	FLI006	GCA_900691875.1
+14588980	INSDC	CAADHH010000022.1	27301	34401	+	VFN59250.1	toxin B	Clostridioides difficile		
 14588980	INSDC	CAAJOW010000021.1	40484	47584	-	VHR69930.1	Toxin B	Clostridioides difficile	lon003	GCA_901002915.1
 14588980	INSDC	CAAJUY010000004.1	260183	267283	-	VHX46298.1	Toxin B	Clostridioides difficile	lsh15	GCA_901004475.1
 14588980	INSDC	CAAJUX010000004.1	153544	160644	-	VHX47574.1	Toxin B	Clostridioides difficile	lsh13	GCA_901004485.1
@@ -1043,4 +1051,3 @@ Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	S
 14588980	PAT	N/A				AVA67138.1	Sequence 141 from patent US 9745354	Unknown		
 14588980	PAT	N/A				AVA67155.1	Sequence 158 from patent US 9745354	Unknown		
 14588980	PAT	N/A				AVA67156.1	Sequence 159 from patent US 9745354	Unknown		
-

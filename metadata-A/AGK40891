@@ -1,9 +1,7 @@
 >AGK40891
-
 Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	Strain	Assembly
 35552089	INSDC	KC814176.1	1	7857	+	AGK40891.1	TcsH	Paeniclostridium sordellii	VPI 9048	
 35552089	INSDC	KF726111.1	1	7857	+	AHB59888.1	hemorrhagic toxin	Paeniclostridium sordellii	VPI 9048	
 35552089	INSDC	MG205641.1	13010	20866	-	AUO31606.1	glucosylating hemorrhagic toxin TcsH	Paeniclostridium sordellii	7508-A	
 35552089	INSDC	MG205642.1	13010	20866	-	AUO31700.1	glucosylating hemorrhagic toxin TcsH	Paeniclostridium sordellii	7543-A	
 35552089	INSDC	LN681235.1	13010	20866	-	CEK40047.1	Haemorrhagic Toxin	Paeniclostridium sordellii	JGS6382	GCA_000953555.1
-

@@ -1,5 +1,4 @@
 >WP_021122190
-
 Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	Strain	Assembly
 42508674	RefSeq	NZ_AJXR02000041.1	7973	15067	-	WP_021122190.1	glycosylating toxin TcdB	Paeniclostridium sordellii 8483	8483	GCF_001023455.2
 42508674	RefSeq	NZ_CDNJ01000026.1	24012	31106	+	WP_021122190.1	glycosylating toxin TcdB	Paeniclostridium sordellii	JGS444	GCF_001372655.1
@@ -9,4 +8,3 @@ Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	S
 42508674	INSDC	CDNU01000031.1	31932	39026	-	CEN29775.1	Toxin B	Paeniclostridium sordellii	JGS445	GCA_001372675.1
 42508674	INSDC	APWR01000088.1	15323	22417	+	EPZ61151.1	toxin B	Paeniclostridium sordellii ATCC 9714	ATCC 9714	GCA_000444075.1
 42508674	INSDC	AJXR02000041.1	7973	15067	-	TAN66409.1	glycosylating toxin TcdB	Paeniclostridium sordellii 8483	8483	GCA_001023455.2
-

@@ -1,5 +1,4 @@
 >WP_074049122
-
 Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	Strain	Assembly
 133625303	RefSeq	NZ_CAACZY010000012.1	73356	80456	+	WP_074049122.1	glycosylating toxin TcdB	Clostridioides difficile	lsh34	GCF_900687725.1
 133625303	RefSeq	NZ_CAAJVH010000012.1	48711	55811	-	WP_074049122.1	glycosylating toxin TcdB	Clostridioides difficile	lsh28	GCF_901004555.1
@@ -31,4 +30,3 @@ Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	S
 133625303	INSDC	PZRE01000002.1	721384	728484	+	TOY31816.1	glycosylating toxin TcdB	Clostridioides difficile	20483	GCA_006380955.1
 133625303	INSDC	CAACZY010000012.1	73356	80456	+	VFC77025.1	Toxin B	Clostridioides difficile	lsh34	GCA_900687725.1
 133625303	INSDC	CAAJVH010000012.1	48711	55811	-	VHX93008.1	Toxin B	Clostridioides difficile	lsh28	GCA_901004555.1
-

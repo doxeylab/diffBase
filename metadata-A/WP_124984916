@@ -1,0 +1,25 @@
+>WP_124984916
+Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	Strain	Assembly
+34121707	RefSeq	NZ_BIQJ01000064.1	9338	17470	+	WP_124984916.1	glycosylating toxin TcdA	Clostridioides difficile	FD100	GCF_004315525.1
+34121707	RefSeq	NZ_RQZW01000043.1	35919	44051	+	WP_124984916.1	glycosylating toxin TcdA	Clostridioides difficile	17-218-01102	GCF_003862965.1
+34121707	RefSeq	NZ_SEQE01000046.1	8885	17017	+	WP_124984916.1	glycosylating toxin TcdA	Clostridioides difficile	LC3P-135-1	GCF_007001985.1
+34121707	RefSeq	NZ_SEQF01000051.1	8376	16508	-	WP_124984916.1	glycosylating toxin TcdA	Clostridioides difficile	LC3P-135-2	GCF_007001935.1
+34121707	RefSeq	NZ_SEQH01000012.1	68341	76473	+	WP_124984916.1	glycosylating toxin TcdA	Clostridioides difficile	LC3P-135-4	GCF_007001905.1
+34121707	RefSeq	NZ_SEQI01000008.1	31932	40064	+	WP_124984916.1	glycosylating toxin TcdA	Clostridioides difficile	LC3P-135-5	GCF_007001865.1
+34121707	RefSeq	NZ_SEQJ01000002.1	546418	554550	+	WP_124984916.1	glycosylating toxin TcdA	Clostridioides difficile	LC3P-135-6	GCF_007001845.1
+34121707	RefSeq	NZ_SEQK01000002.1	352580	360712	-	WP_124984916.1	glycosylating toxin TcdA	Clostridioides difficile	LC3P-135-7	GCF_007001815.1
+34121707	RefSeq	NZ_SEQL01000001.1	352680	360812	-	WP_124984916.1	glycosylating toxin TcdA	Clostridioides difficile	LC3P-135-8	GCF_007001855.1
+34121707	INSDC	KC292116.1	1	8133	+	AGG91562.1	toxin A	Clostridioides difficile	ZR50	
+34121707	INSDC	RQZW01000043.1	35919	44051	+	RRH45285.1	glycosylating toxin TcdA	Clostridioides difficile	17-218-01102	GCA_003862965.1
+34121707	INSDC	SEQK01000002.1	352580	360712	-	TQZ21485.1	glycosylating toxin TcdA	Clostridioides difficile	LC3P-135-7	GCA_007001815.1
+34121707	INSDC	SEQJ01000002.1	546418	554550	+	TQZ22990.1	glycosylating toxin TcdA	Clostridioides difficile	LC3P-135-6	GCA_007001845.1
+34121707	INSDC	SEQL01000001.1	352680	360812	-	TQZ25859.1	glycosylating toxin TcdA	Clostridioides difficile	LC3P-135-8	GCA_007001855.1
+34121707	INSDC	SEQH01000012.1	68341	76473	+	TQZ27276.1	glycosylating toxin TcdA	Clostridioides difficile	LC3P-135-4	GCA_007001905.1
+34121707	INSDC	SEQI01000008.1	31932	40064	+	TQZ29875.1	glycosylating toxin TcdA	Clostridioides difficile	LC3P-135-5	GCA_007001865.1
+34121707	INSDC	SEQF01000051.1	8376	16508	-	TQZ30516.1	glycosylating toxin TcdA	Clostridioides difficile	LC3P-135-2	GCA_007001935.1
+34121707	INSDC	SEQE01000046.1	8885	17017	+	TQZ37142.1	glycosylating toxin TcdA	Clostridioides difficile	LC3P-135-1	GCA_007001985.1
+34121707	PAT	N/A				AGU08404.1	Sequence 100 from patent US 8481692	Unknown		
+34121707	PAT	N/A				AGY25071.1	Sequence 100 from patent US 8557548	Unknown		
+34121707	PAT	N/A				AJN68976.1	Sequence 100 from patent US 8900597	Unknown		
+34121707	PAT	N/A				AOD83365.1	Sequence 100 from patent US 9187536	Unknown		
+34121707	PAT	N/A				AVA67097.1	Sequence 100 from patent US 9745354	Unknown		

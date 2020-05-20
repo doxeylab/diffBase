@@ -1,0 +1,4 @@
+>WP_124962361
+Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	Strain	Assembly
+220995298	RefSeq	NZ_RRAG01000014.1	1	7207	-	WP_124962361.1	glycosylating toxin TcdA	Clostridioides difficile	17-246-05417	GCF_003862835.1
+220995298	INSDC	RRAG01000014.1	1	7207	-	RRG99060.1	glycosylating toxin TcdA	Clostridioides difficile	17-246-05417	GCA_003862835.1

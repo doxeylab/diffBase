@@ -1,5 +1,4 @@
 >CAA80815
-
 Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	Strain	Assembly
 804355	INSDC	Z23277.1	61	7164	+	CAA80815.1	toxin B	Clostridioides difficile		
 804355	PAT	N/A				ADA49477.1	Sequence 42 from patent US 7625559	Unknown		
@@ -10,4 +9,3 @@ Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	S
 804355	PAT	N/A				AJO50658.1	Sequence 42 from patent US 8609111	Unknown		
 804355	PAT	N/A				AOG81209.1	Sequence 42 from patent US 9217029	Unknown		
 804355	PAT	N/A				AQN28341.1	Sequence 90 from patent US 9388394	Unknown		
-

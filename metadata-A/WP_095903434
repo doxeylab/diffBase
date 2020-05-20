@@ -1,6 +1,4 @@
 >WP_095903434
-
 Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	Strain	Assembly
 159683973	RefSeq	NZ_MOTE01000005.1	2598	10730	-	WP_095903434.1	glycosylating toxin TcdA	Clostridioides difficile	6618-NonSp/ST53	GCF_002303465.1
 159683973	INSDC	MOTE01000005.1	2598	10730	-	PBI31439.1	peptidase C80	Clostridioides difficile	6618-NonSp/ST53	GCA_002303465.1
-

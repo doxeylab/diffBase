@@ -1,7 +1,7 @@
 #!/usr/bin/env Rscript
 
 # update.R
-# Last modified: 2020-05-16 15:01:57 (CEST)
+# Last modified: 2020-05-20 12:26:14 (CEST)
 # BJM Tremblay
 
 # possible tree building code:
@@ -65,7 +65,7 @@ update_app <- function(app) {
 
   MDa <- structure(lapply(
     list.files(meta, full.names = TRUE),
-    function(x) suppressMessages(readr::read_tsv(x, skip = 2))
+    function(x) suppressMessages(readr::read_tsv(x, comment=">"))
   ), names = list.files(meta))
 
   saveRDS(MDa, paste0(app, "/data/metadata.RDS"))

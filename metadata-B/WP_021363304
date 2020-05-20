@@ -1,5 +1,4 @@
 >WP_021363304
-
 Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	Strain	Assembly
 34121709	RefSeq	NZ_AVGN01000018.1	47706	54806	+	WP_021363304.1	glycosylating toxin TcdB	Clostridioides difficile CD18	CD18	GCF_000448905.2
 34121709	RefSeq	NZ_AVGV01000042.1	1027	8127	+	WP_021363304.1	glycosylating toxin TcdB	Clostridioides difficile CD42	CD42	GCF_000449005.2
@@ -56,6 +55,7 @@ Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	S
 34121709	RefSeq	NZ_FUPE01000003.1	394731	401831	-	WP_021363304.1	glycosylating toxin TcdB	Clostridioides difficile	VRECD0031	GCF_900165075.1
 34121709	RefSeq	NZ_FUSV01000004.1	228004	235104	-	WP_021363304.1	glycosylating toxin TcdB	Clostridioides difficile	CD49	GCF_900166025.1
 34121709	RefSeq	NZ_FUSX01000005.1	59399	66499	+	WP_021363304.1	glycosylating toxin TcdB	Clostridioides difficile	CD29	GCF_900166055.1
+34121709	RefSeq	NZ_JAAVSO010000094.1	6667	13767	-	WP_021363304.1	glycosylating toxin TcdB	Clostridioides difficile	OC108	GCF_012102895.1
 34121709	RefSeq	NZ_MOQA01000045.1	1426	8526	+	WP_021363304.1	glycosylating toxin TcdB	Clostridioides difficile	5548-Y/ST2	GCF_002301495.1
 34121709	RefSeq	NZ_MOTD01000075.1	390	7490	+	WP_021363304.1	glycosylating toxin TcdB	Clostridioides difficile	6616-NonSp/novelST	GCF_002303415.1
 34121709	RefSeq	NZ_MOTE01000005.1	12080	19180	-	WP_021363304.1	glycosylating toxin TcdB	Clostridioides difficile	6618-NonSp/ST53	GCF_002303465.1
@@ -133,6 +133,7 @@ Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	S
 34121709	INSDC	AVLW01000014.1	25370	32470	+	EQJ32841.1	toxin B	Clostridioides difficile P19	P19	GCA_000451705.1
 34121709	INSDC	AVLX01000019.1	57694	64794	+	EQJ41038.1	toxin B	Clostridioides difficile P20	P20	GCA_000451725.2
 34121709	INSDC	AVMD01000019.1	35353	42453	+	EQJ61138.1	toxin B	Clostridioides difficile P29	P29	GCA_000451745.2
+34121709	INSDC	JAAVSO010000094.1	6667	13767	-	NKC46805.1	glycosylating toxin TcdB	Clostridioides difficile	OC108	
 34121709	INSDC	KV785917.1	22765	29865	+	OFU04421.1	peptidase C80	Clostridium sp. HMSC19D02	HMSC19D02	GCA_001806725.1
 34121709	INSDC	LWOZ01000120.1	7117	14217	+	OFU04421.1	peptidase C80	Clostridium sp. HMSC19D02	HMSC19D02	GCA_001806725.1
 34121709	INSDC	KV785723.1	5416	12516	+	OFU08973.1	peptidase C80	Clostridium sp. HMSC19C11	HMSC19C11	GCA_001806715.1
@@ -211,4 +212,3 @@ Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	S
 34121709	PAT	N/A				AVA67121.1	Sequence 124 from patent US 9745354	Unknown		
 34121709	PAT	N/A				AVA67127.1	Sequence 130 from patent US 9745354	Unknown		
 34121709	PAT	N/A				AVA67170.1	Sequence 173 from patent US 9745354	Unknown		
-

@@ -1,5 +1,4 @@
 >WP_003418170
-
 Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	Strain	Assembly
 20066291	RefSeq	NC_017174.1	783728	790828	+	WP_003418170.1	glycosylating toxin TcdB	Clostridioides difficile M120	M120	GCF_000210435.1
 20066291	RefSeq	NZ_BEHB01000015.1	89412	96512	+	WP_003418170.1	glycosylating toxin TcdB	Clostridioides difficile	TNHP173	GCF_008579085.1
@@ -109,6 +108,7 @@ Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	S
 20066291	RefSeq	NZ_HF677319.1	14478	21578	+	WP_003418170.1	glycosylating toxin TcdB	Clostridioides difficile T5	T5	GCF_001050575.1
 20066291	RefSeq	NZ_HF922427.1	15596	22696	+	WP_003418170.1	glycosylating toxin TcdB	Clostridioides difficile T20	T20	GCF_000499505.1
 20066291	RefSeq	NZ_HF927515.1	15596	22696	+	WP_003418170.1	glycosylating toxin TcdB	Clostridioides difficile E1	E1	GCF_000582865.1
+20066291	RefSeq	NZ_JAATIE010000001.1	661271	668371	+	WP_003418170.1	glycosylating toxin TcdB	Clostridioides difficile	CD07814	GCF_012952655.1
 20066291	RefSeq	NZ_JBOQ01000048.1	7142	14242	-	WP_003418170.1	glycosylating toxin TcdB	Clostridioides difficile	5754	GCF_002412385.1
 20066291	RefSeq	NZ_JCKF01000046.1	7544	14644	-	WP_003418170.1	glycosylating toxin TcdB	Clostridioides difficile	RF17	GCF_002352505.1
 20066291	RefSeq	NZ_MOPU01000014.1	90054	97154	+	WP_003418170.1	glycosylating toxin TcdB	Clostridioides difficile	5538-BK/ST11	GCF_002301695.1
@@ -135,6 +135,7 @@ Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	S
 20066291	INSDC	ADVM01000023.1	7703	14803	-	EFH16598.1	cell wall-binding repeat protein	Clostridioides difficile NAP07	NAP07	GCA_000164655.1
 20066291	INSDC	GG770748.1	349309	356409	-	EFH16598.1	cell wall-binding repeat protein	Clostridioides difficile NAP07	NAP07	GCA_000164655.1
 20066291	INSDC	BEHB01000015.1	89412	96512	+	GCA60934.1	peptidase C80	Clostridioides difficile	TNHP173	
+20066291	INSDC	JAATIE010000001.1	661271	668371	+	NMQ75911.1	glycosylating toxin TcdB	Clostridioides difficile	CD07814	
 20066291	INSDC	MTVX01000003.1	583665	590765	+	OMK36485.1	toxin B	Clostridioides difficile	20110986	GCA_001972115.1
 20066291	INSDC	MTWE01000004.1	429749	436849	+	OMK63930.1	toxin B	Clostridioides difficile	20120183	GCA_001972065.1
 20066291	INSDC	MOPU01000014.1	90054	97154	+	PBE37829.1	peptidase C80	Clostridioides difficile	5538-BK/ST11	GCA_002301695.1
@@ -415,4 +416,3 @@ Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	S
 20066291	PAT	N/A				AVA67115.1	Sequence 118 from patent US 9745354	Unknown		
 20066291	PAT	N/A				AVA67120.1	Sequence 123 from patent US 9745354	Unknown		
 20066291	PAT	N/A				AVA67122.1	Sequence 125 from patent US 9745354	Unknown		
-

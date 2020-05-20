@@ -1,7 +1,4 @@
 >WP_070481156
-
 Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	Strain	Assembly
-120571803	RefSeq	N/A				WP_070481156.1	glycosylating toxin TcdB	Clostridium sp. HMSC19D07		
 120571803	INSDC	KV785821.1	1875	8978	-	OFU01712.1	peptidase C80	Clostridium sp. HMSC19D07	HMSC19D07	GCA_001806735.1
 120571803	INSDC	LWOY01000128.1	1875	8978	-	OFU01712.1	peptidase C80	Clostridium sp. HMSC19D07	HMSC19D07	GCA_001806735.1
-

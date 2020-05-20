@@ -1,7 +1,8 @@
 >WP_045146042
-
 Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	Strain	Assembly
-77853194	RefSeq	N/A				WP_045146042.1	glycosylating toxin TcdB	Clostridioides difficile		
+77853194	RefSeq	NZ_JAATWN010000051.1	1249	8349	+	WP_045146042.1	glycosylating toxin TcdB	Clostridioides difficile	HC20	GCF_012029905.1
+77853194	RefSeq	NZ_JABBZF010000090.1	1401	8501	-	WP_045146042.1	glycosylating toxin TcdB	Clostridioides difficile	HC45	GCF_012955915.1
 77853194	INSDC	KP981374.1	1038	8138	+	ALD14616.1	toxin B	Clostridioides difficile	ZJCDC-1	
 77853194	INSDC	JYNK01000004.1	369426	376526	-	KJF64190.1	peptidase C80	Clostridioides difficile	ZJCDC-S82	GCA_000949855.1
-
+77853194	INSDC	JAATWN010000051.1	1249	8349	+	NJK24125.1	glycosylating toxin TcdB	Clostridioides difficile	HC20	
+77853194	INSDC	JABBZF010000090.1	1401	8501	-	NMS87789.1	glycosylating toxin TcdB	Clostridioides difficile	HC45	

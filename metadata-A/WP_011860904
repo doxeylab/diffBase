@@ -1,5 +1,4 @@
 >WP_011860904
-
 Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	Strain	Assembly
 6137234	RefSeq	NC_009089.1	795843	803975	+	WP_011860904.1	glycosylating toxin TcdA	Clostridioides difficile 630	630	GCF_000009205.2
 6137234	RefSeq	NZ_CP010905.1	780401	788533	+	WP_011860904.1	glycosylating toxin TcdA	Clostridioides difficile 630	630	
@@ -47,4 +46,3 @@ Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	S
 6137234	PAT	N/A				AUF03943.1	Sequence 1 from patent US 9694063	Unknown		
 6137234	PAT	N/A				AVA67016.1	Sequence 1 from patent US 9745354	Unknown		
 6137234	PAT	N/A				QFO61286.1	Sequence 6 from patent US 10357557	Unknown		
-

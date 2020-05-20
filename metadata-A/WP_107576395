@@ -1,7 +1,5 @@
 >WP_107576395
-
 Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	Strain	Assembly
 137707146	RefSeq	NZ_OEZU01000006.1	1368	9500	-	WP_107576395.1	glycosylating toxin TcdA	Clostridioides difficile	CH6230	GCF_900243205.1
 137707146	INSDC	CAAJQC010000014.1	48045	56177	+	VHS92263.1	Toxin A	Clostridioides difficile	LSTM018	GCA_901003195.1
 137707146	PAT	N/A				AQN28352.1	Sequence 101 from patent US 9388394	Unknown		
-

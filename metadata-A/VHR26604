@@ -1,0 +1,5 @@
+>VHR26604
+Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	Strain	Assembly
+253594394	INSDC	CAAJOQ010000001.1	69428	77497	+	VHR26604.1	Toxin A	Clostridioides difficile	ham004	GCA_901002855.1
+253594394	INSDC	CAAJOX010000007.1	69649	77718	+	VHR66437.1	Toxin A	Clostridioides difficile	Cam027	GCA_901002925.1
+253594394	INSDC	CAAJSZ010000007.1	69491	77560	+	VHV60085.1	Toxin A	Clostridioides difficile	Exe009	GCA_901003995.1

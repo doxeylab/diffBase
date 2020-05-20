@@ -1,0 +1,4 @@
+>WP_142794472
+Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	Strain	Assembly
+260075447	RefSeq	NZ_SERB01000023.1	31428	39749	-	WP_142794472.1	peptidase C80	Clostridioides difficile	LC4-009-8	GCF_007001495.1
+260075447	INSDC	SERB01000023.1	31428	39749	-	TQY56667.1	peptidase C80	Clostridioides difficile	LC4-009-8	GCA_007001495.1

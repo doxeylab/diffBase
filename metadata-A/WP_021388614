@@ -1,0 +1,4 @@
+>WP_021388614
+Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	Strain	Assembly
+42921599	RefSeq	NZ_AVID01000018.1	45955	53343	+	WP_021388614.1	toxin B	Clostridioides difficile CD181	CD181	GCF_000449585.2
+42921599	INSDC	AVID01000018.1	45955	53343	+	EQF56578.1	toxin B	Clostridioides difficile CD181	CD181	GCA_000449585.2

@@ -1,0 +1,4 @@
+>WP_021416544
+Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	Strain	Assembly
+42950287	RefSeq	NZ_AVLO01000036.1	9545	16639	+	WP_021416544.1	glycosylating toxin TcdA	Clostridioides difficile P5	P5	GCF_000450965.2
+42950287	INSDC	AVLO01000036.1	9545	16639	+	EQJ00853.1	toxin B	Clostridioides difficile P5	P5	GCA_000450965.2

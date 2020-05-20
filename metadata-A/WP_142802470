@@ -1,0 +1,4 @@
+>WP_142802470
+Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	Strain	Assembly
+260075591	RefSeq	NZ_SERA01000030.1	35927	43192	+	WP_142802470.1	glycosylating toxin TcdA	Clostridioides difficile	LC4-009-7	GCF_007001505.1
+260075591	INSDC	SERA01000030.1	35927	43192	+	TQY67237.1	glycosylating toxin TcdA	Clostridioides difficile	LC4-009-7	GCA_007001505.1

@@ -1,0 +1,4 @@
+>WP_021427868
+Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	Strain	Assembly
+42965418	RefSeq	NZ_AVNA01000015.1	31610	39277	+	WP_021427868.1	toxin B	Clostridioides difficile P77	P77	GCF_000452205.2
+42965418	INSDC	AVNA01000015.1	31610	39277	+	EQK44219.1	toxin B	Clostridioides difficile P77	P77	GCA_000452205.2

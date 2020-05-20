@@ -1,6 +1,4 @@
 >WP_021371861
-
 Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	Strain	Assembly
 42908049	RefSeq	NZ_AVGY01000052.1	57525	64625	+	WP_021371861.1	glycosylating toxin TcdB	Clostridioides difficile CD45	CD45	GCF_000449065.2
 42908049	INSDC	AVGY01000052.1	57525	64625	+	EQE69290.1	toxin B	Clostridioides difficile CD45	CD45	GCA_000449065.2
-

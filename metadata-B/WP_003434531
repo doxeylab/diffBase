@@ -1,5 +1,4 @@
 >WP_003434531
-
 Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	Strain	Assembly
 25752960	RefSeq	NZ_AVGU01000011.1	36721	43821	+	WP_003434531.1	glycosylating toxin TcdB	Clostridioides difficile CD41	CD41	GCF_000448985.2
 25752960	RefSeq	NZ_AVHK01000015.1	66574	73674	+	WP_003434531.1	glycosylating toxin TcdB	Clostridioides difficile CD104	CD104	GCF_000451245.2
@@ -16,6 +15,13 @@ Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	S
 25752960	RefSeq	NZ_FUUO01000004.1	213989	221089	-	WP_003434531.1	glycosylating toxin TcdB	Clostridioides difficile	CD12	GCF_900166475.1
 25752960	RefSeq	NZ_FUUP01000004.1	189772	196872	+	WP_003434531.1	glycosylating toxin TcdB	Clostridioides difficile	CD46	GCF_900166485.1
 25752960	RefSeq	NZ_HF928501.1	5404	12504	+	WP_003434531.1	glycosylating toxin TcdB	Clostridioides difficile E12	E12	GCF_000531535.1
+25752960	RefSeq	NZ_JAATNN010000175.1	953	8053	+	WP_003434531.1	glycosylating toxin TcdB	Clostridioides difficile	HC51	GCF_011881435.1
+25752960	RefSeq	NZ_JAATWO010000056.1	12264	19364	-	WP_003434531.1	glycosylating toxin TcdB	Clostridioides difficile	HC89	GCF_012029845.1
+25752960	RefSeq	NZ_JAAUXH010000045.1	469	7569	+	WP_003434531.1	glycosylating toxin TcdB	Clostridioides difficile	HC164	GCF_012029735.1
+25752960	RefSeq	NZ_JAAXLM010000030.1	12329	19429	-	WP_003434531.1	glycosylating toxin TcdB	Clostridioides difficile	OC110	GCF_012276915.1
+25752960	RefSeq	NZ_JAAXLP010000013.1	40463	47563	+	WP_003434531.1	glycosylating toxin TcdB	Clostridioides difficile	HC142	GCF_012277125.1
+25752960	RefSeq	NZ_JAAXLQ010000006.1	58985	66085	+	WP_003434531.1	glycosylating toxin TcdB	Clostridioides difficile	HC191	GCF_012277145.1
+25752960	RefSeq	NZ_JABBZH010000024.1	55050	62150	-	WP_003434531.1	glycosylating toxin TcdB	Clostridioides difficile	HC131	GCF_012956715.1
 25752960	RefSeq	NZ_JH379238.1	5442	12542	+	WP_003434531.1	glycosylating toxin TcdB	Clostridioides difficile 70-100-2010	70-100-2010	GCF_000235905.1
 25752960	RefSeq	NZ_MNBA01000193.1	205532	212632	-	WP_003434531.1	glycosylating toxin TcdB	Clostridioides difficile	5475-DH/ST42	GCF_002300835.1
 25752960	RefSeq	NZ_MNBS01000116.1	967	8067	+	WP_003434531.1	glycosylating toxin TcdB	Clostridioides difficile	5481-DH/ST42	GCF_002300925.1
@@ -71,6 +77,13 @@ Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	S
 25752960	INSDC	AVHK01000015.1	66574	73674	+	EQE93423.1	toxin B	Clostridioides difficile CD104	CD104	GCA_000451245.2
 25752960	INSDC	AVIH01000019.1	37267	44367	+	EQF72163.1	toxin B	Clostridioides difficile CD206	CD206	GCA_000449685.2
 25752960	INSDC	AVIJ01000012.1	25483	32583	+	EQF77236.1	toxin B	Clostridioides difficile CD212	CD212	GCA_000449725.2
+25752960	INSDC	JAATNN010000175.1	953	8053	+	NIZ94725.1	glycosylating toxin TcdB	Clostridioides difficile	HC51	
+25752960	INSDC	JAAUXH010000045.1	469	7569	+	NJI43652.1	glycosylating toxin TcdB	Clostridioides difficile	HC164	
+25752960	INSDC	JAATWO010000056.1	12264	19364	-	NJJ64491.1	glycosylating toxin TcdB	Clostridioides difficile	HC89	
+25752960	INSDC	JAAXLQ010000006.1	58985	66085	+	NKN43509.1	glycosylating toxin TcdB	Clostridioides difficile	HC191	
+25752960	INSDC	JAAXLM010000030.1	12329	19429	-	NKN49126.1	glycosylating toxin TcdB	Clostridioides difficile	OC110	
+25752960	INSDC	JAAXLP010000013.1	40463	47563	+	NKN82748.1	glycosylating toxin TcdB	Clostridioides difficile	HC142	
+25752960	INSDC	JABBZH010000024.1	55050	62150	-	NMT39042.1	glycosylating toxin TcdB	Clostridioides difficile	HC131	
 25752960	INSDC	MTVW01000001.1	724645	731745	+	OMK32592.1	toxin B	Clostridioides difficile	20110973	GCA_001971945.1
 25752960	INSDC	MTVY01000001.1	736225	743325	+	OMK41837.1	toxin B	Clostridioides difficile	20110995	GCA_001972085.1
 25752960	INSDC	MOPE01000104.1	59514	66614	+	PBD76120.1	peptidase C80	Clostridioides difficile	5488-DH/ST42	GCA_002301025.1
@@ -123,4 +136,3 @@ Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	S
 25752960	PAT	N/A				AJN69007.1	Sequence 131 from patent US 8900597	Unknown		
 25752960	PAT	N/A				AOD83396.1	Sequence 131 from patent US 9187536	Unknown		
 25752960	PAT	N/A				AVA67128.1	Sequence 131 from patent US 9745354	Unknown		
-

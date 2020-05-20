@@ -1,5 +1,4 @@
 >P16154
-
 Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	Strain	Assembly
 861681	Swiss-Prot	N/A				P16154.2	Toxin A	Clostridioides difficile		
 861681	INSDC	X51797.1	1282	9414	+	CAA36094.1	unnamed protein product	Clostridioides difficile	isolate VPI 10463	
@@ -33,4 +32,3 @@ Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	S
 861681	PAT	N/A				QFP11993.1	Sequence 1 from patent US 10369206	Unknown		
 861681	PAT	N/A				QFP25939.1	Sequence 1 from patent US 10377816	Unknown		
 861681	PAT	N/A				QHZ80418.1	Sequence 5 from patent US 10533036	Unknown		
-

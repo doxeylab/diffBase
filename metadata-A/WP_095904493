@@ -1,5 +1,4 @@
 >WP_095904493
-
 Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	Strain	Assembly
 34121705	RefSeq	NZ_CAADEN010000002.1	68056	76188	+	WP_095904493.1	glycosylating toxin TcdA	Clostridioides difficile	SWE007	GCF_900692305.1
 34121705	RefSeq	NZ_CAADEQ010000005.1	209184	217316	-	WP_095904493.1	glycosylating toxin TcdA	Clostridioides difficile	SWE008	GCF_900692335.1
@@ -15,4 +14,3 @@ Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	S
 34121705	PAT	N/A				AJN69016.1	Sequence 140 from patent US 8900597	Unknown		
 34121705	PAT	N/A				AOD83405.1	Sequence 140 from patent US 9187536	Unknown		
 34121705	PAT	N/A				AVA67137.1	Sequence 140 from patent US 9745354	Unknown		
-

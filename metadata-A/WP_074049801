@@ -1,0 +1,17 @@
+>WP_074049801
+Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	Strain	Assembly
+133626040	RefSeq	NZ_CZXX01000026.1	25331	31118	+	WP_074049801.1	glycosylating toxin TcdA	Clostridioides difficile		GCF_900011815.1
+133626040	RefSeq	NZ_CZZJ01000050.1	25510	31297	+	WP_074049801.1	glycosylating toxin TcdA	Clostridioides difficile		GCF_900008715.1
+133626040	RefSeq	NZ_CZZS01000041.1	9556	15343	+	WP_074049801.1	glycosylating toxin TcdA	Clostridioides difficile		GCF_900010485.1
+133626040	RefSeq	NZ_FAAO01000041.1	25309	31096	+	WP_074049801.1	glycosylating toxin TcdA	Clostridioides difficile		GCF_900010905.1
+133626040	RefSeq	NZ_FACJ01000036.1	25530	31317	+	WP_074049801.1	glycosylating toxin TcdA	Clostridioides difficile		GCF_900012255.1
+133626040	RefSeq	NZ_FACR01000036.1	25330	31117	+	WP_074049801.1	glycosylating toxin TcdA	Clostridioides difficile		GCF_900008455.1
+133626040	RefSeq	NZ_FAGM01000027.1	32523	38310	+	WP_074049801.1	glycosylating toxin TcdA	Clostridioides difficile		GCF_900013785.1
+133626040	RefSeq	NZ_FAHT01000036.1	1	5788	-	WP_074049801.1	glycosylating toxin TcdA	Clostridioides difficile		GCF_900008495.1
+133626040	RefSeq	NZ_FAIG01000068.1	1	5788	-	WP_074049801.1	glycosylating toxin TcdA	Clostridioides difficile		GCF_900016315.1
+133626040	RefSeq	NZ_FAKG01000027.1	25331	31118	+	WP_074049801.1	glycosylating toxin TcdA	Clostridioides difficile		GCF_900014435.1
+133626040	RefSeq	NZ_FAKU01000034.1	31637	37424	+	WP_074049801.1	glycosylating toxin TcdA	Clostridioides difficile		GCF_900014515.1
+133626040	RefSeq	NZ_FAMR01000059.1	1	5788	-	WP_074049801.1	glycosylating toxin TcdA	Clostridioides difficile		GCF_900015675.1
+133626040	RefSeq	NZ_FAMW01000047.1	25544	31331	+	WP_074049801.1	glycosylating toxin TcdA	Clostridioides difficile		GCF_900009245.1
+133626040	RefSeq	NZ_FAOA01000067.1	1	5788	-	WP_074049801.1	glycosylating toxin TcdA	Clostridioides difficile		GCF_900010995.1
+133626040	RefSeq	NZ_FAOE01000056.1	1	5788	-	WP_074049801.1	glycosylating toxin TcdA	Clostridioides difficile		GCF_900014795.1

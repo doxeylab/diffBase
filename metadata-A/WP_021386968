@@ -1,0 +1,4 @@
+>WP_021386968
+Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	Strain	Assembly
+42920211	RefSeq	NZ_AVHY01000025.1	51346	59013	+	WP_021386968.1	toxin B	Clostridioides difficile CD166	CD166	GCF_000449465.2
+42920211	INSDC	AVHY01000025.1	51346	59013	+	EQF39487.1	toxin B	Clostridioides difficile CD166	CD166	GCA_000449465.2

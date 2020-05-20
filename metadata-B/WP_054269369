@@ -1,7 +1,5 @@
 >WP_054269369
-
 Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	Strain	Assembly
 92588863	RefSeq	NZ_CABMIX010000024.1	99858	106958	+	WP_054269369.1	glycosylating toxin TcdB	Clostridioides difficile		GCF_902386425.1
 92588863	RefSeq	NZ_JRHN01000024.1	99858	106958	+	WP_054269369.1	glycosylating toxin TcdB	Clostridioides difficile	CD10-165	GCF_001299635.1
 92588863	INSDC	JRHN01000024.1	99858	106958	+	KPI53030.1	peptidase C80	Clostridioides difficile	CD10-165	GCA_001299635.1
-

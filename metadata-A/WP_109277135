@@ -1,0 +1,5 @@
+>WP_109277135
+Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	Strain	Assembly
+188316455	RefSeq	NZ_CAADAP010000016.1	2547	10616	-	WP_109277135.1	glycosylating toxin TcdA	Clostridioides difficile	lsh08	GCF_900688265.1
+188316455	RefSeq	NZ_FMME01000004.1	68276	76345	+	WP_109277135.1	glycosylating toxin TcdA	Clostridioides difficile		GCF_900096415.1
+188316455	INSDC	CAADAP010000016.1	2547	10616	-	VFD48247.1	Toxin A	Clostridioides difficile	lsh08	GCA_900688265.1

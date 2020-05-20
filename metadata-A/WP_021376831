@@ -1,0 +1,4 @@
+>WP_021376831
+Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	Strain	Assembly
+42913369	RefSeq	NZ_AVHF01000044.1	9434	16759	+	WP_021376831.1	toxin B	Clostridioides difficile CD70	CD70	GCF_000449225.2
+42913369	INSDC	AVHF01000044.1	9434	16759	+	EQE99611.1	toxin B	Clostridioides difficile CD70	CD70	GCA_000449225.2

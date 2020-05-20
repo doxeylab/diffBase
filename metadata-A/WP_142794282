@@ -1,0 +1,4 @@
+>WP_142794282
+Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	Strain	Assembly
+260067218	RefSeq	NZ_QWVM01000020.1	39338	47659	-	WP_142794282.1	peptidase C80	Clostridioides difficile	LC1-11-0728	GCF_007001365.1
+260067218	INSDC	QWVM01000020.1	39338	47659	-	TQX33250.1	peptidase C80	Clostridioides difficile	LC1-11-0728	GCA_007001365.1

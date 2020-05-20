@@ -1,0 +1,5 @@
+>VHS58454
+Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	Strain	Assembly
+253595847	INSDC	CAAJPU010000004.1	69719	77788	+	VHS58454.1	Toxin A	Clostridioides difficile	Bir029	GCA_901003145.1
+253595847	INSDC	CAAJQI010000004.1	69614	77683	+	VHT05379.1	Toxin A	Clostridioides difficile	LSTM016	GCA_901003275.1
+253595847	INSDC	CAAKKR010000007.1	69614	77683	+	VIM32532.1	Toxin A	Clostridioides difficile	Liv185	GCA_901008875.1

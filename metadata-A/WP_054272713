@@ -1,6 +1,4 @@
 >WP_054272713
-
 Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	Strain	Assembly
 92591876	RefSeq	NZ_JPPA01000028.1	174256	182172	+	WP_054272713.1	peptidase C80	Clostridioides difficile	RA09-70	GCF_001299495.1
 92591876	INSDC	JPPA01000028.1	174256	182172	+	KPI56898.1	peptidase C80	Clostridioides difficile	RA09-70	GCA_001299495.1
-

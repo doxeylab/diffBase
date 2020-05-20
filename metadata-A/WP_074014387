@@ -1,0 +1,21 @@
+>WP_074014387
+Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	Strain	Assembly
+133607130	RefSeq	NZ_CZWK01000061.1	9469	15256	+	WP_074014387.1	glycosylating toxin TcdA	Clostridioides difficile		GCF_900007545.1
+133607130	RefSeq	NZ_CZWN01000083.1	1	5788	-	WP_074014387.1	glycosylating toxin TcdA	Clostridioides difficile		GCF_900010815.1
+133607130	RefSeq	NZ_CZZR01000023.1	1	5788	-	WP_074014387.1	glycosylating toxin TcdA	Clostridioides difficile		GCF_900011945.1
+133607130	RefSeq	NZ_CZZW01000063.1	1	5788	-	WP_074014387.1	glycosylating toxin TcdA	Clostridioides difficile		GCF_900011965.1
+133607130	RefSeq	NZ_CZZZ01000066.1	1	5788	-	WP_074014387.1	glycosylating toxin TcdA	Clostridioides difficile		GCF_900008395.1
+133607130	RefSeq	NZ_FAAS01000071.1	1	5788	-	WP_074014387.1	glycosylating toxin TcdA	Clostridioides difficile		GCF_900012055.1
+133607130	RefSeq	NZ_FADB01000024.1	1	5788	-	WP_074014387.1	glycosylating toxin TcdA	Clostridioides difficile		GCF_900012305.1
+133607130	RefSeq	NZ_FADH01000022.1	1	5788	-	WP_074014387.1	glycosylating toxin TcdA	Clostridioides difficile		GCF_900012765.1
+133607130	RefSeq	NZ_FAFT01000061.1	1	5788	-	WP_074014387.1	glycosylating toxin TcdA	Clostridioides difficile		GCF_900013655.1
+133607130	RefSeq	NZ_FAHC01000063.1	9585	15372	+	WP_074014387.1	glycosylating toxin TcdA	Clostridioides difficile		GCF_900012495.1
+133607130	RefSeq	NZ_FAIC01000021.1	1	5788	-	WP_074014387.1	glycosylating toxin TcdA	Clostridioides difficile		GCF_900013895.1
+133607130	RefSeq	NZ_FAIN01000055.1	1	5788	-	WP_074014387.1	glycosylating toxin TcdA	Clostridioides difficile		GCF_900008765.1
+133607130	RefSeq	NZ_FAJX01000092.1	8775	14562	+	WP_074014387.1	glycosylating toxin TcdA	Clostridioides difficile		GCF_900014415.1
+133607130	RefSeq	NZ_FAKH01000033.1	1	5788	-	WP_074014387.1	glycosylating toxin TcdA	Clostridioides difficile		GCF_900014295.1
+133607130	RefSeq	NZ_FALT01000068.1	1	5788	-	WP_074014387.1	glycosylating toxin TcdA	Clostridioides difficile		GCF_900014585.1
+133607130	RefSeq	NZ_FAMG01000075.1	1	5788	-	WP_074014387.1	glycosylating toxin TcdA	Clostridioides difficile		GCF_900014655.1
+133607130	RefSeq	NZ_FAMI01000041.1	1	5788	-	WP_074014387.1	glycosylating toxin TcdA	Clostridioides difficile		GCF_900014945.1
+133607130	RefSeq	NZ_FANK01000057.1	1	5788	-	WP_074014387.1	glycosylating toxin TcdA	Clostridioides difficile		GCF_900015935.1
+133607130	RefSeq	NZ_FANW01000157.1	198	5985	+	WP_074014387.1	glycosylating toxin TcdA	Clostridioides difficile		GCF_900013395.1

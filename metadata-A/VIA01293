@@ -1,0 +1,4 @@
+>VIA01293
+Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	Strain	Assembly
+253233547	INSDC	CAAJXO010000014.1	22999	31473	-	VIA01293.1	Toxin A	Clostridioides difficile	078GUE014	GCA_901005205.1
+253233547	INSDC	CAAKLM010000012.1	22981	31455	-	VIN13235.1	Toxin A	Clostridioides difficile	078NET036	GCA_901009095.1

@@ -1,7 +1,5 @@
 >WP_087565758
-
 Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	Strain	Assembly
 151258953	RefSeq	NZ_NGUY01000023.1	5486	12586	+	WP_087565758.1	glycosylating toxin TcdB	Clostridioides difficile	WCHCD15108050	GCF_002165155.1
 151258953	RefSeq	NZ_VALF01000034.1	16732	23832	-	WP_087565758.1	glycosylating toxin TcdB	Clostridioides difficile	WCH065050	GCF_005786645.1
 151258953	INSDC	VALF01000034.1	16732	23832	-	TLE38623.1	glycosylating toxin TcdB	Clostridioides difficile	WCH065050	GCA_005786645.1
-

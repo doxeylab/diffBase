@@ -1,8 +1,6 @@
 >WP_021426110
-
 Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	Strain	Assembly
 42960292	RefSeq	NZ_AVMQ01000017.1	58542	65642	+	WP_021426110.1	glycosylating toxin TcdB	Clostridioides difficile P59	P59	GCF_000452005.1
 42960292	RefSeq	NZ_OEZU01000006.1	10849	17949	-	WP_021426110.1	glycosylating toxin TcdB	Clostridioides difficile	CH6230	GCF_900243205.1
 42960292	INSDC	AVMQ01000017.1	58542	65642	+	EQK09453.1	toxin B	Clostridioides difficile P59	P59	GCA_000452005.1
 42960292	INSDC	CAAJQC010000014.1	39596	46696	+	VHS92243.1	Toxin B	Clostridioides difficile	LSTM018	GCA_901003195.1
-

@@ -1,0 +1,4 @@
+>WP_021418419
+Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	Strain	Assembly
+42952054	RefSeq	NZ_AVLU01000017.1	33606	40994	+	WP_021418419.1	toxin B	Clostridioides difficile P13	P13	GCF_000451665.2
+42952054	INSDC	AVLU01000017.1	33606	40994	+	EQJ19351.1	toxin B	Clostridioides difficile P13	P13	GCA_000451665.2

@@ -1,5 +1,4 @@
 >WP_009902069
-
 Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	Strain	Assembly
 95451	RefSeq	NC_009089.1	787393	794493	+	WP_009902069.1	glycosylating toxin TcdB	Clostridioides difficile 630	630	GCF_000009205.2
 95451	RefSeq	NZ_AVGL01000018.1	25017	32117	+	WP_009902069.1	glycosylating toxin TcdB	Clostridioides difficile CD13	CD13	GCF_000448885.2
@@ -34,6 +33,7 @@ Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	S
 95451	RefSeq	NZ_FUSA01000004.1	200747	207847	+	WP_009902069.1	glycosylating toxin TcdB	Clostridioides difficile	VRECD0096	GCF_900165815.1
 95451	RefSeq	NZ_HF923686.1	7113	14213	+	WP_009902069.1	glycosylating toxin TcdB	Clostridioides difficile E28	E28	GCF_000530595.1
 95451	RefSeq	NZ_HF926300.1	16102	23202	+	WP_009902069.1	glycosylating toxin TcdB	Clostridioides difficile T3	T3	GCF_000531225.1
+95451	RefSeq	NZ_JAATWP010000004.1	1536	8636	+	WP_009902069.1	glycosylating toxin TcdB	Clostridioides difficile	OC96	GCF_012029835.1
 95451	RefSeq	NZ_JXBP01000004.1	58739	65839	+	WP_009902069.1	glycosylating toxin TcdB	Clostridioides difficile	LIBA-5701	GCF_000828235.1
 95451	RefSeq	NZ_JXBQ01000025.1	7695	14795	-	WP_009902069.1	glycosylating toxin TcdB	Clostridioides difficile	LIBA-5719	GCF_000828255.1
 95451	RefSeq	NZ_JXBR01000018.1	58626	65726	+	WP_009902069.1	glycosylating toxin TcdB	Clostridioides difficile	LIBA-5734	GCF_000828225.1
@@ -73,6 +73,7 @@ Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	S
 95451	INSDC	AVMN01000011.1	46819	53919	+	EQJ95904.1	toxin B	Clostridioides difficile P49	P49	GCA_000451945.2
 95451	INSDC	AWZO01000016.1	46904	54004	+	ERM49979.1	toxin B	Clostridioides difficile P53	P53	GCA_000473645.2
 95451	INSDC	QKRD01000001.1	740222	747322	+	NAT12089.1	glycosylating toxin TcdB	Clostridioides difficile	CBA7208	
+95451	INSDC	JAATWP010000004.1	1536	8636	+	NJJ69936.1	glycosylating toxin TcdB	Clostridioides difficile	OC96	
 95451	INSDC	MPDY01000434.1	737	7837	+	OJT86925.1	peptidase C80	Clostridioides difficile	NT513	GCA_001896455.1
 95451	INSDC	MTVZ01000001.1	773967	781067	+	OMK48482.1	toxin B	Clostridioides difficile	20111003	GCA_001972105.1
 95451	INSDC	NBTS02000002.1	3638258	3645358	+	PNL86555.1	glycosylating toxin TcdB	Clostridioides difficile	FDAARGOS_268	GCA_002082945.2
@@ -139,4 +140,3 @@ Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	S
 95451	PAT	N/A				QFP11994.1	Sequence 2 from patent US 10369206	Unknown		
 95451	PAT	N/A				QFP25940.1	Sequence 2 from patent US 10377816	Unknown		
 95451	PAT	N/A				QHZ80419.1	Sequence 6 from patent US 10533036	Unknown		
-

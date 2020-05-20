@@ -1,5 +1,4 @@
 >WP_022620617
-
 Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	Strain	Assembly
 44173531	RefSeq	NZ_FUQC01000002.1	174691	181791	+	WP_022620617.1	glycosylating toxin TcdB	Clostridioides difficile	VRECD0180	GCF_900165325.1
 44173531	RefSeq	NZ_FUQK01000001.1	336240	343340	+	WP_022620617.1	glycosylating toxin TcdB	Clostridioides difficile	VRECD0190	GCF_900165385.1
@@ -14,4 +13,3 @@ Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	S
 44173531	INSDC	FUQC01000002.1	174691	181791	+	SJS06102.1	Toxin B	Clostridioides difficile	VRECD0180	GCA_900165325.1
 44173531	INSDC	FUQK01000001.1	336240	343340	+	SJS24885.1	Toxin B	Clostridioides difficile	VRECD0190	GCA_900165385.1
 44173531	INSDC	FUQL01000002.1	66577	73677	+	SJS26667.1	Toxin B	Clostridioides difficile	VRECD0191	GCA_900165405.1
-

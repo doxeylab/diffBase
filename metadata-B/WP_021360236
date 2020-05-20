@@ -1,5 +1,4 @@
 >WP_021360236
-
 Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	Strain	Assembly
 42896623	RefSeq	NZ_AVGJ01000041.1	1003	8103	+	WP_021360236.1	glycosylating toxin TcdB	Clostridioides difficile CD8	CD8	GCF_000448845.2
 42896623	RefSeq	NZ_AVGK01000007.1	321832	328932	+	WP_021360236.1	glycosylating toxin TcdB	Clostridioides difficile CD9	CD9	GCF_000448865.2
@@ -19,4 +18,3 @@ Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	S
 42896623	INSDC	MOTL01000004.1	479	7579	+	PBI57158.1	peptidase C80	Clostridioides difficile	6627-AL/ST58	GCA_002303655.1
 42896623	INSDC	MOTM01000003.1	60458	67558	+	PBI61303.1	peptidase C80	Clostridioides difficile	6628-AL/ST58	GCA_002303675.1
 42896623	INSDC	SEPH01000055.1	12434	19534	-	TRA30505.1	glycosylating toxin TcdB	Clostridioides difficile	LC3P-119-1	GCA_007002415.1
-

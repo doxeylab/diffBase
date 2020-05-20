@@ -1,0 +1,4 @@
+>WP_021373291
+Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	Strain	Assembly
+42909500	RefSeq	NZ_AVHC01000037.1	32119	38651	+	WP_021373291.1	glycosylating toxin TcdA	Clostridioides difficile CD51	CD51	GCF_000449145.2
+42909500	INSDC	AVHC01000037.1	32119	38651	+	EQE80683.1	toxin B	Clostridioides difficile CD51	CD51	GCA_000449145.2

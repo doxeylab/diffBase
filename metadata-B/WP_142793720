@@ -1,0 +1,4 @@
+>WP_142793720
+Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	Strain	Assembly
+260076227	RefSeq	NZ_SEQG01000091.1	5191	12052	-	WP_142793720.1	glycosylating toxin TcdB	Clostridioides difficile	LC3P-135-3	GCF_007001925.1
+260076227	INSDC	SEQG01000091.1	5191	12052	-	TQZ39514.1	glycosylating toxin TcdB	Clostridioides difficile	LC3P-135-3	GCA_007001925.1

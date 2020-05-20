@@ -1,0 +1,4 @@
+>WP_022583414
+Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	Strain	Assembly
+44062835	RefSeq	NZ_AWZO01000016.1	55354	62403	+	WP_022583414.1	glycosylating toxin TcdA	Clostridioides difficile P53	P53	GCF_000473645.2
+44062835	INSDC	AWZO01000016.1	55354	62403	+	ERM49877.1	toxin B	Clostridioides difficile P53	P53	GCA_000473645.2

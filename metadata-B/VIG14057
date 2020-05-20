@@ -1,6 +1,4 @@
 >VIG14057
-
 Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	Strain	Assembly
 253233698	INSDC	CAAKDT010000031.1	22561	29661	+	VIG14057.1	Toxin B	Clostridioides difficile	MON003	GCA_901006825.1
 253233698	INSDC	CAAKEV010000033.1	7553	14653	-	VIG92077.1	Toxin B	Clostridioides difficile	MON021	GCA_901007075.1
-

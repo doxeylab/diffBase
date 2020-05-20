@@ -1,0 +1,4 @@
+>WP_131777524
+Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	Strain	Assembly
+234716094	RefSeq	NZ_CAADBE010000014.1	22981	30774	-	WP_131777524.1	peptidase C80	Clostridioides difficile	078LVP013	GCF_900688775.1
+234716094	INSDC	CAADBE010000014.1	22981	30774	-	VFD94023.1	Toxin A	Clostridioides difficile	078LVP013	GCA_900688775.1

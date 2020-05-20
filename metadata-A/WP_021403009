@@ -1,0 +1,4 @@
+>WP_021403009
+Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	Strain	Assembly
+42937072	RefSeq	NZ_AVJV01000021.1	34382	41061	+	WP_021403009.1	toxin B	Clostridioides difficile DA00212	DA00212	GCF_000450465.2
+42937072	INSDC	AVJV01000021.1	34382	41061	+	EQH28172.1	toxin B	Clostridioides difficile DA00212	DA00212	GCA_000450465.2

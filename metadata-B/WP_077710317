@@ -1,5 +1,4 @@
 >WP_077710317
-
 Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	Strain	Assembly
 137942235	RefSeq	NZ_FUTI01000002.1	354122	361222	-	WP_077710317.1	glycosylating toxin TcdB	Clostridioides difficile	CD21	GCF_900166155.1
 137942235	RefSeq	NZ_FUTJ01000002.1	354441	361541	-	WP_077710317.1	glycosylating toxin TcdB	Clostridioides difficile	CD38	GCF_900166165.1
@@ -7,4 +6,3 @@ Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	S
 137942235	INSDC	FUTI01000002.1	354122	361222	-	SJV23503.1	toxin B	Clostridioides difficile	CD21	GCA_900166155.1
 137942235	INSDC	FUTJ01000002.1	354441	361541	-	SJV40983.1	toxin B	Clostridioides difficile	CD38	GCA_900166165.1
 137942235	INSDC	FUUQ01000002.1	255763	262863	-	SJW60738.1	toxin B	Clostridioides difficile	CD08	GCA_900166505.1
-

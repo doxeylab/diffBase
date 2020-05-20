@@ -1,5 +1,4 @@
 >WP_009888442
-
 Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	Strain	Assembly
 5207373	RefSeq	NC_013315.1	710024	717124	+	WP_009888442.1	glycosylating toxin TcdB	Clostridioides difficile CD196	CD196	GCF_000085225.1
 5207373	RefSeq	NZ_AMDL01000002.1	560097	567197	+	WP_009888442.1	glycosylating toxin TcdB	Clostridioides difficile CD26A54_S	CD26A54_S	GCF_001484895.1
@@ -94,7 +93,6 @@ Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	S
 5207373	RefSeq	NZ_CP026597.1	720990	728090	+	WP_009888442.1	glycosylating toxin TcdB	Clostridioides difficile	10-00078	GCF_002946035.1
 5207373	RefSeq	NZ_CP026598.1	721181	728281	+	WP_009888442.1	glycosylating toxin TcdB	Clostridioides difficile	10-00253	GCF_002946135.1
 5207373	RefSeq	NZ_CP026599.1	721034	728134	+	WP_009888442.1	glycosylating toxin TcdB	Clostridioides difficile	09-00072	GCF_002946195.1
-5207373	RefSeq	NZ_CP028523.1	720951	728051	+	WP_009888442.1	glycosylating toxin TcdB	Clostridioides difficile	020474	GCF_003597775.1
 5207373	RefSeq	NZ_CP028525.1	721041	728141	+	WP_009888442.1	glycosylating toxin TcdB	Clostridioides difficile	020482	GCF_003597895.1
 5207373	RefSeq	NZ_CP028526.1	3508885	3515985	-	WP_009888442.1	glycosylating toxin TcdB	Clostridioides difficile	020688	GCF_003597795.1
 5207373	RefSeq	NZ_CP028527.1	721097	728197	+	WP_009888442.1	glycosylating toxin TcdB	Clostridioides difficile	020695	GCF_003597815.1
@@ -653,4 +651,3 @@ Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	S
 5207373	PAT	N/A				AVY38150.1	Sequence 4 from patent US 9896514	Unknown		
 5207373	PAT	N/A				QCA90688.1	Sequence 1 from patent US 10226523	Unknown		
 5207373	PAT	N/A				QFP11996.1	Sequence 4 from patent US 10369206	Unknown		
-

@@ -1,0 +1,5 @@
+>EQF47272
+Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	Strain	Assembly
+42920888	INSDC	AVIA01000050.1	45636	51782	+	EQF47272.1	toxin B	Clostridioides difficile CD170	CD170	GCA_000449505.2
+42920888	INSDC	AVIN01000034.1	21423	27569	+	EQG03027.1	toxin B	Clostridioides difficile 840	840	GCA_000449805.2
+42920888	INSDC	AVIT01000034.1	24162	30308	+	EQG23255.1	toxin B	Clostridioides difficile DA00062	DA00062	GCA_000449925.2

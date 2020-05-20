@@ -1,5 +1,4 @@
 >WP_077709087
-
 Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	Strain	Assembly
 45733474	RefSeq	NZ_CP020378.1	799345	806445	+	WP_077709087.1	glycosylating toxin TcdB	Clostridioides difficile	DSM 102859	GCF_003456975.1
 45733474	RefSeq	NZ_CP020379.1	853606	860706	+	WP_077709087.1	glycosylating toxin TcdB	Clostridioides difficile	DSM 102860	GCF_003457015.1
@@ -7,12 +6,13 @@ Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	S
 45733474	RefSeq	NZ_FUSQ01000020.1	5502	12602	+	WP_077709087.1	glycosylating toxin TcdB	Clostridioides difficile	CD04	GCF_900165975.1
 45733474	RefSeq	NZ_FUST01000021.1	66977	74077	-	WP_077709087.1	glycosylating toxin TcdB	Clostridioides difficile	CD60	GCF_900166005.1
 45733474	RefSeq	NZ_FUSU01000021.1	67040	74140	-	WP_077709087.1	glycosylating toxin TcdB	Clostridioides difficile	CD30	GCF_900166015.1
+45733474	RefSeq	NZ_JAAUXG010000050.1	17692	24792	-	WP_077709087.1	glycosylating toxin TcdB	Clostridioides difficile	HC129	GCF_012030175.1
 45733474	INSDC	CP020378.1	799345	806445	+	AXU26639.1	toxin B	Clostridioides difficile	DSM 102859	GCA_003456975.1
 45733474	INSDC	CP020379.1	853606	860706	+	AXU30498.1	toxin B	Clostridioides difficile	DSM 102860	GCA_003457015.1
 45733474	INSDC	CP020380.1	853599	860699	+	AXU34286.1	toxin B	Clostridioides difficile	DSM 102978	GCA_003457035.1
 45733474	INSDC	HG002394.1	5477	12577	+	CDF47237.1	tcdB	Clostridioides difficile	Ox1485	
+45733474	INSDC	JAAUXG010000050.1	17692	24792	-	NJI65729.1	glycosylating toxin TcdB	Clostridioides difficile	HC129	
 45733474	INSDC	FUST01000021.1	66977	74077	-	SJV30850.1	toxin B	Clostridioides difficile	CD60	GCA_900166005.1
 45733474	INSDC	FUSU01000021.1	67040	74140	-	SJV65707.1	toxin B	Clostridioides difficile	CD30	GCA_900166015.1
 45733474	INSDC	FUSQ01000020.1	5502	12602	+	SJV74335.1	toxin B	Clostridioides difficile	CD04	GCA_900165975.1
 45733474	INSDC	CAAJLR010000021.1	5470	12570	+	VHO94528.1	Toxin B	Clostridioides difficile	Liv080	GCA_901002195.1
-

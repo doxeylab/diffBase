@@ -1,0 +1,4 @@
+>WP_021369285
+Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	Strain	Assembly
+42906617	RefSeq	NZ_AVGV01000042.1	9477	16799	+	WP_021369285.1	toxin B	Clostridioides difficile CD42	CD42	GCF_000449005.2
+42906617	INSDC	AVGV01000042.1	9477	16799	+	EQE57915.1	toxin B	Clostridioides difficile CD42	CD42	GCA_000449005.2

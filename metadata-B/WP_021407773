@@ -1,5 +1,4 @@
 >WP_021407773
-
 Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	Strain	Assembly
 42942501	RefSeq	NZ_AVKP01000015.1	27839	34942	+	WP_021407773.1	glycosylating toxin TcdB	Clostridioides difficile F314	F314	GCF_000450785.2
 42942501	RefSeq	NZ_BIQE01000028.1	28642	35745	+	WP_021407773.1	glycosylating toxin TcdB	Clostridioides difficile	FD094	GCF_004315425.1
@@ -30,4 +29,3 @@ Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	S
 42942501	PAT	N/A				AOD83392.1	Sequence 127 from patent US 9187536	Unknown		
 42942501	PAT	N/A				AVA67123.1	Sequence 126 from patent US 9745354	Unknown		
 42942501	PAT	N/A				AVA67124.1	Sequence 127 from patent US 9745354	Unknown		
-

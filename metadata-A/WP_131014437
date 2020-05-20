@@ -1,0 +1,10 @@
+>WP_131014437
+Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	Strain	Assembly
+236583285	RefSeq	NZ_BIPD01000042.1	9631	15903	+	WP_131014437.1	glycosylating toxin TcdA	Clostridioides difficile	FD064	GCF_004314885.1
+236583285	RefSeq	NZ_BIPK01000072.1	1	6273	-	WP_131014437.1	glycosylating toxin TcdA	Clostridioides difficile	FD072	GCF_004315025.1
+236583285	RefSeq	NZ_BIPR01000063.1	9977	16249	+	WP_131014437.1	glycosylating toxin TcdA	Clostridioides difficile	FD079	GCF_004315165.1
+236583285	RefSeq	NZ_BIPV01000018.1	52156	58428	+	WP_131014437.1	glycosylating toxin TcdA	Clostridioides difficile	FD084	GCF_004315245.1
+236583285	RefSeq	NZ_BIRD01000068.1	9688	15960	+	WP_131014437.1	glycosylating toxin TcdA	Clostridioides difficile	FD121	GCF_004315925.1
+236583285	RefSeq	NZ_BITM01000083.1	9406	15678	+	WP_131014437.1	glycosylating toxin TcdA	Clostridioides difficile	FD192	GCF_004317145.1
+236583285	RefSeq	NZ_BIUJ01000074.1	9530	15802	+	WP_131014437.1	glycosylating toxin TcdA	Clostridioides difficile	FD215	GCF_004317605.1
+236583285	RefSeq	NZ_BIVH01000053.1	1	6273	-	WP_131014437.1	glycosylating toxin TcdA	Clostridioides difficile	FD240	GCF_004318085.1

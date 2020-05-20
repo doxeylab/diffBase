@@ -1,5 +1,4 @@
 >WP_003426838
-
 Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	Strain	Assembly
 25749026	RefSeq	NC_017175.1	734610	741713	+	WP_003426838.1	glycosylating toxin TcdB	Clostridioides difficile M68	M68	GCF_000210395.1
 25749026	RefSeq	NZ_AVIB01000080.1	263	7366	+	WP_003426838.1	glycosylating toxin TcdB	Clostridioides difficile CD175	CD175	GCF_000449525.2
@@ -154,7 +153,6 @@ Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	S
 25749026	RefSeq	NZ_MTVU01000001.1	806959	814062	+	WP_003426838.1	glycosylating toxin TcdB	Clostridioides difficile	20110960	GCF_001971875.1
 25749026	RefSeq	NZ_MTWI01000001.1	769473	776576	+	WP_003426838.1	glycosylating toxin TcdB	Clostridioides difficile	20121412	GCF_001972195.1
 25749026	RefSeq	NZ_OEZL01000085.1	85162	92265	+	WP_003426838.1	glycosylating toxin TcdB	Clostridioides difficile	1470	GCF_900243225.1
-25749026	RefSeq	NZ_QNWA01000017.1	30100	37203	-	WP_003426838.1	glycosylating toxin TcdB	Clostridioides difficile	GZ14	GCF_003327375.1
 25749026	RefSeq	NZ_QNWB01000017.1	10076	17179	-	WP_003426838.1	glycosylating toxin TcdB	Clostridioides difficile	GZ3	GCF_003327325.1
 25749026	RefSeq	NZ_QNWD01000044.1	10543	17646	-	WP_003426838.1	glycosylating toxin TcdB	Clostridioides difficile	ZR59	GCF_003327365.1
 25749026	RefSeq	NZ_QNWE01000020.1	10476	17579	-	WP_003426838.1	glycosylating toxin TcdB	Clostridioides difficile	ZR66	GCF_003327345.1
@@ -331,4 +329,3 @@ Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	S
 25749026	PAT	N/A				AJN68997.1	Sequence 121 from patent US 8900597	Unknown		
 25749026	PAT	N/A				AOD83386.1	Sequence 121 from patent US 9187536	Unknown		
 25749026	PAT	N/A				AVA67118.1	Sequence 121 from patent US 9745354	Unknown		
-

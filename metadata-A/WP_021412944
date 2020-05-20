@@ -1,0 +1,4 @@
+>WP_021412944
+Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	Strain	Assembly
+42946980	RefSeq	NZ_AVKY01000051.1	9578	15900	+	WP_021412944.1	glycosylating toxin TcdA	Clostridioides difficile Y202	Y202	GCF_000451165.2
+42946980	INSDC	AVKY01000051.1	9578	15900	+	EQI46192.1	toxin B	Clostridioides difficile Y202	Y202	GCA_000451165.2

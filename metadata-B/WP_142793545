@@ -1,5 +1,4 @@
 >WP_142793545
-
 Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	Strain	Assembly
 260075420	RefSeq	NZ_SEQU01000008.1	198557	205657	-	WP_142793545.1	glycosylating toxin TcdB	Clostridioides difficile	LC4-009-0	GCF_007001645.1
 260075420	RefSeq	NZ_SEQV01000007.1	198022	205122	-	WP_142793545.1	glycosylating toxin TcdB	Clostridioides difficile	LC4-009-1	GCF_007001605.1
@@ -17,4 +16,3 @@ Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	S
 260075420	INSDC	SEQU01000008.1	198557	205657	-	TQY75406.1	glycosylating toxin TcdB	Clostridioides difficile	LC4-009-0	GCA_007001645.1
 260075420	INSDC	SEQV01000007.1	198022	205122	-	TQY80058.1	glycosylating toxin TcdB	Clostridioides difficile	LC4-009-1	GCA_007001605.1
 260075420	INSDC	SEQW01000028.1	7680	14780	-	TQY84788.1	glycosylating toxin TcdB	Clostridioides difficile	LC4-009-2	GCA_007001595.1
-

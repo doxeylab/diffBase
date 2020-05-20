@@ -1,0 +1,12 @@
+>WP_009895695
+Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	Strain	Assembly
+14588978	RefSeq	NZ_CM000637.1	671996	678249	+	WP_009895695.1	glycosylating toxin TcdA	Clostridioides difficile QCD-63q42		GCF_000154625.1
+14588978	RefSeq	NZ_RQZQ01000023.1	1	6253	-	WP_009895695.1	glycosylating toxin TcdA	Clostridioides difficile	17-051-10330	GCF_003863045.1
+14588978	RefSeq	NZ_RRAF01000068.1	1	6254	-	WP_009895695.1	glycosylating toxin TcdA	Clostridioides difficile	17-245-01183	GCF_003862865.1
+14588978	RefSeq	NZ_RRAM01000024.1	35591	41844	+	WP_009895695.1	glycosylating toxin TcdA	Clostridioides difficile	17-267-03811	GCF_003862735.1
+14588978	RefSeq	NZ_RRAX01000018.1	1	6254	-	WP_009895695.1	glycosylating toxin TcdA	Clostridioides difficile	17-295-07069	GCF_003862565.1
+14588978	INSDC	RRAX01000018.1	1	6254	-	RRG36073.1	glycosylating toxin TcdA	Clostridioides difficile	17-295-07069	GCA_003862565.1
+14588978	INSDC	RRAM01000024.1	35591	41844	+	RRG67396.1	glycosylating toxin TcdA	Clostridioides difficile	17-267-03811	GCA_003862735.1
+14588978	INSDC	RRAF01000068.1	1	6254	-	RRH16046.1	glycosylating toxin TcdA	Clostridioides difficile	17-245-01183	GCA_003862865.1
+14588978	INSDC	RQZQ01000023.1	1	6253	-	RRH67581.1	glycosylating toxin TcdA	Clostridioides difficile	17-051-10330	GCA_003863045.1
+14588978	PAT	N/A				AVA97210.1	Sequence 1 from patent US 9770500	Unknown		

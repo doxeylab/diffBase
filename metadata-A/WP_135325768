@@ -1,0 +1,6 @@
+>WP_135325768
+Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	Strain	Assembly
+243080153	RefSeq	NZ_SRKG01000082.1	14112	21370	+	WP_135325768.1	glycosylating toxin TcdA	Clostridioides difficile	JIR8556	GCF_004684565.1
+243080153	RefSeq	NZ_SRKH01000018.1	14112	21370	+	WP_135325768.1	glycosylating toxin TcdA	Clostridioides difficile	JIR8504	GCF_004684585.1
+243080153	INSDC	SRKG01000082.1	14112	21370	+	TGA03528.1	glycosylating toxin TcdA	Clostridioides difficile	JIR8556	GCA_004684565.1
+243080153	INSDC	SRKH01000018.1	14112	21370	+	TGA31468.1	glycosylating toxin TcdA	Clostridioides difficile	JIR8504	GCA_004684585.1

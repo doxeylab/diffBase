@@ -1,6 +1,3 @@
 >WP_135001061
-
 Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	Strain	Assembly
-180379640	RefSeq	N/A				WP_135001061.1	glycosylating toxin TcdB	Clostridioides difficile		
 180379640	INSDC	LQZJ01000045.1	27286	34386	+	PPS86364.1	peptidase C80	Clostridioides difficile	33736	GCA_002939365.1
-

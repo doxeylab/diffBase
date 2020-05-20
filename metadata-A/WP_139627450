@@ -1,0 +1,4 @@
+>WP_139627450
+Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	Strain	Assembly
+253439088	RefSeq	NZ_CAAJNJ010000044.1	22972	31104	+	WP_139627450.1	glycosylating toxin TcdA	Clostridioides difficile	Bel022	GCF_901002605.1
+253439088	INSDC	CAAJNJ010000044.1	22972	31104	+	VHQ50538.1	Toxin A	Clostridioides difficile	Bel022	GCA_901002605.1

@@ -1,0 +1,4 @@
+>WP_077744969
+Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	Strain	Assembly
+137937267	RefSeq	NZ_FUTY01000012.1	97153	104604	+	WP_077744969.1	peptidase C80	Clostridioides difficile	CD20	GCF_900166315.1
+137937267	INSDC	FUTY01000012.1	97153	104604	+	SJV96580.1	toxin A	Clostridioides difficile	CD20	GCA_900166315.1

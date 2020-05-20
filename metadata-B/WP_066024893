@@ -1,6 +1,4 @@
 >WP_066024893
-
 Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	Strain	Assembly
 115470847	RefSeq	NZ_MBGB02000039.1	5409	12509	+	WP_066024893.1	glycosylating toxin TcdB	Clostridioides difficile	WCHCD070133	GCF_001704805.2
 115470847	INSDC	CAAJZI010000047.1	2689	9789	-	VIB65762.1	Toxin B	Clostridioides difficile	078NET080	GCA_901005665.1
-

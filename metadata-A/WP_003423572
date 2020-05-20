@@ -1,0 +1,5 @@
+>WP_003423572
+Id	Source	Nucleotide Accession	Start	Stop	Strand	Protein	Protein Name	Organism	Strain	Assembly
+20089422	RefSeq	NZ_GG770748.1	341607	347959	-	WP_003423572.1	toxin A	Clostridioides difficile NAP07	NAP07	GCF_000164655.1
+20089422	INSDC	ADVM01000023.1	1	6353	-	EFH16595.1	cell wall-binding repeat protein	Clostridioides difficile NAP07	NAP07	GCA_000164655.1
+20089422	INSDC	GG770748.1	341607	347959	-	EFH16595.1	cell wall-binding repeat protein	Clostridioides difficile NAP07	NAP07	GCA_000164655.1
