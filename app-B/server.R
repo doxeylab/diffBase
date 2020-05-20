@@ -1,6 +1,6 @@
 #-------------------------------------------------------------------------------
 # server.R
-# Last modified: 2020-05-18 16:03:56 (CEST)
+# Last modified: 2020-05-20 13:03:04 (CEST)
 # BJM Tremblay
 
 msg("Loading server")
@@ -52,6 +52,12 @@ server <- function(input, output, session) {
       SELECTED_TYPE$WHICH <- QType
       SELECTED_SUBTYPE[[QType]] <- SType
       CURRENT_PAGE$WHICH <- "INFO"
+      updateSelectInput(
+        session, "SUBTYPE_SELECTOR",
+        label = "",
+        choices = names(SEQ_NAMES_LIST[[SELECTED_TYPE$WHICH]]),
+        selected = SELECTED_SUBTYPE[[SELECTED_TYPE$WHICH]]
+      )
     }
   })
 
@@ -126,7 +132,6 @@ server <- function(input, output, session) {
     paste(
       "<b>Representative sequence:</b>",
       names(SEQ_NAMES_ALL[SELECTED_SUBTYPE[[SELECTED_TYPE$WHICH]]])
-      # SEQ_NAMES_ALL[SELECTED_SUBTYPE[[SELECTED_TYPE$WHICH]]]
     )
   })
 
