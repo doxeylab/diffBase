@@ -1,6 +1,6 @@
 #-------------------------------------------------------------------------------
 # global.R
-# Last modified: 2020-05-20 12:33:11 (CEST)
+# Last modified: 2020-05-20 12:41:47 (CEST)
 # BJM Tremblay
 
 LAST_UPDATE_DATE <- function() "2020-05-20"
@@ -72,7 +72,7 @@ make_type_info <- function() {
       label = "",
       choices = names(SEQ_NAMES_LIST$B1),
       selected = "B1.1",
-      width = "85px"
+      width = "145px"
     ),
     br(),
     downloadLink("DOWNLOAD_TYPE", "Download all subtype sequences")
