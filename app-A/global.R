@@ -1,6 +1,6 @@
 #-------------------------------------------------------------------------------
 # global.R
-# Last modified: 2020-05-20 12:41:57 (CEST)
+# Last modified: 2020-05-20 12:43:22 (CEST)
 # BJM Tremblay
 
 LAST_UPDATE_DATE <- function() "2020-05-20"
@@ -79,13 +79,6 @@ make_type_info <- function() {
   )
 }
 
-# show_metadata <- function(subtype) {
-#   ACCs <- unique(META2ACC$Acc[META2ACC$Subtype == subtype])
-#   i <- pmatch(names(METADATA), ACCs)
-#   i <- i[!is.na(i)]
-#   x <- METADATA[i]
-#   if (length(x)) do.call(rbind, x) else NULL
-# }
 show_metadata <- function(subtype) {
   ACCs <- unique(META2ACC$Acc[META2ACC$Subtype == subtype])
   ACCs <- vapply(strsplit(ACCs, ".", fixed = TRUE), function(x) x[1], character(1))
