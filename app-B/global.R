@@ -1,6 +1,6 @@
 #-------------------------------------------------------------------------------
 # global.R
-# Last modified: 2020-05-20 12:41:47 (CEST)
+# Last modified: 2020-05-22 21:34:39 (CEST)
 # BJM Tremblay
 
 LAST_UPDATE_DATE <- function() "2020-05-20"
@@ -80,10 +80,24 @@ make_type_info <- function() {
 }
 
 show_metadata <- function(subtype) {
-  ACCs <- unique(META2ACC$Acc[META2ACC$Subtype == subtype])
+  ACCs <- META2ACC$Acc[META2ACC$Subtype == subtype]
   ACCs <- vapply(strsplit(ACCs, ".", fixed = TRUE), function(x) x[1], character(1))
-  x <- METADATA[ACCs]
-  if (length(x)) do.call(rbind, x) else NULL
+  ACCs <- unique(ACCs)
+  if (any(!ACCs %in% names(METADATA))) {
+    ACCs2 <- ACCs[!ACCs %in% names(METADATA)]
+    ACCs <- ACCs[ACCs %in% names(METADATA)]
+    ACCs2 <- tibble(
+      Id = NA, Source = NA,
+      `Nucleotide Accession` = NA,
+      Start = NA, Stop = NA, Strand = NA, Protein = ACCs2,
+      `Protein Name` = NA, Organism = NA, Strain = NA, Assembly = NA
+    )
+    if (!length(ACCs)) ACCs2
+    else rbind(do.call(rbind, METADATA[ACCs]), ACCs2)
+  } else {
+    x <- METADATA[ACCs]
+    if (length(x)) do.call(rbind, x) else NULL
+  }
 }
 
 make_type_info_more <- function() {
