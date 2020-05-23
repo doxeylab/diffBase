@@ -1,6 +1,6 @@
 #-------------------------------------------------------------------------------
 # global.R
-# Last modified: 2020-05-22 21:35:44 (CEST)
+# Last modified: 2020-05-23 16:42:49 (CEST)
 # BJM Tremblay
 
 LAST_UPDATE_DATE <- function() "2020-05-20"

@@ -1,6 +1,6 @@
 #-------------------------------------------------------------------------------
 # server.R
-# Last modified: 2020-05-23 15:47:40 (CEST)
+# Last modified: 2020-05-23 16:42:00 (CEST)
 # BJM Tremblay
 
 msg("Loading server")
@@ -190,12 +190,35 @@ server <- function(input, output, session) {
     )
   })
 
+  TREE_STATE <- reactiveValues(SHOW = FALSE)
+
+  observeEvent(input$TREE_BUTTON, {
+    if (TREE_STATE$SHOW)
+      TREE_STATE$SHOW <- FALSE
+    else
+      TREE_STATE$SHOW <- TRUE
+  })
+
+  observeEvent(CURRENT_PAGE$WHICH, {
+    if (CURRENT_PAGE$WHICH != "WELCOME")
+      TREE_STATE$SHOW <- FALSE
+    else
+      TREE_STATE$SHOW <- TRUE
+  })
+  output$SHOW_PLOT <- eventReactive(TREE_STATE$SHOW, {
+    TREE_STATE$SHOW
+  })
+  outputOptions(output, "SHOW_PLOT", suspendWhenHidden = FALSE)
+
   output$PANEL_PLOT <- renderPlot({
-    switch(CURRENT_PAGE$WHICH,
-      WELCOME = plot_tree(),
-      INFO = plot_tree(SELECTED_SUBTYPE[[SELECTED_TYPE$WHICH]]),
-      BLASTP_RES = plot_tree()
-    )
+    if (TREE_STATE$SHOW)
+      switch(CURRENT_PAGE$WHICH,
+        WELCOME = plot_tree(),
+        INFO = plot_tree(SELECTED_SUBTYPE[[SELECTED_TYPE$WHICH]]),
+        BLASTP_RES = plot_tree()
+      )
+    else
+      NULL
   })
 
   observeEvent(input$COMMUNITY_BUTTON, {

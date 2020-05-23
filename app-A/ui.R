@@ -1,6 +1,6 @@
 #-------------------------------------------------------------------------------
 # ui.R
-# Last modified: 2020-05-14 11:29:15 (CEST)
+# Last modified: 2020-05-23 16:42:22 (CEST)
 # BJM Tremblay
 
 msg("Loading UI")
@@ -154,7 +154,17 @@ ui <- function(request) fluidPage(
           wellPanel(
             tagList(
               h4("Phylogenetic tree"),
-              plotOutput("PANEL_PLOT")
+              conditionalPanel(
+                condition = "output.CURRENT_PAGE != 'WELCOME'",
+                tagList(
+                  actionLink("TREE_BUTTON", "Show/hide tree"),
+                  br(), br()
+                )
+              ),
+              conditionalPanel(
+                condition = "output.SHOW_PLOT",
+                plotOutput("PANEL_PLOT")
+              )
             )
           )
         )
