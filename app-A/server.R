@@ -1,6 +1,6 @@
 #-------------------------------------------------------------------------------
 # server.R
-# Last modified: 2020-05-23 16:43:24 (CEST)
+# Last modified: 2020-05-23 16:56:02 (CEST)
 # BJM Tremblay
 
 msg("Loading server")
@@ -150,14 +150,18 @@ server <- function(input, output, session) {
         "No hits were detected."
       ))
       return()
-    } else if (is.data.frame(res)) {
+    } else if (is.data.frame(res[[1]])) {
       output$BLASTP_DOWNLOAD <- downloadHandler(
         filename = "blastp_results.tsv",
-        content = function(con) readr::write_tsv(res[, -ncol(res)], con)
+        content = function(con) readr::write_tsv(res[[1]][, -ncol(res[[1]])], con)
+      )
+      output$BLASTP_DOWNLOAD_RAW <- downloadHandler(
+        filename = "blastp_results_alignment.txt",
+        content = function(con) readr::write_lines(res[[2]], con)
       )
       output$BLASTP_RES_TABLE <- DT::renderDataTable({
         DT::datatable(
-          res,
+          res[[1]],
           extensions = "Buttons",
           escape = FALSE,
           selection = "none",

@@ -1,6 +1,6 @@
 #-------------------------------------------------------------------------------
 # global.R
-# Last modified: 2020-05-23 16:42:49 (CEST)
+# Last modified: 2020-05-23 16:55:20 (CEST)
 # BJM Tremblay
 
 LAST_UPDATE_DATE <- function() "2020-05-20"
@@ -162,6 +162,7 @@ run_blast <- function(query, evalue = 1) {
     d <- as.integer(Sys.time())
     f <- paste0("queries/", d, ".fa")
     o <- paste0("queries/", d, ".res")
+    o2 <- paste0("queries/", d, "-RAW.res")
     cat(c(">QUERY", query), file = f, sep = "\n")
     cmd <- paste(
       "blastp -query", f, "-db blastdb/ALL-sequences.fa", "-out", o,
@@ -178,12 +179,17 @@ run_blast <- function(query, evalue = 1) {
       res <- suppressMessages(readr::read_tsv(o, col_names = FALSE))
       msg("Number of hits:", nrow(res))
       if (nrow(res) == 0) return(NULL)
+      system(paste(
+        "blastp -query", f, "-db blastdb/ALL-sequences.fa", "-out",
+        o2, CONFIGS$BlastpParameters
+      ))
+      res2 <- suppressMessages(readr::read_lines(o2))
       colnames(res) <- c("qseqid", "Match", "E-Value", "# of Mismatches", "% Identity", "Coverage")
       res$`Match Coverage %` <- round(
         100 * (res$Coverage / nchar(as.character(SEQS_ALL)[res$Match])), 1
       )
       res$`Go To Toxin Page` <- make_blast_buttons(res$Match)
-      as.data.frame(res)[order(res[[5]], decreasing = TRUE), -1]
+      list(as.data.frame(res)[order(res[[5]], decreasing = TRUE), -1], res2)
     }
   }
 }

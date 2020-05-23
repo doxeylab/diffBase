@@ -1,6 +1,6 @@
 #-------------------------------------------------------------------------------
 # ui.R
-# Last modified: 2020-05-23 16:41:13 (CEST)
+# Last modified: 2020-05-23 16:53:04 (CEST)
 # BJM Tremblay
 
 msg("Loading UI")
@@ -149,7 +149,8 @@ ui <- function(request) fluidPage(
 
             conditionalPanel(
               condition = "output.CURRENT_PAGE == 'BLASTP_RES'",
-              downloadLink("BLASTP_DOWNLOAD", "Download all results"), br(), br(),
+              downloadLink("BLASTP_DOWNLOAD", "Download all results"), br(),
+              downloadLink("BLASTP_DOWNLOAD_RAW", "Download BLASTP alignment"), br(), br(),
               DT::dataTableOutput("BLASTP_RES_TABLE")
             )
 
