@@ -6,4 +6,4 @@ GmailCredentials = "/home/$USER/diffBase/credentials.json"
 GmailCache       = "/home/$USER/diffBase/.secret"
 
 UseBlastp        = TRUE
-BlastpParameters = "-evalue 1"
+BlastpParameters = "-evalue 1e-10"
