@@ -1,6 +1,6 @@
 #-------------------------------------------------------------------------------
 # server.R
-# Last modified: 2020-05-23 16:53:50 (CEST)
+# Last modified: 2020-05-28 23:16:52 (CEST)
 # BJM Tremblay
 
 msg("Loading server")
@@ -204,10 +204,7 @@ server <- function(input, output, session) {
   })
 
   observeEvent(CURRENT_PAGE$WHICH, {
-    if (CURRENT_PAGE$WHICH != "WELCOME")
-      TREE_STATE$SHOW <- FALSE
-    else
-      TREE_STATE$SHOW <- TRUE
+    TREE_STATE$SHOW <- FALSE
   })
   output$SHOW_PLOT <- eventReactive(TREE_STATE$SHOW, {
     TREE_STATE$SHOW
