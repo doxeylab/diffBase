@@ -1,6 +1,6 @@
 #-------------------------------------------------------------------------------
 # global.R
-# Last modified: 2020-05-23 16:55:20 (CEST)
+# Last modified: 2020-05-29 17:09:25 (CEST)
 # BJM Tremblay
 
 LAST_UPDATE_DATE <- function() "2020-05-20"
@@ -272,6 +272,8 @@ for (i in 1:4) {
 
 METADATA <- readRDS("data/metadata.RDS")
 METADATA <- lapply(METADATA, function(x) x[x$Source != "PAT", ])
+# METADATA_ALL <- do.call(rbind, METADATA)
+METADATA <- METADATA[unname(sapply(METADATA, nrow)) > 0]
 METADATA_ALL <- do.call(rbind, METADATA)
 
 META2ACC <- readRDS("data/metadata2acc.RDS")
