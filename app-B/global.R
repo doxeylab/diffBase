@@ -1,6 +1,6 @@
 #-------------------------------------------------------------------------------
 # global.R
-# Last modified: 2020-05-29 17:09:26 (CEST)
+# Last modified: 2020-05-29 17:20:56 (CEST)
 # BJM Tremblay
 
 LAST_UPDATE_DATE <- function() "2020-05-20"
@@ -63,9 +63,7 @@ make_type_info <- function() {
     actionLink("BUTTON_GO_BACK_TO_WELCOME", "Go back"), br(),
     br(),
     htmlOutput("PANEL_LEFT_CURRENT_TYPE"),
-    br(),
     htmlOutput("PANEL_LEFT_CURRENT_SUBTYPE"),
-    br(),
     htmlOutput("CURRENT_ACCESSION"),
     selectInput(
       "SUBTYPE_SELECTOR",
@@ -282,8 +280,8 @@ for (i in seq_len(nrow(clades))) {
 
 METADATA <- readRDS("data/metadata.RDS")
 METADATA <- lapply(METADATA, function(x) x[x$Source != "PAT", ])
-# METADATA_ALL <- do.call(rbind, METADATA)
 METADATA <- METADATA[unname(sapply(METADATA, nrow)) > 0]
+METADATA_ALL <- do.call(rbind, METADATA)
 
 META2ACC <- readRDS("data/metadata2acc.RDS")
 
