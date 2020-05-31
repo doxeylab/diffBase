@@ -1,6 +1,6 @@
 #-------------------------------------------------------------------------------
 # ui.R
-# Last modified: 2020-05-29 17:12:48 (CEST)
+# Last modified: 2020-05-31 15:48:31 (CEST)
 # BJM Tremblay
 
 msg("Loading UI")
@@ -8,7 +8,7 @@ ui <- function(request) fluidPage(
 
   theme = shinytheme("simplex"),
 
-  title = "Diff-Base: Toxin A",
+  title = "DiffBase: Toxin A",
 
   br(), br(), br(),
 
@@ -20,7 +20,7 @@ ui <- function(request) fluidPage(
     title = div(
       img(src = "DiffBaseLogo.png", height = 53, width = 100),
       HTML(paste0(
-        "<a href='", CONFIGS$URL, "'>Diff-Base</a>"
+        "<a href='", CONFIGS$URL, "'>DiffBase</a>"
       ))
     ),
     id = "NAVBARPAGE",
