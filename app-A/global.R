@@ -1,9 +1,9 @@
 #-------------------------------------------------------------------------------
 # global.R
-# Last modified: 2020-05-29 17:20:51 (CEST)
+# Last modified: 2020-06-09 11:05:30 (CEST)
 # BJM Tremblay
 
-LAST_UPDATE_DATE <- function() "2020-05-20"
+LAST_UPDATE_DATE <- function() "2020-06-09"
 
 msg <- function(...) {
   time <- format(as.POSIXlt(Sys.time(), tz = "America/Toronto"))
@@ -262,7 +262,7 @@ for (i in 1:4) {
       label = as.character(clades$Label)[i],
       align = TRUE,
       # offset = 15 + i
-      offset = -57,
+      offset = -56.5,
       offset.text = -2,
       hjust = 0.5
     )
