@@ -1,6 +1,6 @@
 #-------------------------------------------------------------------------------
 # server.R
-# Last modified: 2020-05-28 23:16:52 (CEST)
+# Last modified: 2020-06-11 00:09:13 (CEST)
 # BJM Tremblay
 
 msg("Loading server")
@@ -89,7 +89,7 @@ server <- function(input, output, session) {
   output$PANEL_TOP_RIGHT_METADATA <- DT::renderDataTable({
     if (CURRENT_PAGE$WHICH != "INFO") return()
     out <- show_metadata(
-      SEQ_NAMES_ALL[SELECTED_SUBTYPE[[SELECTED_TYPE$WHICH]]]
+      SELECTED_SUBTYPE[[SELECTED_TYPE$WHICH]]
     )
     if (is.null(out)) return()
     DT::datatable(
@@ -137,7 +137,9 @@ server <- function(input, output, session) {
   output$CURRENT_ACCESSION <- renderText({
     paste(
       "<b>Representative sequence:</b>",
-      names(SEQ_NAMES_ALL[SELECTED_SUBTYPE[[SELECTED_TYPE$WHICH]]])
+      REP_SEQS$Sequence[REP_SEQS$Subtype == SELECTED_TYPE$WHICH],
+      "<br><b>Representative strain:</b>",
+      REP_SEQS$Strain[REP_SEQS$Subtype == SELECTED_TYPE$WHICH]
     )
   })
 
@@ -189,7 +191,7 @@ server <- function(input, output, session) {
     updateSelectInput(
       session, "SUBTYPE_SELECTOR",
       label = "",
-      choices = names(SEQ_NAMES_LIST[[SELECTED_TYPE$WHICH]]),
+      choices = unname(SEQ_NAMES_LIST[[SELECTED_TYPE$WHICH]]),
       selected = SELECTED_SUBTYPE[[SELECTED_TYPE$WHICH]]
     )
   })
@@ -257,7 +259,7 @@ server <- function(input, output, session) {
       "_Associated_Metadata.tsv"
     ),
     content = function(con) readr::write_tsv(show_metadata(
-      SEQ_NAMES_ALL[SELECTED_SUBTYPE[[SELECTED_TYPE$WHICH]]]
+      SELECTED_SUBTYPE[[SELECTED_TYPE$WHICH]]
     ), con)
   )
 

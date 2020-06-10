@@ -1,7 +1,7 @@
 #!/usr/bin/env Rscript
 
 # update.R
-# Last modified: 2020-05-20 12:26:14 (CEST)
+# Last modified: 2020-06-11 00:09:43 (CEST)
 # BJM Tremblay
 
 # possible tree building code:
@@ -55,13 +55,21 @@ update_app <- function(app) {
 
   names(groupsA) <- fileNamesA
 
+  namesA <- lapply(groupsA, names)
+  names(namesA) <- fileNamesA
+
+  for (i in seq_along(namesA)) {
+    namesA[[i]] <- structure(paste0(names(namesA)[i], ".", seq_along(namesA[[i]])), names = namesA[[i]])
+    names(groupsA[[i]]) <- unname(namesA[[i]])
+  }
+
   groupsAaligned <- groupsA
 
   groupsA <- lapply(groupsA, fix_seqs)
 
   saveRDS(groupsA, paste0(app, "/data/ALL-sequences.RDS"))
 
-  namesA <- lapply(groupsA, names)
+  # namesA <- lapply(groupsA, names)
 
   MDa <- structure(lapply(
     list.files(meta, full.names = TRUE),
@@ -87,17 +95,14 @@ update_app <- function(app) {
   setwd("../..")
 
   alnA <- read.alignment(paste0(app, "/data/ALL-sequences-aligned.fa"), "fasta")
-  # treeA <- bionj(dist.alignment(alnA, matrix = "similarity"))
-  # treeA <- ladderize(midpoint.root(treeA))
   treeA <- dist.alignment(alnA)
   treeA <- hclust(treeA, method = "average")
   treeA <- as.phylo(treeA)
 
   saveRDS(treeA, paste0(app, "/data/tree.RDS"))
 
-  for (i in seq_along(namesA)) {
-    names(namesA[[i]]) <- namesA[[i]]
-  }
+  repSeqs <- readr::read_tsv(paste0("rep-sequences/repSequences", let, ".txt"))
+  readr::write_tsv(repSeqs, paste0(app, "/data/repseqs.tsv"))
 
   saveRDS(namesA, paste0(app, "/data/ALL-names.RDS"))
 

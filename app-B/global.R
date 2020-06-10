@@ -1,9 +1,9 @@
 #-------------------------------------------------------------------------------
 # global.R
-# Last modified: 2020-06-09 11:04:58 (CEST)
+# Last modified: 2020-06-11 00:12:01 (CEST)
 # BJM Tremblay
 
-LAST_UPDATE_DATE <- function() "2020-06-09"
+LAST_UPDATE_DATE <- function() "2020-06-11"
 
 msg <- function(...) {
   time <- format(as.POSIXlt(Sys.time(), tz = "America/Toronto"))
@@ -68,7 +68,7 @@ make_type_info <- function() {
     selectInput(
       "SUBTYPE_SELECTOR",
       label = "",
-      choices = names(SEQ_NAMES_LIST$B1),
+      choices = unname(SEQ_NAMES_LIST$B1),
       selected = "B1.1",
       width = "145px"
     ),
@@ -210,19 +210,11 @@ TREE <- readRDS("data/tree.RDS")
 TREE_TBL <- as_tibble(TREE)
 
 SEQ_NAMES_LIST <- readRDS("data/ALL-names.RDS")
+SEQ_NAMES_ALL <- SEQ_NAMES_LIST[[1]]
+for (i in seq_along(SEQ_NAMES_LIST)[-1]) {
+  SEQ_NAMES_ALL <- c(SEQ_NAMES_ALL, SEQ_NAMES_LIST[[i]])
+}
 
-# SEQ_NAMES_ALL <- do.call(c, SEQ_NAMES_LIST)
-# names(SEQ_NAMES_ALL) <- gsub("^[A-Z]\\d+[.]", "", names(SEQ_NAMES_ALL))
-# names(SEQ_NAMES_ALL) <- gsub("^[A-Z][.]", "", names(SEQ_NAMES_ALL))
-# names(SEQ_NAMES_ALL) <- gsub("^[A-Z][1-2][.]", "", names(SEQ_NAMES_ALL))
-SEQ_NAMES_ALL <- unlist(SEQ_NAMES_LIST, use.names = FALSE)
-names(SEQ_NAMES_ALL) <- SEQ_NAMES_ALL
-
-# SEQS_ALL <- gsub("-", "", readRDS("data/ALL-sequences.RDS"), fixed = TRUE)
-#
-# ALL_TYPES <- c(
-#   "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"
-# )
 SEQS_ALL <- readRDS("data/ALL-sequences.RDS")
 
 ALL_TYPES <- names(SEQ_NAMES_LIST)
@@ -245,7 +237,7 @@ for (i in seq_along(SEQS_ALL_AA)[-1]) SEQS_ALL <- c(SEQS_ALL, SEQS_ALL_AA[[i]])
 if (!file.exists("downloads/ALL-sequences.fa"))
   Biostrings::writeXStringSet(SEQS_ALL, "downloads/ALL-sequences.fa")
 
-ALL_TYPES_SUBTYPES <- lapply(SEQ_NAMES_LIST, function(x) names(x))
+ALL_TYPES_SUBTYPES <- lapply(SEQ_NAMES_LIST, function(x) unname(x))
 
 TREE2 <- groupOTU(TREE, ALL_TYPES_SUBTYPES)
 
@@ -284,6 +276,10 @@ METADATA <- METADATA[unname(sapply(METADATA, nrow)) > 0]
 METADATA_ALL <- do.call(rbind, METADATA)
 
 META2ACC <- readRDS("data/metadata2acc.RDS")
+META2ACC$Subtype <- SEQ_NAMES_ALL[META2ACC$Subtype]
+
+REP_SEQS <- readr::read_tsv("data/repseqs.tsv")
+REP_SEQS$Sequence <- SEQ_NAMES_ALL[REP_SEQS$Rep_identifier]
 
 NUMBER_OF_SEQUENCES <- function() length(SEQ_NAMES_ALL)
 NUMBER_OF_STRAINS <- function() length(unique(METADATA_ALL$Strain))
