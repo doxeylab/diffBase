@@ -1,6 +1,6 @@
 #-------------------------------------------------------------------------------
 # server.R
-# Last modified: 2020-06-11 00:09:13 (CEST)
+# Last modified: 2020-06-11 10:48:20 (CEST)
 # BJM Tremblay
 
 msg("Loading server")
@@ -60,7 +60,7 @@ server <- function(input, output, session) {
         updateSelectInput(
           session, "SUBTYPE_SELECTOR",
           label = "",
-          choices = names(SEQ_NAMES_LIST[[SELECTED_TYPE$WHICH]]),
+          choices = unname(SEQ_NAMES_LIST[[SELECTED_TYPE$WHICH]]),
           selected = SELECTED_SUBTYPE[[SELECTED_TYPE$WHICH]]
         )
       }
