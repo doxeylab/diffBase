@@ -1,6 +1,6 @@
 #-------------------------------------------------------------------------------
 # global.R
-# Last modified: 2020-06-11 11:06:09 (CEST)
+# Last modified: 2020-06-11 11:10:48 (CEST)
 # BJM Tremblay
 
 LAST_UPDATE_DATE <- function() "2020-06-11"
@@ -285,4 +285,7 @@ NUMBER_OF_SEQUENCES <- function() length(SEQ_NAMES_ALL)
 NUMBER_OF_STRAINS <- function() length(unique(METADATA_ALL$Strain))
 NUMBER_OF_NCBI_IDs <- function() length(METADATA)
 
-GET_MEMBER_COUNT <- function(x) paste(length(SEQ_NAMES_LIST[[x]]), "members")
+GET_MEMBER_COUNT <- function(x) {
+  x <- length(SEQ_NAMES_LIST[[x]])
+  paste(x, if (x > 1) "members" else "member")
+}
