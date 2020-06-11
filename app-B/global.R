@@ -1,6 +1,6 @@
 #-------------------------------------------------------------------------------
 # global.R
-# Last modified: 2020-06-11 11:10:48 (CEST)
+# Last modified: 2020-06-11 17:07:16 (CEST)
 # BJM Tremblay
 
 LAST_UPDATE_DATE <- function() "2020-06-11"
@@ -94,7 +94,16 @@ show_metadata <- function(subtype) {
     else rbind(do.call(rbind, METADATA[ACCs]), ACCs2)
   } else {
     x <- METADATA[ACCs]
-    if (length(x)) do.call(rbind, x) else NULL
+    if (length(x) && sum(vapply(x, nrow, integer(1)))) {
+      do.call(rbind, x)
+    } else {
+      tibble(
+        Id = NA, Source = NA,
+        `Nucleotide Accession` = NA,
+        Start = NA, Stop = NA, Strand = NA, Protein = names(x),
+        `Protein Name` = NA, Organism = NA, Strain = NA, Assembly = NA
+      )
+    }
   }
 }
 

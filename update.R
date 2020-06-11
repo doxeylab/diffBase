@@ -1,7 +1,7 @@
 #!/usr/bin/env Rscript
 
 # update.R
-# Last modified: 2020-06-11 10:54:27 (CEST)
+# Last modified: 2020-06-11 17:05:24 (CEST)
 # BJM Tremblay
 
 # possible tree building code:
@@ -33,6 +33,36 @@ fix_seqs <- function(x) {
   AAStringSet(toupper(gsub("-", "", as.character(x))))
 }
 
+gather_metadata <- function(subtype, META2ACC, METADATA) {
+  ACCs <- META2ACC$Acc[META2ACC$Subtype == subtype]
+  ACCs <- vapply(strsplit(ACCs, ".", fixed = TRUE), function(x) x[1], character(1))
+  ACCs <- unique(ACCs)
+  if (any(!ACCs %in% names(METADATA))) {
+    ACCs2 <- ACCs[!ACCs %in% names(METADATA)]
+    ACCs <- ACCs[ACCs %in% names(METADATA)]
+    ACCs2 <- tibble(
+      Id = NA, Source = NA,
+      `Nucleotide Accession` = NA,
+      Start = NA, Stop = NA, Strand = NA, Protein = ACCs2,
+      `Protein Name` = NA, Organism = NA, Strain = NA, Assembly = NA
+    )
+    if (!length(ACCs)) ACCs2
+    else rbind(do.call(rbind, METADATA[ACCs]), ACCs2)
+  } else {
+    x <- METADATA[ACCs]
+    if (length(x) && sum(vapply(x, nrow, integer(1)))) {
+      do.call(rbind, x)
+    } else {
+      tibble(
+        Id = NA, Source = NA,
+        `Nucleotide Accession` = NA,
+        Start = NA, Stop = NA, Strand = NA, Protein = names(x),
+        `Protein Name` = NA, Organism = NA, Strain = NA, Assembly = NA
+      )
+    }
+  }
+}
+
 suppressPackageStartupMessages(library(Biostrings))
 suppressPackageStartupMessages(library(ape))
 suppressPackageStartupMessages(library(seqinr))
@@ -58,6 +88,43 @@ update_app <- function(app) {
   namesA <- lapply(groupsA, names)
   names(namesA) <- fileNamesA
 
+  repSeqs <- suppressMessages(readr::read_tsv(paste0("rep-sequences/repSequences", let, ".txt")))
+  readr::write_tsv(repSeqs, paste0(app, "/data/repseqs.tsv"))
+
+  MDa <- structure(lapply(
+    list.files(meta, full.names = TRUE),
+    function(x) suppressMessages(readr::read_tsv(x, comment=">"))
+  ), names = list.files(meta))
+
+  saveRDS(MDa, paste0(app, "/data/metadata.RDS"))
+
+  meta2acc <- suppressMessages(readr::read_delim(
+    paste0("classifications/tcd", tolower(let), "-allBLASThits.classified.txt"),
+    " ", col_names = FALSE
+  ))
+  colnames(meta2acc) <- c("Acc", "Subtype", "Identity", "Length", "Coverage")
+  meta2acc <- meta2acc[meta2acc$Identity == 100 & meta2acc$Coverage == "COMPLETE", ]
+  saveRDS(meta2acc, paste0(app, "/data/metadata2acc.RDS"))
+
+  groupSubLens <- lapply(namesA, function(x) unlist(lapply(x, function(y) nrow(gather_metadata(y, meta2acc, MDa)))))
+
+  for (i in seq_along(groupSubLens)) {
+    names(groupSubLens[[i]]) <- namesA[[i]]
+    groupSubLens[[i]] <- sort(groupSubLens[[i]], decreasing = TRUE)
+    groupSubLens[[i]] <- c(
+      groupSubLens[[i]][repSeqs$Rep_identifier[repSeqs$Subtype == names(groupSubLens)[i]]],
+      groupSubLens[[i]][!names(groupSubLens[[i]]) %in% repSeqs$Rep_identifier[repSeqs$Subtype == names(groupSubLens)[i]]]
+    )
+  }
+
+  for (i in seq_along(groupsA)) {
+    groupsA[[i]] <- groupsA[[i]][names(groupSubLens[[i]])]
+  }
+
+  for (i in seq_along(namesA)) {
+    namesA[[i]] <- names(groupSubLens[[i]])
+  }
+
   for (i in seq_along(namesA)) {
     namesA[[i]] <- structure(paste0(names(namesA)[i], ".", seq_along(namesA[[i]])), names = namesA[[i]])
     names(groupsA[[i]]) <- unname(namesA[[i]])
@@ -68,15 +135,6 @@ update_app <- function(app) {
   groupsA <- lapply(groupsA, fix_seqs)
 
   saveRDS(groupsA, paste0(app, "/data/ALL-sequences.RDS"))
-
-  # namesA <- lapply(groupsA, names)
-
-  MDa <- structure(lapply(
-    list.files(meta, full.names = TRUE),
-    function(x) suppressMessages(readr::read_tsv(x, comment=">"))
-  ), names = list.files(meta))
-
-  saveRDS(MDa, paste0(app, "/data/metadata.RDS"))
 
   groupsAflat <- groupsA[[1]]
   for (i in seq_along(groupsA)[-1]) groupsAflat <- c(groupsAflat, groupsA[[i]])
@@ -101,22 +159,11 @@ update_app <- function(app) {
 
   saveRDS(treeA, paste0(app, "/data/tree.RDS"))
 
-  repSeqs <- suppressMessages(readr::read_tsv(paste0("rep-sequences/repSequences", let, ".txt")))
-  readr::write_tsv(repSeqs, paste0(app, "/data/repseqs.tsv"))
-
   saveRDS(namesA, paste0(app, "/data/ALL-names.RDS"))
 
   fix_update_date(paste0(app, "/global.R"))
 
   unlink(list.files(paste0("app-", let, "/downloads"), full.names = TRUE))
-
-  meta2acc <- suppressMessages(readr::read_delim(
-    paste0("classifications/tcd", tolower(let), "-allBLASThits.classified.txt"),
-    " ", col_names = FALSE
-  ))
-  colnames(meta2acc) <- c("Acc", "Subtype", "Identity", "Length", "Coverage")
-  meta2acc <- meta2acc[meta2acc$Identity == 100 & meta2acc$Coverage == "COMPLETE", ]
-  saveRDS(meta2acc, paste0(app, "/data/metadata2acc.RDS"))
 
 }
 
