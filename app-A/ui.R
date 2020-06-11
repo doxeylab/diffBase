@@ -1,6 +1,6 @@
 #-------------------------------------------------------------------------------
 # ui.R
-# Last modified: 2020-05-31 15:48:31 (CEST)
+# Last modified: 2020-06-11 17:28:50 (CEST)
 # BJM Tremblay
 
 msg("Loading UI")
@@ -68,6 +68,9 @@ ui <- function(request) fluidPage(
               downloadLink(
                 "DOWNLOAD_ALL", "Download all toxin A sequences"
               ),
+              downloadLink(
+                "DOWNLOAD_REP", "Download representative sequences"
+              )
             )
           ),
 

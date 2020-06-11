@@ -1,6 +1,6 @@
 #-------------------------------------------------------------------------------
 # server.R
-# Last modified: 2020-06-11 11:00:01 (CEST)
+# Last modified: 2020-06-11 17:22:40 (CEST)
 # BJM Tremblay
 
 msg("Loading server")
@@ -261,6 +261,15 @@ server <- function(input, output, session) {
     content = function(con) readr::write_tsv(show_metadata(
       SELECTED_SUBTYPE[[SELECTED_TYPE$WHICH]]
     ), con)
+  )
+
+  output$DOWNLOAD_REP <- downloadHandler(
+    filename = "ToxinB_representative_sequences.fa",
+    content = function(con) {
+      readr::write_lines(
+        readr::read_lines("downloads/REPRESENTATIVE-sequences.fa"), con
+      )
+    }
   )
 
   output$DOWNLOAD_ALL <- downloadHandler(

@@ -1,6 +1,6 @@
 #-------------------------------------------------------------------------------
 # server.R
-# Last modified: 2020-06-11 11:04:41 (CEST)
+# Last modified: 2020-06-11 17:29:12 (CEST)
 # BJM Tremblay
 
 msg("Loading server")
@@ -263,6 +263,15 @@ server <- function(input, output, session) {
     content = function(con) {
       readr::write_lines(
         readr::read_lines("downloads/ALL-sequences.fa"), con
+      )
+    }
+  )
+
+  output$DOWNLOAD_REP <- downloadHandler(
+    filename = "ToxinA_representative_sequences.fa",
+    content = function(con) {
+      readr::write_lines(
+        readr::read_lines("downloads/REPRESENTATIVE-sequences.fa"), con
       )
     }
   )

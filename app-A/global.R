@@ -1,6 +1,6 @@
 #-------------------------------------------------------------------------------
 # global.R
-# Last modified: 2020-06-11 17:07:36 (CEST)
+# Last modified: 2020-06-11 17:28:16 (CEST)
 # BJM Tremblay
 
 LAST_UPDATE_DATE <- function() "2020-06-11"
@@ -286,6 +286,12 @@ META2ACC$Subtype <- SEQ_NAMES_ALL[META2ACC$Subtype]
 
 REP_SEQS <- suppressMessages(readr::read_tsv("data/repseqs.tsv"))
 REP_SEQS$Sequence <- SEQ_NAMES_ALL[REP_SEQS$Rep_identifier]
+
+if (!file.exists("downloads/REPRESENTATIVE-sequences.fa")) {
+  Biostrings::writeXStringSet(
+    SEQS_ALL[REP_SEQS$Sequence], "downloads/REPRESENTATIVE-sequences.fa"
+  )
+}
 
 NUMBER_OF_SEQUENCES <- function() length(SEQ_NAMES_ALL)
 NUMBER_OF_STRAINS <- function() length(unique(METADATA_ALL$Strain))
