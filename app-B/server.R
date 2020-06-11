@@ -1,6 +1,6 @@
 #-------------------------------------------------------------------------------
 # server.R
-# Last modified: 2020-06-11 10:53:37 (CEST)
+# Last modified: 2020-06-11 11:00:01 (CEST)
 # BJM Tremblay
 
 msg("Loading server")
@@ -68,20 +68,20 @@ server <- function(input, output, session) {
   })
 
   output$PANEL_LEFT_CURRENT_TYPE <- renderText({
-    paste("<b>Type:</b>", SELECTED_TYPE$WHICH)
+    paste("<b>Subtype:</b>", SELECTED_TYPE$WHICH)
   })
 
-  output$PANEL_LEFT_CURRENT_SUBTYPE <- renderText({
-    paste(
-      "<b>Currently selected subtype:</b>",
-      SELECTED_SUBTYPE[[SELECTED_TYPE$WHICH]]
-    )
-  })
+  # output$PANEL_LEFT_CURRENT_SUBTYPE <- renderText({
+  #   paste(
+  #     "<b>Currently selected sequence:</b>",
+  #     SELECTED_SUBTYPE[[SELECTED_TYPE$WHICH]]
+  #   )
+  # })
 
   output$PANEL_TOP_RIGHT_CURRENT_SUBTYPE <- renderText({
     if (CURRENT_PAGE$WHICH != "INFO") return()
     paste(
-      "<b>Currently selected subtype sequence:</b>",
+      "<b>Currently selected sequence:</b>",
       SELECTED_SUBTYPE[[SELECTED_TYPE$WHICH]]
     )
   })

@@ -1,6 +1,6 @@
 #-------------------------------------------------------------------------------
 # global.R
-# Last modified: 2020-06-11 10:55:05 (CEST)
+# Last modified: 2020-06-11 11:06:01 (CEST)
 # BJM Tremblay
 
 LAST_UPDATE_DATE <- function() "2020-06-11"
@@ -63,7 +63,7 @@ make_type_info <- function() {
     actionLink("BUTTON_GO_BACK_TO_WELCOME", "Go back"), br(),
     br(),
     htmlOutput("PANEL_LEFT_CURRENT_TYPE"),
-    htmlOutput("PANEL_LEFT_CURRENT_SUBTYPE"),
+    # htmlOutput("PANEL_LEFT_CURRENT_SUBTYPE"),
     htmlOutput("CURRENT_ACCESSION"),
     selectInput(
       "SUBTYPE_SELECTOR",
@@ -72,7 +72,7 @@ make_type_info <- function() {
       selected = "A1.1",
       width = "145px"
     ),
-    br(),
+    # br(),
     downloadLink("DOWNLOAD_TYPE", "Download all subtype sequences")
   )
 }
@@ -103,10 +103,10 @@ make_type_info_more <- function() {
     br(),
     verbatimTextOutput("PANEL_TOP_RIGHT_CURRENT_SUBTYPE_SEQUENCE"),
     br(),
-    tags$b("Member sequences:"),
+    tags$b("Sequence accessions:"),
     DT::dataTableOutput("PANEL_TOP_RIGHT_METADATA"),
     br(),
-    downloadLink("DOWNLOAD_METADATA", "Download associated sequences table")
+    downloadLink("DOWNLOAD_METADATA", "Download sequence accessions table")
   )
 }
 
