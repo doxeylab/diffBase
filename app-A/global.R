@@ -1,6 +1,6 @@
 #-------------------------------------------------------------------------------
 # global.R
-# Last modified: 2020-06-11 00:12:12 (CEST)
+# Last modified: 2020-06-11 10:55:05 (CEST)
 # BJM Tremblay
 
 LAST_UPDATE_DATE <- function() "2020-06-11"
@@ -274,7 +274,7 @@ METADATA_ALL <- do.call(rbind, METADATA)
 META2ACC <- readRDS("data/metadata2acc.RDS")
 META2ACC$Subtype <- SEQ_NAMES_ALL[META2ACC$Subtype]
 
-REP_SEQS <- readr::read_tsv("data/repseqs.tsv")
+REP_SEQS <- suppressMessages(readr::read_tsv("data/repseqs.tsv"))
 REP_SEQS$Sequence <- SEQ_NAMES_ALL[REP_SEQS$Rep_identifier]
 
 NUMBER_OF_SEQUENCES <- function() length(SEQ_NAMES_ALL)

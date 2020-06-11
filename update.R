@@ -1,7 +1,7 @@
 #!/usr/bin/env Rscript
 
 # update.R
-# Last modified: 2020-06-11 00:09:43 (CEST)
+# Last modified: 2020-06-11 10:54:27 (CEST)
 # BJM Tremblay
 
 # possible tree building code:
@@ -101,7 +101,7 @@ update_app <- function(app) {
 
   saveRDS(treeA, paste0(app, "/data/tree.RDS"))
 
-  repSeqs <- readr::read_tsv(paste0("rep-sequences/repSequences", let, ".txt"))
+  repSeqs <- suppressMessages(readr::read_tsv(paste0("rep-sequences/repSequences", let, ".txt")))
   readr::write_tsv(repSeqs, paste0(app, "/data/repseqs.tsv"))
 
   saveRDS(namesA, paste0(app, "/data/ALL-names.RDS"))
