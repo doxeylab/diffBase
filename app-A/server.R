@@ -1,6 +1,6 @@
 #-------------------------------------------------------------------------------
 # server.R
-# Last modified: 2020-06-12 13:22:26 (CEST)
+# Last modified: 2020-06-12 16:00:49 (CEST)
 # BJM Tremblay
 
 msg("Loading server")
@@ -239,7 +239,8 @@ server <- function(input, output, session) {
       switch(CURRENT_PAGE$WHICH,
         WELCOME = plot_tree(),
         INFO = plot_tree(SELECTED_SUBTYPE[[SELECTED_TYPE$WHICH]]),
-        BLASTP_RES = plot_tree()
+        BLASTP_RES = plot_tree(),
+        SEARCH_RES = plot_tree()
       )
     else
       NULL
