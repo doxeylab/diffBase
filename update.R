@@ -1,7 +1,7 @@
 #!/usr/bin/env Rscript
 
 # update.R
-# Last modified: 2020-06-11 17:05:24 (CEST)
+# Last modified: 2020-06-12 10:46:37 (CEST)
 # BJM Tremblay
 
 # possible tree building code:
@@ -46,14 +46,16 @@ gather_metadata <- function(subtype, META2ACC, METADATA) {
       Start = NA, Stop = NA, Strand = NA, Protein = ACCs2,
       `Protein Name` = NA, Organism = NA, Strain = NA, Assembly = NA
     )
-    if (!length(ACCs)) ACCs2
-    else rbind(do.call(rbind, METADATA[ACCs]), ACCs2)
+    if (!length(ACCs))
+      out <- ACCs2
+    else
+      out <- rbind(do.call(rbind, METADATA[ACCs]), ACCs2)
   } else {
     x <- METADATA[ACCs]
     if (length(x) && sum(vapply(x, nrow, integer(1)))) {
-      do.call(rbind, x)
+      out <- do.call(rbind, x)
     } else {
-      tibble(
+      out <- tibble(
         Id = NA, Source = NA,
         `Nucleotide Accession` = NA,
         Start = NA, Stop = NA, Strand = NA, Protein = names(x),
@@ -61,6 +63,7 @@ gather_metadata <- function(subtype, META2ACC, METADATA) {
       )
     }
   }
+  out[!is.na(out$Protein), ]
 }
 
 suppressPackageStartupMessages(library(Biostrings))
@@ -133,6 +136,21 @@ update_app <- function(app) {
   groupsAaligned <- groupsA
 
   groupsA <- lapply(groupsA, fix_seqs)
+
+  metaAll <- lapply(namesA, function(x) lapply(names(x), function(y) gather_metadata(y, meta2acc, MDa)))
+  for (i in seq_along(metaAll)) {
+    names(metaAll[[i]]) <- names(namesA[[i]])
+  }
+  for (i in seq_along(metaAll)) {
+    for (j in seq_along(metaAll[[i]])) {
+      metaAll[[i]][[j]]$SeqId <- names(metaAll[[i]])[j]
+    }
+  }
+  for (i in seq_along(metaAll)) {
+    metaAll[[i]] <- do.call(rbind, metaAll[[i]])
+  }
+  metaAll <- do.call(rbind, metaAll)
+  saveRDS(metaAll, paste0(app, "/data/ALL-metadata.RDS"))
 
   saveRDS(groupsA, paste0(app, "/data/ALL-sequences.RDS"))
 

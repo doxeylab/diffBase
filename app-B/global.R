@@ -1,9 +1,9 @@
 #-------------------------------------------------------------------------------
 # global.R
-# Last modified: 2020-06-12 10:22:00 (CEST)
+# Last modified: 2020-06-12 10:43:56 (CEST)
 # BJM Tremblay
 
-LAST_UPDATE_DATE <- function() "2020-06-11"
+LAST_UPDATE_DATE <- function() "2020-06-12"
 
 msg <- function(...) {
   time <- format(as.POSIXlt(Sys.time(), tz = "America/Toronto"))
@@ -107,7 +107,7 @@ show_metadata <- function(subtype) {
       )
     }
   }
-  out[complete.cases(out), ]
+  out[!is.na(out$Protein), ]
 }
 
 make_type_info_more <- function() {
