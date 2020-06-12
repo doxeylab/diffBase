@@ -1,6 +1,6 @@
 #-------------------------------------------------------------------------------
 # server.R
-# Last modified: 2020-06-12 16:00:49 (CEST)
+# Last modified: 2020-06-12 16:42:34 (CEST)
 # BJM Tremblay
 
 msg("Loading server")
@@ -36,29 +36,6 @@ server <- function(input, output, session) {
   QUERY <- reactiveValues(STRING = NULL)
   observe({
     QUERY$STRING <- parseQueryString(session$clientData$url_search)[["goto"]]
-  })
-
-  observeEvent(QUERY$STRING, {
-    req(QUERY$STRING)
-    if (!is.null(QUERY$STRING)) {
-      SType <- QUERY$STRING
-      QType <- strsplit(SType, ".", fixed = TRUE)[[1]][1]
-      if (!QType %in% ALL_TYPES || !SType %in% ALL_TYPES_SUBTYPES[[QType]]) {
-        showModal(modalDialog(
-          title = "Error", paste("Incorrect query.", SType, "does not exist.")
-        ))
-      } else {
-        SELECTED_TYPE$WHICH <- QType
-        SELECTED_SUBTYPE[[QType]] <- SType
-        CURRENT_PAGE$WHICH <- "INFO"
-        updateSelectInput(
-          session, "SUBTYPE_SELECTOR",
-          label = "",
-          choices = unname(SEQ_NAMES_LIST[[SELECTED_TYPE$WHICH]]),
-          selected = SELECTED_SUBTYPE[[SELECTED_TYPE$WHICH]]
-        )
-      }
-    }
   })
 
   output$PANEL_LEFT_CURRENT_TYPE <- renderText({
@@ -323,6 +300,29 @@ server <- function(input, output, session) {
       gsub("_", ".", input$BLASTP_GOTO, fixed = TRUE),
       fixed = TRUE
     )
+  })
+
+  observeEvent(QUERY$STRING, {
+    req(QUERY$STRING)
+    if (!is.null(QUERY$STRING)) {
+      SType <- QUERY$STRING
+      QType <- strsplit(SType, ".", fixed = TRUE)[[1]][1]
+      if (!QType %in% ALL_TYPES || !SType %in% ALL_TYPES_SUBTYPES[[QType]]) {
+        showModal(modalDialog(
+          title = "Error", paste("Incorrect query.", SType, "does not exist.")
+        ))
+      } else {
+        SELECTED_TYPE$WHICH <- QType
+        SELECTED_SUBTYPE[[QType]] <- SType
+        CURRENT_PAGE$WHICH <- "INFO"
+        updateSelectInput(
+          session, "SUBTYPE_SELECTOR",
+          label = "",
+          choices = unname(SEQ_NAMES_LIST[[SELECTED_TYPE$WHICH]]),
+          selected = SELECTED_SUBTYPE[[SELECTED_TYPE$WHICH]]
+        )
+      }
+    }
   })
 
 }
