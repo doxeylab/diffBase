@@ -1,6 +1,6 @@
 #-------------------------------------------------------------------------------
 # global.R
-# Last modified: 2020-06-12 11:54:39 (CEST)
+# Last modified: 2020-06-12 13:25:46 (CEST)
 # BJM Tremblay
 
 LAST_UPDATE_DATE <- function() "2020-06-12"
@@ -72,7 +72,6 @@ make_type_info <- function() {
       selected = "B1.1",
       width = "145px"
     ),
-    # br(),
     downloadLink("DOWNLOAD_TYPE", "Download all subtype sequences")
   )
 }
@@ -214,6 +213,22 @@ check_email <- function(x) {
         ignore.case = TRUE)
 }
 
+search_metadata <- function(x) {
+  y <- METADATA_ALL2[
+    grepl(x, METADATA_ALL2[["Id"]], fixed = TRUE) |
+    grepl(x, METADATA_ALL2[["Nucleotide Accession"]], fixed = TRUE) |
+    grepl(x, METADATA_ALL2[["Protein"]], fixed = TRUE) |
+    grepl(x, METADATA_ALL2[["Protein Name"]], fixed = TRUE) |
+    grepl(x, METADATA_ALL2[["Organism"]], fixed = TRUE) |
+    grepl(x, METADATA_ALL2[["Strain"]], fixed = TRUE) |
+    grepl(x, METADATA_ALL2[["Strain"]], fixed = TRUE) |
+    grepl(x, METADATA_ALL2[["Assembly"]], fixed = TRUE) |
+    grepl(x, METADATA_ALL2[["Sequence"]], fixed = TRUE),
+    -12
+  ]
+  y[, c(12:13, 1:11)]
+}
+
 #-------------------------------------------------------------------------------
 msg("Loading data")
 
@@ -288,6 +303,8 @@ METADATA <- METADATA[unname(sapply(METADATA, nrow)) > 0]
 METADATA_ALL <- do.call(rbind, METADATA)
 
 METADATA_ALL2 <- readRDS("data/ALL-metadata.RDS")
+METADATA_ALL2$Sequence <- SEQ_NAMES_ALL[METADATA_ALL2$SeqId]
+METADATA_ALL2$`Go To Toxin Page` <- make_blast_buttons(METADATA_ALL2$Sequence)
 
 META2ACC <- readRDS("data/metadata2acc.RDS")
 META2ACC$Subtype <- SEQ_NAMES_ALL[META2ACC$Subtype]

@@ -1,6 +1,6 @@
 #-------------------------------------------------------------------------------
 # ui.R
-# Last modified: 2020-06-11 17:28:50 (CEST)
+# Last modified: 2020-06-12 13:22:50 (CEST)
 # BJM Tremblay
 
 msg("Loading UI")
@@ -63,11 +63,15 @@ ui <- function(request) fluidPage(
               actionLink("BUTTON_A5", "A5:"), GET_MEMBER_COUNT("A5"), br(),
               actionLink("BUTTON_A6", "A6:"), GET_MEMBER_COUNT("A6"), br(),
               actionLink("BUTTON_A7", "A7:"), GET_MEMBER_COUNT("A7"), br(),
-              actionLink("BUTTON_sordellii_TcsH", "sordellii_TcsH:"), GET_MEMBER_COUNT("sordellii_TcsH"), br(),
-              br(),
+              actionLink("BUTTON_sordellii_TcsH", "sordellii_TcsH:"), GET_MEMBER_COUNT("sordellii_TcsH"), 
+              br(), br(),
+              textInput("APP_SEARCH_BOX", "Query the database"),
+              actionLink("SEARCH_BUTTON", "Search"),
+              br(), br(),
               downloadLink(
                 "DOWNLOAD_ALL", "Download all toxin A sequences"
               ),
+              br(),
               downloadLink(
                 "DOWNLOAD_REP", "Download representative sequences"
               )
@@ -88,6 +92,11 @@ ui <- function(request) fluidPage(
               br(),
               verbatimTextOutput("BLASTP_SHOW_QUERY")
             )
+          ),
+
+          conditionalPanel(
+            condition = "output.CURRENT_PAGE == 'SEARCH_RES'",
+            actionLink("BUTTON_GO_BACK_TO_WELCOME_SEARCH", "Go back")
           )
 
         ),
@@ -99,8 +108,6 @@ ui <- function(request) fluidPage(
             HTML(paste("<b>Number of sequences:</b>", NUMBER_OF_SEQUENCES())),
             br(),
             HTML(paste("<b>Number of bacterial strains:</b>", NUMBER_OF_STRAINS()))
-            # br(),
-            # HTML(paste("<b>Number of NCBI IDs:</b>", NUMBER_OF_NCBI_IDs()))
           )
         ),
         wellPanel(
@@ -149,6 +156,11 @@ ui <- function(request) fluidPage(
               downloadLink("BLASTP_DOWNLOAD", "Download all results"), br(),
               downloadLink("BLASTP_DOWNLOAD_RAW", "Download BLASTP alignment"), br(), br(),
               DT::dataTableOutput("BLASTP_RES_TABLE")
+            ),
+
+            conditionalPanel(
+              condition = "output.CURRENT_PAGE == 'SEARCH_RES'",
+              DT::dataTableOutput("SEARCH_RES_TABLE")
             )
 
           )

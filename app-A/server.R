@@ -1,6 +1,6 @@
 #-------------------------------------------------------------------------------
 # server.R
-# Last modified: 2020-06-11 17:29:12 (CEST)
+# Last modified: 2020-06-12 13:22:26 (CEST)
 # BJM Tremblay
 
 msg("Loading server")
@@ -42,7 +42,6 @@ server <- function(input, output, session) {
     req(QUERY$STRING)
     if (!is.null(QUERY$STRING)) {
       SType <- QUERY$STRING
-      print(SType)
       QType <- strsplit(SType, ".", fixed = TRUE)[[1]][1]
       if (!QType %in% ALL_TYPES || !SType %in% ALL_TYPES_SUBTYPES[[QType]]) {
         showModal(modalDialog(
@@ -120,8 +119,35 @@ server <- function(input, output, session) {
     CURRENT_PAGE$WHICH <- "WELCOME"
   })
 
+  observeEvent(input$BUTTON_GO_BACK_TO_WELCOME_SEARCH, {
+    CURRENT_PAGE$WHICH <- "WELCOME"
+  })
+
   observeEvent(input$SUBTYPE_SELECTOR, {
     SELECTED_SUBTYPE[[SELECTED_TYPE$WHICH]] <- input$SUBTYPE_SELECTOR
+  })
+
+  observeEvent(input$SEARCH_BUTTON, {
+    req(input$APP_SEARCH_BOX)
+    res <- search_metadata(input$APP_SEARCH_BOX)
+    output$SEARCH_RES_TABLE <- DT::renderDataTable(
+      res,
+      extensions = "Buttons",
+      escape = FALSE,
+      selection = "none",
+      rownames = FALSE,
+      options = list(
+        lengthMenu = list(c(10, 50, 100, 200), c("10", "50", "100", "200")),
+        pageLength = 10,
+        dom = "ltip",
+        scrollX = TRUE,
+        columnDefs = list(
+          list(targets = 0, className = "dt-center"),
+          list(targets = 1, bSortable = FALSE, className = "dt-center")
+        )
+      )
+    )
+    CURRENT_PAGE$WHICH <- "SEARCH_RES"
   })
 
   output$PANEL_TOP_RIGHT_CURRENT_SUBTYPE_SEQUENCE <- renderText({
