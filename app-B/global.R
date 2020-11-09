@@ -1,9 +1,9 @@
 #-------------------------------------------------------------------------------
 # global.R
-# Last modified: 2020-06-12 13:25:46 (CEST)
+# Last modified: 2020-11-09 21:47:44 (CET)
 # BJM Tremblay
 
-LAST_UPDATE_DATE <- function() "2020-06-17"
+LAST_UPDATE_DATE <- function() "2020-11-09"
 
 msg <- function(...) {
   time <- format(as.POSIXlt(Sys.time(), tz = "America/Toronto"))
@@ -278,7 +278,7 @@ TREE_PLOT <- ggtree(TREE2, branch.length = "none") +
   # geom_tiplab(size = 1)
   layout_dendrogram()
 for (i in seq_len(nrow(clades))) {
-  if (clades$Size[i] <= 1) next
+  if (clades$Size[i] <= 2) next
   if (nchar(clades$Label[i]) > 3) next
   TREE_PLOT <- TREE_PLOT +
     geom_cladelabel(
