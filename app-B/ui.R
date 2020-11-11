@@ -1,6 +1,6 @@
 #-------------------------------------------------------------------------------
 # ui.R
-# Last modified: 2020-11-09 21:28:56 (CET)
+# Last modified: 2020-11-12 00:16:53 (CET)
 # BJM Tremblay
 
 msg("Loading UI")
@@ -56,18 +56,18 @@ ui <- function(request) fluidPage(
             condition = "output.CURRENT_PAGE == 'WELCOME'",
             tagList(
               h4("Toxin Subtypes (TcdB)"),
-              actionLink("BUTTON_B1a", "B1a:"), GET_MEMBER_COUNT("B1a"), br(),
-              actionLink("BUTTON_B1b", "B1b:"), GET_MEMBER_COUNT("B1b"), br(),
-              actionLink("BUTTON_B1c", "B1c:"), GET_MEMBER_COUNT("B1c"), br(),
+              actionLink("BUTTON_B1", "B1:"), GET_MEMBER_COUNT("B1"), br(),
               actionLink("BUTTON_B2", "B2:"), GET_MEMBER_COUNT("B2"), br(),
               actionLink("BUTTON_B3", "B3:"), GET_MEMBER_COUNT("B3"), br(),
-              actionLink("BUTTON_B4a", "B4a:"), GET_MEMBER_COUNT("B4a"), br(),
-              actionLink("BUTTON_B4b", "B4b:"), GET_MEMBER_COUNT("B4b"), br(),
+              actionLink("BUTTON_B4", "B4:"), GET_MEMBER_COUNT("B4"), br(),
               actionLink("BUTTON_B5", "B5:"), GET_MEMBER_COUNT("B5"), br(),
               actionLink("BUTTON_B6", "B6:"), GET_MEMBER_COUNT("B6"), br(),
               actionLink("BUTTON_B7", "B7:"), GET_MEMBER_COUNT("B7"), br(),
               actionLink("BUTTON_B8", "B8:"), GET_MEMBER_COUNT("B8"), br(),
               actionLink("BUTTON_B9", "B9:"), GET_MEMBER_COUNT("B9"), br(),
+              actionLink("BUTTON_B10", "B10:"), GET_MEMBER_COUNT("B10"), br(),
+              actionLink("BUTTON_B11", "B11:"), GET_MEMBER_COUNT("B11"), br(),
+              actionLink("BUTTON_B12", "B12:"), GET_MEMBER_COUNT("B12"), br(),
               actionLink("BUTTON_sordellii_group", "sordellii_group:"), GET_MEMBER_COUNT("sordellii_group"), br(),
               actionLink("BUTTON_sordellii_TcsL", "sordellii_TcsL:"), GET_MEMBER_COUNT("sordellii_TcsL"),
               br(), br(),

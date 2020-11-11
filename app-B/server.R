@@ -1,6 +1,6 @@
 #-------------------------------------------------------------------------------
 # server.R
-# Last modified: 2020-11-09 21:28:05 (CET)
+# Last modified: 2020-11-12 00:16:12 (CET)
 # BJM Tremblay
 
 msg("Loading server")
@@ -23,18 +23,18 @@ server <- function(input, output, session) {
   )
 
   SELECTED_SUBTYPE <- reactiveValues(
-    "B1a" = "B1a.1",
-    "B1b" = "B1b.1",
-    "B1c" = "B1c.1",
+    "B1" = "B1.1",
     "B2" = "B2.1",
     "B3" = "B3.1",
-    "B4a" = "B4a.1",
-    "B4b" = "B4b.1",
+    "B4" = "B4.1",
     "B5" = "B5.1",
     "B6" = "B6.1",
     "B7" = "B7.1",
     "B8" = "B8.1",
     "B9" = "B9.1",
+    "B10" = "B10.1",
+    "B11" = "B11.1",
+    "B12" = "B12.1",
     "sordellii_group" = "sordellii_group.1",
     "sordellii_TcsL" = "sordellii_TcsL.1"
   )
