@@ -3,7 +3,7 @@
 # Last modified: 2020-11-12 00:15:06 (CET)
 # BJM Tremblay
 
-LAST_UPDATE_DATE <- function() "2020-11-12"
+LAST_UPDATE_DATE <- function() "2020-12-29"
 
 msg <- function(...) {
   time <- format(as.POSIXlt(Sys.time(), tz = "America/Toronto"))
